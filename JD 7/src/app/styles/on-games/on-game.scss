@@ -1,0 +1,47 @@
+.on-background-game {
+  $colors: (
+    1: #4d01fb,
+    2: #ff6501,
+    3: #ff6501,
+    4: #9b04fb,
+    5: #ffb900,
+    6: #ff6501,
+    7: null,
+  );
+  background-image: url('./images/on-global/themes/#{$on-theme-number}/on-background-game.jpg');
+  background-color: map-get($colors, $on-theme-number);
+  @include MQL(M) {
+    background-image: url('./images/on-global/themes/#{$on-theme-number}/mobile/on-background-game.jpg');
+    background-size: cover !important;
+  }
+}
+
+.on-image-game {
+  $colors: (
+    1: (#00EAFF, #FFFFFF),
+    2: (#FFF600, #FFFFFF),
+    3: (#FFF600, #FFFFFF),
+    4: (#FFFFFF, #B4FF00),
+    5: (#f06, #FFFFFF),
+    6: (#FFF600, #FFFFFF),
+    7: (null, null),
+  );
+  max-width: 463px;
+  @if(
+    $on-theme-number == 1 or
+    $on-theme-number == 4 or
+    $on-theme-number == 5
+  ) {
+    margin: 0 auto;
+  }
+  .st0{fill: nth(map-get($colors, $on-theme-number), 1);}
+  .st1{fill: nth(map-get($colors, $on-theme-number), 2);}
+
+}
+
+.on-image-game ~ p {
+  font-size: 18px;
+  @if ($on-theme-number == 5) {
+    color: #000;
+  }
+}

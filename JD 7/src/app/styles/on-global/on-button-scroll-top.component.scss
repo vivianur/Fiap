@@ -1,0 +1,38 @@
+on-button-scroll-top {
+  display: block;
+  position: fixed;
+  bottom: $on-elements-spacing / 2;
+  right: $on-elements-spacing;
+  z-index: 2;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: 'Gotham HTF Medium';
+  color: #5f5e60;
+  .on-button-scroll-top-container {
+    > * {
+      display: inline-block;
+      vertical-align: middle;
+      transition: .5s all;
+    }
+    .on-arrow {
+      margin-right: 5px;
+      width: 15px;
+      height: 15px;
+      margin-top: 10px;
+      border-color: #5f5e60;
+    }
+    span {
+      @include MQL(M) {
+        display: none;
+      }
+    }
+  }
+  &:hover {
+    color: $on-color-magenta;
+    .on-arrow {
+      border-color: $on-color-magenta
+    }
+  }
+}

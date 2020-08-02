@@ -1,0 +1,252 @@
+body{
+    background-color: lighten($cor-cinza, 78%);
+}
+b, strong{
+    font-family:'Gotham HTF Bold';
+}
+.clear{
+    clear: both;
+}
+.break{
+    clear: both;
+    height: 1em;
+}
+.text-center{
+    text-align: center;
+}
+.img-100{
+    width: 100%;
+}
+.none{
+    display: none;
+}
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+.titulo-destaque{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+//Transitions
+.transitions {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+//Tooltip
+.tooltip {
+    display:none;
+    position:absolute;
+    background-color:lighten($cor-principal, 10%);
+    padding:1.5em;
+    color:#fff;
+    font:1em 'Gotham HTF Book';
+    width: 30%;
+    box-shadow: 2px 2px 1px rgba($cor-cinza, .9);
+}
+
+//Enfase
+.enfase {
+    color: $cor-principal;
+    font: 1.5em 'Gotham HTF Book';
+    line-height: 1.4em;
+    position: relative;
+    width: 40%;
+    height: auto;
+    padding: 1em;
+    border-left: $cor-principal 4px solid;
+    //
+    &.enfase-left{
+        float: left;
+        margin: 15px 20px 10px 0;
+    }
+    &.enfase-right{
+        float: right;
+        margin: 15px 0 10px 20px;
+    }
+}
+
+
+//Scrollbar
+.scrollbar{
+    height: 400px;
+}
+.mCSB_inside>.mCSB_container {
+    margin-right: 0px;
+}
+.mCSB_scrollTools{
+    right: 10px;
+}
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_draggerRail {
+    background-color: rgba(0,0,0,0.2);
+}
+
+//Box de destaque dashed
+.box-destaque-dashed {
+    padding: 1em;
+    clear: both;
+    margin: 20px 0;
+    border: 2px dashed rgba($cor-principal, .5);
+    color: darken($cor-principal, 8%);
+}
+//Box de destaque
+.box-destaque{
+    padding: 1em;
+    margin: $margin-padrao;
+    background-color: rgba($cor-cinza, .15);
+    &.code{
+        font-family: "Gotham HTF Medium";
+    }
+    //
+    p:first-child,
+    .box-destaque-subtitulo:first-child{
+        padding-top: 0px;
+    }
+    .box-destaque-subtitulo{
+        font: 1.2em 'Gotham HTF Medium';
+    }
+}
+//Box dica
+.box-dica{
+    background-color: rgba( $cor-principal, 0.17);
+    padding: 1em;
+    margin: 20px 0;
+}
+
+//Nota de rodape
+.nota-rodape{
+    border-top: 2px dashed rgba($cor-cinza, .3);
+    padding-top: 1em;
+    margin: 1.5em 0 1em 0;
+    //
+    ol li{
+        font-size: 0.9em;
+        color: rgba($cor-cinza, .8);
+        padding: $padding-padrao;
+    }
+}
+//Modal.
+.popup-modal-box{
+    background: #FFF;
+    padding: 20px 30px;
+    text-align: left;
+    max-width: 650px;
+    margin: 40px auto;
+    position: relative;
+    //
+    pre {
+        background-color: #fff;
+        color: #303030;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        line-height: 1.8em;
+    }
+}
+.popup-modal-fechar{
+    color: $cor-principal;
+    font-size: 0px;
+    top: 10px;
+    right: 10px;
+    position: absolute;
+    text-decoration:none;
+
+    &:hover{
+        text-decoration: none;
+    }
+    &:before{
+        font-size: 14px;
+        content: "\ea0f";
+        font-family:'icomoon';
+    }
+}
+.mfp-hide {
+    display: none!important;
+}
+
+//Box de dicas e sugestões.
+.box-dicas {
+    padding: 1.8em;
+    margin: $margin-padrao;
+    clear: both;
+    position: relative;
+}
+.link-dicas{
+    color: $cor-cinza;
+    display: block;
+    margin: $margin-padrao;
+}
+span.icon-video{
+    background: $cor-principal url(../images/icon-links.svg) -69px center no-repeat;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background-size: 140px;
+}
+
+//Box de citação.
+.citacao {
+    margin: $margin-padrao;
+    border-left: 4px solid $cor-principal;
+    padding: 1.3em;
+    font-style: italic;
+    color: $cor-principal;
+    font-size: 1em;
+    line-height: 1.4em;
+    background-color: lighten(#fff, 5%);
+}
+
+
+//BTN
+.btn{
+    padding: 10px;
+    border: 1px solid rgba($cor-cinza, .2);
+    background-color: lighten($cor-cinza, 25%);
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "Gotham HTF Medium";
+    font-weight: normal;
+    letter-spacing: 1px;
+    font-size: 0.8em;
+    margin: $margin-padrao;
+    cursor: pointer;
+    //
+    &:hover{
+        background-color: $cor-principal;
+        color: #fff;
+        border-color: $cor-principal;
+        text-decoration: none;
+    }
+}
+//Media Query
+@include MQ (XL){
+    .enfase {
+        font-size: 1.4em;
+    }
+}
+@include MQ (L){
+    .enfase {
+        font-size: 1.3em;
+    }
+}
+
+@include MQ(XS){
+    //Enfase.
+    .enfase {
+        font-size: 1.3em;
+        line-height: 1.1em;
+        width: 100%;
+    }
+}
+
+

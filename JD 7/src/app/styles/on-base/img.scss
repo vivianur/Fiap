@@ -1,0 +1,8 @@
+img {
+  display: block;
+  max-width: 100%;
+  //margin: $on-elements-spacing 0
+  &[src$=".svg"] {
+    width: 100%;
+  }
+}

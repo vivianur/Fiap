@@ -1,0 +1,19 @@
+<div class="on-animation">
+  <object>
+    <ng-content></ng-content>
+  </object>
+  <div class="on-animation-player">
+    <div class="on-animation-player-button on-animation-player-button-restart" (click)="animationRestart()"></div>
+    <div class="on-animation-player-button on-animation-player-button-play" (click)="animationPlay()"></div>
+    <div class="on-animation-player-button on-animation-player-button-pause on-hide" (click)="animationPause()"></div>
+    <div class="on-animation-player-progress">
+      <div class="on-animation-player-progress-line"
+      (mousedown)="onAnimationLine($event)"
+      (touchstart)="onAnimationLine($event)">
+        <div class="on-animation-player-progress-line-fill"></div>
+        <div class="on-animation-player-progress-line-track"></div>
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,163 @@
+{
+  "onGameQuestionNAnswersRush": {
+    "prefix": "onGameQuestionNAnswersRush",
+    "body": [
+      "this.onGameQuestionNAnswers = [{\r",
+      "  id: 1,\r",
+      "  name: '$1',\r",
+      "  answers: [\r",
+      "    { id: 1, name: '$2' },\r",
+      "    { id: 2, name: '$3' },\r",
+      "    { id: 3, name: '$4' }\r",
+      "  ],\r",
+      "  tip: '$5',\r",
+      "  correctAnswerId: $6 \r",
+      "},\r",
+      "{\r",
+      "  id: $7,\r",
+      "  name: '$8',\r",
+      "  answers: [\r",
+      "    { id: 1, name: '$9' },\r",
+      "    { id: 2, name: '$10' },\r",
+      "    { id: 3, name: '$11' },\r",
+      "   ],\r",
+      "  tip: '$12',\r",
+      "  correctAnswerId: $13\r",
+      "}];"
+    ],
+    "description": "onGameQuestionNAnswersRush"
+  },
+  "onAnimationGameTheme1": {
+    "prefix": "onAnimationGameTheme1",
+    "body": [
+      "onAnimationGame() {\r",
+      "    let animationTime = 1;\r",
+      "    let animationSequenceDelay = 0.3;\r",
+      "    let onImageGame = new TimelineMax({ paused: true })\r",
+      "      // Jogo\r",
+      "      .from('#on-image-jogo-1 path:nth-child(1)', animationTime, {scale: 0, transformOrigin: 'center', ease: Elastic.easeOut.config(.5, 1)}, 'jogo') // J\r",
+      "      .from(['#on-image-jogo-1 path:nth-child(2)', '#on-image-jogo-1 path:nth-child(3)'], animationTime, {scale: 0, transformOrigin: 'center', ease: Elastic.easeOut.config(.5, 1)}, 'jogo+=.2') // O\r",
+      "      .from('#on-image-jogo-1 path:nth-child(4)', animationTime, {scale: 0, transformOrigin: 'center', ease: Elastic.easeOut.config(.5, 1)}, 'jogo+=.4') // G\r",
+      "      .from(['#on-image-jogo-1 path:nth-child(5)', '#on-image-jogo-1 path:nth-child(6)'], animationTime, {scale: 0, transformOrigin: 'center', ease: Elastic.easeOut.config(.5, 1)}, 'jogo+=.6') // O\r",
+      "      // Interativo\r",
+      "      .staggerFrom('#on-image-jogo-2 *', animationTime/2, {y: '-20%', autoAlpha: 0, ease: Elastic.easeOut.config(1.2,1.3)}, .1, 'jogo+=.9')\r",
+      "      .from('.on-image-game + p', 1, {scale: 0, transformOrigin: 'center', ease: Elastic.easeOut.config(1,1)}, 'jogo+=1.9')\r",
+      "      .from('.on-game-button-open-container', 1, {scale: 0, transformOrigin: 'center', ease: Elastic.easeOut.config(1,1)}, 'jogo+=2.1')\r",
+      "\r",
+      "    this.onAnimationsService.addAnimation(\"game\", onImageGame);\r",
+      "}"
+    ],
+    "description": "onAnimationGameTheme1"
+  },
+  "onAnimationGameTheme2": {
+    "prefix": "onAnimationGameTheme2",
+    "body": [
+      "onAnimationGame() {\r",
+      "    let animationTime = 1;\r",
+      "    let onImageGame = new TimelineMax({ paused: true })\r",
+      "      // Jogo\r",
+      "      .staggerFrom('.on-image-game g:last-child>path', animationTime, {scale:0, rotation: 35,transformOrigin:'center', ease: Elastic.easeOut.config(.5,1.5)}, .2, 'jogo')\r",
+      "      // Interativo\r",
+      "      .staggerFrom('.on-image-game svg >*:not(g:last-child)', animationTime, {y: '-20%', autoAlpha: 0, ease: Elastic.easeOut.config(1.2,1.3)}, .1, 'jogo+=.9')\r",
+      "      .from('.on-image-game + p', 1, {scale: 0, transformOrigin: 'center', ease: Elastic.easeOut.config(1,1)}, 'jogo+=1.9')\r",
+      "      .from('.on-game-button-open-container', 1, {scale: 0, transformOrigin: 'center', ease: Elastic.easeOut.config(1,1)}, 'jogo+=2.1')\r",
+      "\r",
+      "    this.onAnimationsService.addAnimation(\"game\", onImageGame);\r",
+      "  }"
+    ],
+    "description": "onAnimationGameTheme2"
+  },
+  "onAnimationGameTheme3": {
+    "prefix": "onAnimationGameTheme3",
+    "body": [
+      "onAnimationGame() {\r",
+      "    let animationTime = 1;\r",
+      "    let onImageGame = new TimelineMax({ paused: true })\r",
+      "      // Jogo\r",
+      "      .staggerFrom('.on-image-game path:nth-last-child(-n+4)', animationTime, {y: '-10%', autoAlpha: 0, ease: Elastic.easeOut.config(1.2,1.3)}, .2, 'jogo')\r",
+      "      // Interativo\r",
+      "      .staggerFrom('.on-image-game svg >*:not(path:last-child):not(path:nth-child(13)):not(path:nth-child(12)):not(path:nth-child(11))', animationTime, {y: '10%', autoAlpha: 0, ease: Elastic.easeOut.config(1.2,1.3)}, .1, 'jogo+=.5')\r",
+      "      .from('.on-image-game + p', 1, {scale: 0, transformOrigin: 'center', ease: Elastic.easeOut.config(1,1)}, 'jogo+=1.5')\r",
+      "      .from('.on-game-button-open-container', 1, {scale: 0, transformOrigin: 'center', ease: Elastic.easeOut.config(1,1)}, 'jogo+=1.7')\r",
+      "    this.onAnimationsService.addAnimation(\"game\", onImageGame);\r",
+      "}"
+    ],
+    "description": "onAnimationGameTheme3"
+  },
+  "onAnimationGameTheme4": {
+    "prefix": "onAnimationGameTheme4",
+    "body": [
+      "onAnimationGame() {\r",
+      "    let animationTime = 1;\r",
+      "    TweenMax.set(['.on-image-game svg > path:first','.on-image-game svg > path:nth-child(3)','.on-image-game svg > path:nth-child(4)','.on-image-game svg > path:nth-child(5)'], {fill: 'transparent'})\r",
+      "    let onImageGame = new TimelineMax({ paused: true })\r",
+      "      // Jogo\r",
+      "      .set('.on-image-game svg > path:first', {stroke: '#FFF', strokeDasharray: 395})\r",
+      "      .set('.on-image-game svg > path:nth-child(3)', {stroke: '#FFF', strokeDasharray: 380})\r",
+      "      .set('.on-image-game svg > path:nth-child(4)', {stroke: '#FFF', strokeDasharray: 645})\r",
+      "      .set('.on-image-game svg > path:nth-child(5)', {stroke: '#FFF', strokeDasharray: 380})\r",
+      "      .from('.on-image-game svg>path:first', animationTime, {strokeDashoffset: 395}, 'jogo')\r",
+      "      .from('.on-image-game svg > path:nth-child(3)', animationTime, {strokeDashoffset: 380}, 'jogo+=.1')\r",
+      "      .from('.on-image-game svg > path:nth-child(4)', animationTime, {strokeDashoffset: 645}, 'jogo+=.2')\r",
+      "      .from('.on-image-game svg > path:nth-child(5)', animationTime, {strokeDashoffset: 380}, 'jogo+=.3')\r",
+      "      .staggerTo('.on-image-game svg> path', animationTime/2, {fill: '#B4FF00', stroke: 'none'}, .1, 'jogo+=.6')\r",
+      "      // // Interativo\r",
+      "      .staggerFrom('.on-image-game g > *', animationTime, {scale: 0, transformOrigin: 'center',ease: Elastic.easeOut.config(1,1.2)}, .1, 'jogo+=.7')\r",
+      "      .from('.on-image-game + p', 1, {scale: 0, transformOrigin: 'center', ease: Elastic.easeOut.config(1,1)}, 'jogo+=1.7')\r",
+      "      .from('.on-game-button-open-container', 1, {scale: 0, transformOrigin: 'center', ease: Elastic.easeOut.config(1,1)}, 'jogo+=1.9')\r",
+      "    this.onAnimationsService.addAnimation(\"game\", onImageGame);\r",
+      "}"
+    ],
+    "description": "onAnimationGameTheme4"
+  },
+  "onAnimationGameTheme5": {
+    "prefix": "onAnimationGameTheme5",
+    "body": [
+      "onAnimationGame() {\r",
+      "    let animationTime = 1;\r",
+      "    let onImageGame = new TimelineMax({ paused: true })\r",
+      "      // Jogo\r",
+      "      .staggerFrom('.on-image-game svg > *:nth-child(-n+4)', animationTime, {rotation: 180, transformOrigin: 'center', autoAlpha: 0, ease: Elastic.easeOut.config(1,1.5)}, .2, 'jogo')\r",
+      "      // Interativo\r",
+      "      .staggerFrom('.on-image-game svg > *:nth-last-child(-n+10)', animationTime/2, {x: '-100%', autoAlpha: 0, ease: Elastic.easeOut.config(1,1.5)}, .1, 'jogo+=.4')\r",
+      "      .from('.on-image-game + p', 1, {scale: 0, transformOrigin: 'center', ease: Elastic.easeOut.config(1,1)}, 'jogo+=1.4')\r",
+      "      .from('.on-game-button-open-container', 1, {scale: 0, transformOrigin: 'center', ease: Elastic.easeOut.config(1,1)}, 'jogo+=1.6')\r",
+      "    this.onAnimationsService.addAnimation(\"game\", onImageGame);\r",
+      "}"
+    ],
+    "description": "onAnimationGameTheme5"
+  },
+  "onAnimationGameTheme6": {
+    "prefix": "onAnimationGameTheme6",
+    "body": [
+      "onAnimationGame() {\r",
+      "    let animationTime = 1;\r",
+      "    let onImageGame = new TimelineMax({ paused: true })\r",
+      "      // Jogo\r",
+      "      .from('.on-image-game path:last-child', animationTime, {rotation: 360, x: '-400%', transformOrigin: 'center', autoAlpha:0, ease: Elastic.easeOut.config(1,1.8)}, 'jogo')\r",
+      "      .staggerFrom('.on-image-game svg > *:nth-last-child(-n+4):not(path:last-child)', animationTime, {rotation: 180, transformOrigin: 'center', autoAlpha: 0, ease: Elastic.easeOut.config(1,1.5)}, .1, 'jogo+=.1')\r",
+      "      // Interativo\r",
+      "      .staggerFrom('.on-image-game svg > *:nth-child(-n+10)', animationTime/2, {y: '-30%', autoAlpha: 0, ease: Elastic.easeOut.config(1,1.5)}, .1, 'jogo+=.1')\r",
+      "      .from('.on-image-game + p', 1, {scale: 0, transformOrigin: 'center', ease: Elastic.easeOut.config(1,1)}, 'jogo+=1.1')\r",
+      "      .from('.on-game-button-open-container', 1, {scale: 0, transformOrigin: 'center', ease: Elastic.easeOut.config(1,1)}, 'jogo+=1.3')\r",
+      "    this.onAnimationsService.addAnimation(\"game\", onImageGame);\r",
+      "}"
+    ],
+    "description": "onAnimationGameTheme6"
+  },
+  "onAnimationDestaque": {
+    "prefix": "onAnimationDestaque",
+    "body": [
+      "onAnimation$1() {\r",
+      "  this.onAnimationsService.createAnimation({\r",
+      "    name: \"$2\",\r",
+      "    duration: 1,\r",
+      "    timeSequence: 0.3,\r",
+      "    textSelector: \".on-animation-$3\",\r",
+      "    backgroundSelector: \".on-background-$4\"\r",
+      "  });\r",
+      "}"
+    ],
+    "description": "onAnimationDestaque"
+  }
+}

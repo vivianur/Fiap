@@ -1,0 +1,6 @@
+<div *ngIf="isResponsive">
+  <ng-content select="on-map-of-section-mobile"></ng-content>
+</div>
+<div *ngIf="!isResponsive">
+  <ng-content select="on-map-of-section-desktop"></ng-content>
+</div>

@@ -1,0 +1,9 @@
+object {
+  display: block;
+  max-width: 100%;
+  margin: $on-elements-spacing 0;
+  overflow: hidden;
+  a, svg {
+    display: block
+  }
+}

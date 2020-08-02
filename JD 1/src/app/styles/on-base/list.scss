@@ -1,0 +1,9 @@
+ol, ul {
+  padding-left: $on-elements-spacing;
+  margin: $on-elements-spacing 0;
+  li {
+    &:not(:last-child) {
+      margin-bottom: $on-elements-spacing;
+    }
+  }
+}

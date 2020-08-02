@@ -1,0 +1,32 @@
+on-game-drag-n-drop {
+  display: block;
+}
+
+.on-game-draggable-container {
+  border-bottom: 1px solid $on-color-magenta;
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0px;
+    height: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 10px solid $on-color-magenta;
+  }
+}
+
+.on-game-droppable {
+  background-color: rgba(181, 181, 181, 0.15);
+  min-height: auto;
+  font-family: 'Gotham HTF Medium';
+  font-size: 14px;
+  color: #FFF;
+  text-align: center;
+  padding: $on-elements-spacing;
+  span {
+    margin: auto;
+  }
+}

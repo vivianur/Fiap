@@ -1,0 +1,25 @@
+on-toast {
+  display: block;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  z-index: 2;
+  @include MQ(M) {
+    bottom: $on-elements-spacing;
+    .on-toast-content {
+      display: inline-block;
+      border-radius: 5px;
+    }
+  }
+  .on-toast-content {
+    padding: $on-elements-spacing;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #FFF;
+    font-family: 'Gotham HTF Bold';
+  }
+}
+
+
+
+

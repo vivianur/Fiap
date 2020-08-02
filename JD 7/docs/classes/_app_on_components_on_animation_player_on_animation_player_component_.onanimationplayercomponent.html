@@ -1,0 +1,697 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>OnAnimationPlayerComponent | on-template</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">on-template</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_app_on_components_on_animation_player_on_animation_player_component_.html">&quot;app/on-components/on-animation-player/on-animation-player.component&quot;</a>
+				</li>
+				<li>
+					<a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html">OnAnimationPlayerComponent</a>
+				</li>
+			</ul>
+			<h1>Class OnAnimationPlayerComponent</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<dl class="tsd-comment-tags">
+						<dt>name</dt>
+						<dd><p>OnAnimationPlayer</p>
+						</dd>
+						<dt>description</dt>
+						<dd><p>Este componente é utilizado para animações</p>
+						</dd>
+						<dt>usage</dt>
+						<dd><h3 id="html">HTML</h3>
+							<pre><code class="lang-html">
+<span class="hljs-tag">&lt;<span class="hljs-name">on-animation-player</span>
+   <span class="hljs-attr">id</span>=<span class="hljs-string">"on-image-infografico"</span>
+   [<span class="hljs-attr">animation</span>]=<span class="hljs-string">"onImageInfografico"</span>
+   (<span class="hljs-attr">outputAnimation</span>)=<span class="hljs-string">"onAnimationInfografico = $event"</span>
+   <span class="hljs-attr">figcaption</span>=<span class="hljs-string">"Animação de teste"</span>
+   [<span class="hljs-attr">onAction</span>]=<span class="hljs-string">"onActionInfografico"</span>
+   [<span class="hljs-attr">chapterSwitch</span>]=<span class="hljs-string">"true"</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">on-animation-player</span>&gt;</span>
+</code></pre>
+							<h3 id="typescript">Typescript</h3>
+							<pre><code class="lang-ts">
+onAnimationInfografico: <span class="hljs-built_in">any</span>
+onImageInfografico: <span class="hljs-built_in">any</span>
+onActionInfografico: <span class="hljs-built_in">any</span>
+
+ngOnInit() {
+  <span class="hljs-keyword">this</span>.onImageInternetUmMinuto = <span class="hljs-keyword">new</span> TimelineMax({ paused: <span class="hljs-literal">true</span> })
+
+  <span class="hljs-keyword">this</span>.onActionInternetUmMinuto = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-keyword">this</span>.onImageInternetUmMinuto.play()
+}
+</code></pre>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">OnAnimationPlayerComponent</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><span class="tsd-signature-type">OnInit</span></li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#animation" class="tsd-kind-icon">animation</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#elementref" class="tsd-kind-icon">element<wbr>Ref</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#figurecaption" class="tsd-kind-icon">figure<wbr>Caption</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#leftinpercentage" class="tsd-kind-icon">left<wbr>InPercentage</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#onglobalservice" class="tsd-kind-icon">on<wbr>Global<wbr>Service</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#outputanimation" class="tsd-kind-icon">output<wbr>Animation</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#playerbuttonpause" class="tsd-kind-icon">player<wbr>Button<wbr>Pause</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#playerbuttonplay" class="tsd-kind-icon">player<wbr>Button<wbr>Play</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#playerprogressline" class="tsd-kind-icon">player<wbr>Progress<wbr>Line</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#playerprogresslinefill" class="tsd-kind-icon">player<wbr>Progress<wbr>Line<wbr>Fill</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#playerprogresslinetrack" class="tsd-kind-icon">player<wbr>Progress<wbr>Line<wbr>Track</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#playerprogresslinetrackleft" class="tsd-kind-icon">player<wbr>Progress<wbr>Line<wbr>Track<wbr>Left</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#windowfromx" class="tsd-kind-icon">window<wbr>FromX</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#windowtox" class="tsd-kind-icon">window<wbr>ToX</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#animationpause" class="tsd-kind-icon">animation<wbr>Pause</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#animationplay" class="tsd-kind-icon">animation<wbr>Play</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#animationrestart" class="tsd-kind-icon">animation<wbr>Restart</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#getplayerprogresselements" class="tsd-kind-icon">get<wbr>Player<wbr>Progress<wbr>Elements</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#getplayerprogressinnerspace" class="tsd-kind-icon">get<wbr>Player<wbr>Progress<wbr>Inner<wbr>Space</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#getplayerprogresstrackleftinpixel" class="tsd-kind-icon">get<wbr>Player<wbr>Progress<wbr>Track<wbr>Left<wbr>InPixel</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#ngoninit" class="tsd-kind-icon">ng<wbr>OnInit</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#onanimationline" class="tsd-kind-icon">on<wbr>Animation<wbr>Line</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#setplayerprogresslinebackground" class="tsd-kind-icon">set<wbr>Player<wbr>Progress<wbr>Line<wbr>Background</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#setplayerprogresslinetrackleft" class="tsd-kind-icon">set<wbr>Player<wbr>Progress<wbr>Line<wbr>Track<wbr>Left</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>OnAnimation<wbr>Player<wbr>Component<span class="tsd-signature-symbol">(</span>onGlobalService<span class="tsd-signature-symbol">: </span><a href="_app_providers_on_global_service_.onglobalservice.html" class="tsd-signature-type">OnGlobalService</a>, elementRef<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ElementRef</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html" class="tsd-signature-type">OnAnimationPlayerComponent</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in app/on-components/on-animation-player/on-animation-player.component.ts:60</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>onGlobalService: <a href="_app_providers_on_global_service_.onglobalservice.html" class="tsd-signature-type">OnGlobalService</a></h5>
+								</li>
+								<li>
+									<h5>elementRef: <span class="tsd-signature-type">ElementRef</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html" class="tsd-signature-type">OnAnimationPlayerComponent</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="animation" class="tsd-anchor"></a>
+					<h3>animation</h3>
+					<div class="tsd-signature tsd-kind-icon">animation<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in app/on-components/on-animation-player/on-animation-player.component.ts:48</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="elementref" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> element<wbr>Ref</h3>
+					<div class="tsd-signature tsd-kind-icon">element<wbr>Ref<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ElementRef</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in app/on-components/on-animation-player/on-animation-player.component.ts:64</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="figurecaption" class="tsd-anchor"></a>
+					<h3>figure<wbr>Caption</h3>
+					<div class="tsd-signature tsd-kind-icon">figure<wbr>Caption<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in app/on-components/on-animation-player/on-animation-player.component.ts:47</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="leftinpercentage" class="tsd-anchor"></a>
+					<h3>left<wbr>InPercentage</h3>
+					<div class="tsd-signature tsd-kind-icon">left<wbr>InPercentage<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in app/on-components/on-animation-player/on-animation-player.component.ts:57</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="onglobalservice" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> on<wbr>Global<wbr>Service</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Global<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="_app_providers_on_global_service_.onglobalservice.html" class="tsd-signature-type">OnGlobalService</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in app/on-components/on-animation-player/on-animation-player.component.ts:63</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="outputanimation" class="tsd-anchor"></a>
+					<h3>output<wbr>Animation</h3>
+					<div class="tsd-signature tsd-kind-icon">output<wbr>Animation<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EventEmitter</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new EventEmitter()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in app/on-components/on-animation-player/on-animation-player.component.ts:49</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="playerbuttonpause" class="tsd-anchor"></a>
+					<h3>player<wbr>Button<wbr>Pause</h3>
+					<div class="tsd-signature tsd-kind-icon">player<wbr>Button<wbr>Pause<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in app/on-components/on-animation-player/on-animation-player.component.ts:56</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="playerbuttonplay" class="tsd-anchor"></a>
+					<h3>player<wbr>Button<wbr>Play</h3>
+					<div class="tsd-signature tsd-kind-icon">player<wbr>Button<wbr>Play<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in app/on-components/on-animation-player/on-animation-player.component.ts:55</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="playerprogressline" class="tsd-anchor"></a>
+					<h3>player<wbr>Progress<wbr>Line</h3>
+					<div class="tsd-signature tsd-kind-icon">player<wbr>Progress<wbr>Line<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in app/on-components/on-animation-player/on-animation-player.component.ts:51</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="playerprogresslinefill" class="tsd-anchor"></a>
+					<h3>player<wbr>Progress<wbr>Line<wbr>Fill</h3>
+					<div class="tsd-signature tsd-kind-icon">player<wbr>Progress<wbr>Line<wbr>Fill<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in app/on-components/on-animation-player/on-animation-player.component.ts:52</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="playerprogresslinetrack" class="tsd-anchor"></a>
+					<h3>player<wbr>Progress<wbr>Line<wbr>Track</h3>
+					<div class="tsd-signature tsd-kind-icon">player<wbr>Progress<wbr>Line<wbr>Track<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in app/on-components/on-animation-player/on-animation-player.component.ts:53</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="playerprogresslinetrackleft" class="tsd-anchor"></a>
+					<h3>player<wbr>Progress<wbr>Line<wbr>Track<wbr>Left</h3>
+					<div class="tsd-signature tsd-kind-icon">player<wbr>Progress<wbr>Line<wbr>Track<wbr>Left<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in app/on-components/on-animation-player/on-animation-player.component.ts:54</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="windowfromx" class="tsd-anchor"></a>
+					<h3>window<wbr>FromX</h3>
+					<div class="tsd-signature tsd-kind-icon">window<wbr>FromX<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in app/on-components/on-animation-player/on-animation-player.component.ts:60</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="windowtox" class="tsd-anchor"></a>
+					<h3>window<wbr>ToX</h3>
+					<div class="tsd-signature tsd-kind-icon">window<wbr>ToX<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in app/on-components/on-animation-player/on-animation-player.component.ts:59</li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="animationpause" class="tsd-anchor"></a>
+					<h3>animation<wbr>Pause</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">animation<wbr>Pause<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in app/on-components/on-animation-player/on-animation-player.component.ts:111</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="animationplay" class="tsd-anchor"></a>
+					<h3>animation<wbr>Play</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">animation<wbr>Play<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in app/on-components/on-animation-player/on-animation-player.component.ts:105</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="animationrestart" class="tsd-anchor"></a>
+					<h3>animation<wbr>Restart</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">animation<wbr>Restart<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in app/on-components/on-animation-player/on-animation-player.component.ts:117</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getplayerprogresselements" class="tsd-anchor"></a>
+					<h3>get<wbr>Player<wbr>Progress<wbr>Elements</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Player<wbr>Progress<wbr>Elements<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in app/on-components/on-animation-player/on-animation-player.component.ts:75</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getplayerprogressinnerspace" class="tsd-anchor"></a>
+					<h3>get<wbr>Player<wbr>Progress<wbr>Inner<wbr>Space</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Player<wbr>Progress<wbr>Inner<wbr>Space<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in app/on-components/on-animation-player/on-animation-player.component.ts:83</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getplayerprogresstrackleftinpixel" class="tsd-anchor"></a>
+					<h3>get<wbr>Player<wbr>Progress<wbr>Track<wbr>Left<wbr>InPixel</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Player<wbr>Progress<wbr>Track<wbr>Left<wbr>InPixel<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in app/on-components/on-animation-player/on-animation-player.component.ts:87</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="ngoninit" class="tsd-anchor"></a>
+					<h3>ng<wbr>OnInit</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">ng<wbr>OnInit<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in app/on-components/on-animation-player/on-animation-player.component.ts:67</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="onanimationline" class="tsd-anchor"></a>
+					<h3>on<wbr>Animation<wbr>Line</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Animation<wbr>Line<span class="tsd-signature-symbol">(</span>$event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in app/on-components/on-animation-player/on-animation-player.component.ts:123</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>$event: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setplayerprogresslinebackground" class="tsd-anchor"></a>
+					<h3>set<wbr>Player<wbr>Progress<wbr>Line<wbr>Background</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Player<wbr>Progress<wbr>Line<wbr>Background<span class="tsd-signature-symbol">(</span>leftInPercentage<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in app/on-components/on-animation-player/on-animation-player.component.ts:94</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>leftInPercentage: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setplayerprogresslinetrackleft" class="tsd-anchor"></a>
+					<h3>set<wbr>Player<wbr>Progress<wbr>Line<wbr>Track<wbr>Left</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Player<wbr>Progress<wbr>Line<wbr>Track<wbr>Left<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in app/on-components/on-animation-player/on-animation-player.component.ts:99</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/_app_on_components_on_animation_player_on_animation_player_component_.html">"app/on-<wbr>components/on-<wbr>animation-<wbr>player/on-<wbr>animation-<wbr>player.component"</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html" class="tsd-kind-icon">On<wbr>Animation<wbr>Player<wbr>Component</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#animation" class="tsd-kind-icon">animation</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#elementref" class="tsd-kind-icon">element<wbr>Ref</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#figurecaption" class="tsd-kind-icon">figure<wbr>Caption</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#leftinpercentage" class="tsd-kind-icon">left<wbr>InPercentage</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#onglobalservice" class="tsd-kind-icon">on<wbr>Global<wbr>Service</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#outputanimation" class="tsd-kind-icon">output<wbr>Animation</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#playerbuttonpause" class="tsd-kind-icon">player<wbr>Button<wbr>Pause</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#playerbuttonplay" class="tsd-kind-icon">player<wbr>Button<wbr>Play</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#playerprogressline" class="tsd-kind-icon">player<wbr>Progress<wbr>Line</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#playerprogresslinefill" class="tsd-kind-icon">player<wbr>Progress<wbr>Line<wbr>Fill</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#playerprogresslinetrack" class="tsd-kind-icon">player<wbr>Progress<wbr>Line<wbr>Track</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#playerprogresslinetrackleft" class="tsd-kind-icon">player<wbr>Progress<wbr>Line<wbr>Track<wbr>Left</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#windowfromx" class="tsd-kind-icon">window<wbr>FromX</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#windowtox" class="tsd-kind-icon">window<wbr>ToX</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#animationpause" class="tsd-kind-icon">animation<wbr>Pause</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#animationplay" class="tsd-kind-icon">animation<wbr>Play</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#animationrestart" class="tsd-kind-icon">animation<wbr>Restart</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#getplayerprogresselements" class="tsd-kind-icon">get<wbr>Player<wbr>Progress<wbr>Elements</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#getplayerprogressinnerspace" class="tsd-kind-icon">get<wbr>Player<wbr>Progress<wbr>Inner<wbr>Space</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#getplayerprogresstrackleftinpixel" class="tsd-kind-icon">get<wbr>Player<wbr>Progress<wbr>Track<wbr>Left<wbr>InPixel</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#ngoninit" class="tsd-kind-icon">ng<wbr>OnInit</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#onanimationline" class="tsd-kind-icon">on<wbr>Animation<wbr>Line</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#setplayerprogresslinebackground" class="tsd-kind-icon">set<wbr>Player<wbr>Progress<wbr>Line<wbr>Background</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_app_on_components_on_animation_player_on_animation_player_component_.onanimationplayercomponent.html#setplayerprogresslinetrackleft" class="tsd-kind-icon">set<wbr>Player<wbr>Progress<wbr>Line<wbr>Track<wbr>Left</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>

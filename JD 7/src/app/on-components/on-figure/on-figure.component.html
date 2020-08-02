@@ -1,0 +1,6 @@
+<figure>
+  <a [href]="imageName" target="_blank" class="on-image-popup" (click)="openImage($event)">
+    <img [src]="imageName" alt="{{ imageDescriptionWithoutTags }}" title="{{ imageDescriptionWithoutTags }}">
+  </a>
+  <figcaption [innerHTML]="description" (onCountElement)="countFigures($event)"></figcaption>
+</figure>

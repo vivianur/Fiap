@@ -1,0 +1,19 @@
+a,
+a:hover,
+a:active,
+a:focus {
+  color: $on-color-magenta;
+  font-family: 'Gotham HTF Medium';
+}
+a:visited{
+  color: #a11244;
+}
+a:focus {
+  outline: none;
+}
+
+.on-section-dark {
+  a {
+    color: #FFF;
+  }
+}

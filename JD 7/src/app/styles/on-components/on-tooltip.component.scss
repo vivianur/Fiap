@@ -1,0 +1,42 @@
+
+on-tooltip {
+  display: inline-block;
+  color: $on-color-magenta;
+  cursor: pointer;
+}
+
+.on-tooltip-white {
+  color: #FFF;
+}
+
+.on-tooltip-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: calc(100% - #{$on-elements-spacing * 2});
+  background-color: $on-color-magenta;
+  font-size: 12px;
+  line-height: 1.25;
+  color: #FFF;
+  padding: 20px;
+  margin: 0 $on-elements-spacing;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, .1);
+  @include MQ(XS) {
+    width: calc(100% - #{$on-elements-spacing * 4});
+    margin: 0 $on-elements-spacing * 2;
+  }
+  @include MQ(S) {
+    max-width: 400px;
+    margin: 0;
+  }
+  > * {
+    margin: 20px 0;
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

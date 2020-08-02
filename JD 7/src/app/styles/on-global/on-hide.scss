@@ -1,0 +1,24 @@
+.on-hide {
+  display: none;
+}
+
+.on-hide-xs {
+  display: none;
+  @include MQ(XS) {
+    display: block;
+  }
+}
+
+.on-hide-m {
+  display: block;
+  @include MQ(M) {
+    display: none;
+  }
+}
+
+.on-show-xs {
+  display: block;
+  @include MQ(XS) {
+    display: none;
+  }
+}

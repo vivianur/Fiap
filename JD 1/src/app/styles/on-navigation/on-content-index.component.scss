@@ -1,0 +1,16 @@
+on-content-index {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 6px;
+  right: 16px;
+  font-family: 'Gotham HTF Bold';
+  color: #FFF;
+  @include MQ(M) {
+    position: fixed;
+    top: auto;
+    right: $on-elements-spacing;
+    bottom: $on-elements-spacing * 2;
+    color: $on-color-magenta;
+  }
+}

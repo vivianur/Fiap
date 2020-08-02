@@ -1,0 +1,49 @@
+on-challenge-title {
+  display: flex;
+  align-items: center;
+  @include MQL(S) {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .on-challenge-title-icon {
+    width: 100px + $on-elements-spacing;
+    object {
+      margin: 0;
+      max-width: 100px;
+      .cls-1{fill:#cc1b59;}
+    }
+    @include MQL(S) {
+      order: 1;
+    }
+  }
+
+  .on-challenge-title-text{
+    flex-grow: 1;
+    padding: 0 20px;
+    width: 100%;
+    @include MQL(S) {
+      order: 3;
+      padding: 0;
+    }
+  }
+
+  h1, h2, h3 {
+    margin: 0;
+  }
+}
+
+.on-challenge-header {
+  display: flex;
+  justify-content: space-between;
+  @include MQL(XS) {
+    flex-direction: column-reverse;
+  }
+  &-destaque {
+    align-items: center;
+    @include MQL(M) {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+  }
+}

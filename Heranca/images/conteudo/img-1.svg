@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="700px" height="520px" viewBox="0 0 700 520" enable-background="new 0 0 700 520" xml:space="preserve">
+<rect fill="#FFFFFF" width="700" height="520"/>
+<rect x="194.7" y="391.5" fill="#7E389C" stroke="#4B215C" stroke-miterlimit="10" width="129.8" height="54.3"/>
+<rect x="384.8" y="391.5" fill="#7E389C" stroke="#4B215C" stroke-miterlimit="10" width="129.8" height="54.3"/>
+<rect x="281.2" y="230" fill="#7E389C" stroke="#4B215C" stroke-miterlimit="10" width="129.8" height="48.7"/>
+<rect x="292.4" y="63.2" fill="#7E389C" stroke="#4B215C" stroke-miterlimit="10" width="107.4" height="48.8"/>
+<text transform="matrix(1 0 0 1 306.9516 96.5508)" fill="#FFFFFF" font-family="'ArialMT'" font-size="25" letter-spacing="1">Object</text>
+<text transform="matrix(1 0 0 1 293.226 263.3613)" fill="#FFFFFF" font-family="'ArialMT'" font-size="25" letter-spacing="1">Classe A</text>
+<text transform="matrix(1 0 0 1 205.4488 427.54)" fill="#FFFFFF" font-family="'ArialMT'" font-size="25" letter-spacing="1">Classe B</text>
+<text transform="matrix(1 0 0 1 395.336 427.54)" fill="#FFFFFF" font-family="'ArialMT'" font-size="25" letter-spacing="1">Classe C</text>
+<g>
+	<g>
+		<g>
+			<polygon fill="#D2D2D2" points="337,125 337,193 322,193 347,218 372,193 357,193 357,125 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<g>
+			<polygon fill="#D2D2D2" points="293.6,293.8 259.7,348.5 246.9,340.6 255,375 289.4,366.9 276.6,358.9 310.4,304.2 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<g>
+			<polygon fill="#D2D2D2" points="389.6,304.2 423.4,358.9 410.6,366.9 445,375 453.1,340.6 440.3,348.5 406.4,293.8 			"/>
+		</g>
+	</g>
+</g>
+</svg>

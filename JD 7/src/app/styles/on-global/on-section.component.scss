@@ -1,0 +1,16 @@
+on-section {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.on-section-dark {
+  color: #FFF;
+}
+
+.on-section-full-screen {
+  height: 100vh;
+  on-section-container {
+    height: 100vh;
+  }
+}

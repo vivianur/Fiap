@@ -1,0 +1,230 @@
+$transition-time: 1s;
+
+on-slider {
+  .slick-arrow {
+    @media (max-width: 1050px) {
+      display: none !important;
+    }
+    position: absolute;
+    top: 50%;
+    width: 34px;
+    height: 78px;
+    background-color: transparent;
+    opacity: 1;
+    padding: 0;
+    font-size: 0;
+    margin-top: -39px;
+    transition: opacity $transition-time;
+    cursor: pointer;
+    &:before,
+    &:after {
+      @include MQL(M) {
+        display: none;
+      }
+      content: '';
+      position: absolute;
+      z-index: 1;
+      left: 1px;
+      top: 38px;
+      width: 50px;
+      height: 2px;
+      background-color: $on-color-magenta;
+      transition: background-color $transition-time, opacity $transition-time;
+      transform-origin: left center;
+    }
+    &:before {
+      transform: rotate(-50deg);
+    }
+    &:after {
+      transform: rotate(50deg);
+    }
+
+    &.slick-prev {
+      left: -54px;
+      //left: 0;
+    }
+    &.slick-next {
+      right: -54px;
+      //right: 0;
+      transform: rotate(180deg);
+    }
+    &.slick-disabled {
+      cursor: default;
+    }
+  }
+
+  ul.slick-dots {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    li {
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      background-color: transparent;
+      padding: 0;
+      border: 3px solid #8B7177;
+      border-radius: 100%;
+      transition: background-color $transition-time, border-color $transition-time;
+      cursor: pointer;
+      &:not(:last-of-type) {
+        margin-right: 5px;
+      }
+      &.slick-active {
+        background-color: $on-color-magenta;
+        border-color: $on-color-magenta !important;
+      }
+      button {
+        font-size: 0;
+        line-height: 0;
+        color: transparent;
+      }
+    }
+  }
+
+  &.on-slider-thumb {
+    ul.slick-dots {
+      display: flex;
+      overflow-x: auto;
+      flex-wrap: nowrap;
+      li {
+        flex: 0 0 auto;
+        margin: 0 3px;
+        width: 120px;
+        height: 80px;
+        border-radius: 0;
+        &.slick-active {
+          background-color: none;
+          border-color: $on-color-magenta !important;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+.on-slider-box {
+  position: relative;
+  padding: $on-elements-spacing * 2 0;
+  margin: $on-elements-spacing 0;
+  @include MQ(M) {
+    padding: $on-elements-spacing * 2 65px;
+  }
+  > *:first-child {
+    margin-top: 0;
+  }
+  > *:last-child {
+    margin-bottom: 0;
+  }
+  on-slider {
+    margin: 0;
+    .slick-arrow {
+      width: 25px;
+      height: 56px;
+      &.slick-prev,
+      &.slick-next {
+        &:before,
+        &:after {
+          top: 27px;
+          width: 35px;
+          height: 2px;
+        }
+      }
+    }
+  }
+  &:before, &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: $on-elements-spacing / 2;
+    background: url(./images/on-global/on-image-pattern.svg) repeat;
+    left: 0;
+  }
+  &:before {
+    top: 0;
+  }
+  &:after {
+    bottom: 0;
+  }
+}
+
+.on-background-color-white {
+  on-slider {
+    .slick-arrow.slick-disabled {
+      &:after, &:before {
+        @extend %background-color-gray;
+      }
+    }
+    ul.slick-dots li {
+      @extend %border-color-gray;
+    }
+  }
+}
+
+.on-background-color-gray {
+  on-slider {
+    .slick-arrow.slick-disabled {
+      &:after, &:before {
+        @extend %background-color-gray-component;
+      }
+    }
+    ul.slick-dots li {
+      @extend %border-color-gray-component;
+    }
+  }
+}
+
+.on-background-color-main-light {
+  on-slider {
+    .slick-arrow.slick-disabled {
+      &:after, &:before {
+        @extend %background-color-main-component;
+      }
+    }
+    ul.slick-dots li {
+      @extend %border-color-main-component;
+    }
+  }
+}
+
+.on-section-dark {
+  on-slider {
+    .slick-arrow {
+      &:after, &:before {
+        @extend %background-color-white;
+      }
+    }
+    .slick-arrow.slick-disabled {
+      &:after, &:before {
+        @extend %background-color-white;
+        opacity: .5;
+      }
+    }
+    ul.slick-dots li {
+      @extend %border-color-white;
+      &.slick-active {
+        @extend %background-color-white;
+        border-color: $on-color-white !important;
+      }
+    }
+  }
+  .on-slider-box {
+    &:after {
+      border-top: 2px solid #FFF;
+      height: 0;
+      background: none;
+    }
+    &:before {
+      border-bottom: 2px solid #FFF;
+      height: 0;
+      background: none;
+    }
+  }
+}

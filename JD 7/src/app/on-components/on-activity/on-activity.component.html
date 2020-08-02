@@ -1,0 +1,16 @@
+<ng-content select="on-activity-title"></ng-content>
+<div class="on-activity-header">
+  <div class="on-row">
+    <div class="on-col on-col-sm on-col-sm-10">
+      <p>Clique dentro da(s) coluna(s) da tabela e preencha o(s) campo(s).</p>
+      <button (click)="clean()" class="on-activity-button-clean"></button>
+    </div>
+    <div class="on-col on-col-sm on-col-sm-2">
+      <button (click)="save()" class="on-activity-button-save">Salvar</button>
+    </div>
+  </div>
+</div>
+<div class="on-activity-content">
+  <ng-content></ng-content>
+</div>
+

@@ -1,0 +1,74 @@
+
+.on-display-table {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+@include MQ(M) {
+  .on-display-table-cell {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: $on-elements-spacing / 2;
+    padding-right: $on-elements-spacing / 2;
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+  .on-display-table-cell-1 {
+    width: 8.333333333333333%;
+  }
+  .on-display-table-cell-2 {
+    width: 16.66666666666667%;
+  }
+  .on-display-table-cell-3 {
+    width: 25%;
+  }
+  .on-display-table-cell-4 {
+    width: 33.33333333333333%;
+  }
+  .on-display-table-cell-5 {
+    width: 41.66666666666667%;
+  }
+  .on-display-table-cell-6 {
+    width: 50%;
+  }
+  .on-display-table-cell-7 {
+    width: 58.33333333333333%;
+  }
+  .on-display-table-cell-8 {
+    width: 66.66666666666667%;
+  }
+  .on-display-table-cell-9 {
+    width: 50%;
+  }
+  .on-display-table-cell-10 {
+    width: 83.33333333333333%;
+  }
+  .on-display-table-cell-11 {
+    width: 91.66666666666667%;
+  }
+  .on-display-table-cell-12 {
+    width: 100%;
+  }
+}
+
+.on-display-table-cell:not(:last-of-type) {
+  margin-bottom: $on-elements-spacing;
+  @include MQ(M) {
+    margin: 0;
+  }
+}
+
+.on-display-table-cell > * {
+  &:first-child {
+    margin-top: 0;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

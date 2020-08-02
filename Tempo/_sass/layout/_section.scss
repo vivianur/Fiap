@@ -1,0 +1,89 @@
+.container{
+    color: $cor-cinza;
+    float: right;
+    font: 1em 'Gotham HTF Book';
+    width: 70%;
+    line-height: 1.6em;
+}
+//Sections
+section {
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    padding: 2.8em 5.5em;
+    //
+    p{
+        padding: $padding-padrao;
+    }
+}
+section a,
+section a:focus,
+section a:visited
+{
+    color: lighten($cor-principal, 15%);
+    text-decoration: none;
+}
+section a:hover
+{
+    color: lighten($cor-principal, 20%);
+    text-decoration: underline;
+}
+.section-titulo{
+    font: 2.8em 'Gotham HTF Light';
+    text-transform: uppercase;
+    padding: 15px 0 30px 0;
+}
+.section-subtitulo{
+    font: 1.2em 'Gotham HTF Medium';
+    text-transform: uppercase;
+    padding: $padding-padrao;
+}
+//Bar
+.bg-destaque.bar{
+    &.bar-top:before{
+        border-bottom: 20px solid darken($cor-principal,12%);
+    }
+    &.bar-bottom:before{
+        border-top: 20px solid darken($cor-principal,12%);
+    }
+}
+
+.bar{
+    &:before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        width: 0;
+        height: 0;
+        margin-left: -10px;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        z-index: 9;
+    }
+    &.bar-top:before {
+        top: -20px;
+    }
+    &.bar-bottom:before {
+        bottom: -20px;
+    }
+}
+//Media Query
+@media (max-width: 900px){//Até
+    .container{
+        width: 100%;
+        line-height: 1.6em;
+    }
+    section {
+        padding: 1.2em 2em;
+    }
+}
+@media (max-width: 480px){//Até
+    .section-titulo {
+        font-size: 1.4em;
+        padding-bottom: 15px;
+    }
+    .section-subtitulo {
+        font-size: 1em;
+        line-height: 1.3em;
+    }
+}

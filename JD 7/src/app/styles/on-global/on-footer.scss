@@ -1,0 +1,49 @@
+.on-background-footer {
+  $themes: (
+    h1: (
+      1: 'Alianza Italic 100',
+      2: 'Metronic Slab Pro Bold',
+      3: 'Metronic Slab Pro Light',
+      4: 'Metronic Slab Pro Regular',
+      5: 'Roboto Light',
+      6: 'Gotham HTF Book',
+      7: 'Gotham HTF Bold'
+    ),
+    span: (
+      1: 'Alianza Italic 700',
+      2: 'Metronic Slab Pro Bold',
+      3: 'Metronic Slab Pro Light',
+      4: 'Metronic Slab Pro Black',
+      5: 'Playfair Display Black',
+      6: 'Gotham HTF Ultra',
+      7: 'Gotham HTF Bold'
+    ),
+    bgColors: (
+      1: #000,
+      2: #000,
+      3: #00086b,
+      4: #000,
+      5: #280028,
+      6: #260f01,
+      7: #000
+    )
+  );
+  background-image: url('./images/on-global/themes/#{$on-theme-number}/mobile/on-background-footer.jpg');
+  background-color: map-get(map-get($themes, bgColors), $on-theme-number);
+  background-position: center top;
+  background-repeat: no-repeat;
+  @include MQ(XS) {
+    background-image: url('./images/on-global/themes/#{$on-theme-number}/on-background-footer.jpg');
+  }
+  on-section-content {
+    padding-bottom: 0;
+  }
+  h1 {
+    font-family: map-get(map-get($themes, h1), $on-theme-number);
+    span {
+      font-family: map-get(map-get($themes, span), $on-theme-number);
+      display: inline;
+    }
+  }
+}
+

@@ -1,0 +1,27 @@
+// breakpoints
+$XS:     480px;
+$S:      768px;
+$M:     1000px;
+$L:     1170px;
+$XL:    1450px;
+
+// media queries
+
+@mixin MQ($canvas) {
+    @if $canvas == XS {
+        @media only screen and (max-width: $XS) { @content; }
+    }
+    @else if $canvas == S {
+        @media only screen and (max-width: $S) { @content; }
+    }
+    @else if $canvas == M {
+        @media only screen and (max-width: $M) { @content; }
+    }
+    @else if $canvas == L {
+        @media only screen and (max-width: $L) { @content; }
+    }
+    @else if $canvas == XL {
+        @media only screen and (max-width: $XL) { @content; }
+    }
+}
+

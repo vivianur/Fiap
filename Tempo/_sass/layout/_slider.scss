@@ -1,0 +1,143 @@
+//Slider.
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+//List.
+.slick-list {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+//Inicializado.
+.slick-initialized {
+    .slick-slide {
+        display: block;
+    }
+}
+
+//Vertical.
+.slick-vertical {
+    .slick-slide {
+        border: 1px solid transparent;
+        display: block;
+        height: auto;
+    }
+}
+
+//Track.
+.slick-track {
+    display: block;
+    left: 0;
+    position: relative;
+    top: 0;
+    transform: translate3d(0, 0, 0);
+
+    &:after,
+    &:before {
+        content: "";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+//Slide.
+.slick-slide {
+    cursor: move;
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+
+//Arrows.
+.slick-prev,
+.slick-next {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0;
+    height: 82px;
+    margin-top: -90px;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    transition: all 400ms;
+    width: 45px;
+    &:hover {
+        opacity: .5;
+    }
+    polyline{
+        fill: transparent;
+        stroke: $cor-principal;
+        stroke-width: 2px; 
+        stroke-miterlimit: 10;
+    }
+}
+
+.slick-prev {
+    left: -50px;
+
+    //Espaçamento.
+    .caixa & {
+        left: -80px;
+    }
+}
+
+.slick-next {
+    right: -50px;
+
+    //Espaçamento.
+    .caixa & {
+        right: -80px;
+    }
+
+}
+
+//Dots.
+.slick-dots {
+    list-style: none;
+    display: block;
+    margin-top: 25px;
+    text-align: center;
+    width: 100%;
+
+    li {
+        display: inline-block; //Bolinhas ficam em linha.
+        margin: 0 5px; //Distância entre bolinhas.
+    }
+
+    button {
+        background: #CCC; //Cor de fundo de bolinhas desativadas.
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        display: inline-block;
+        height: 10px; //Altura das bolinhas desativadas.
+        outline: none;
+        text-indent: -99999px; //Texto fora da tela.
+        transition: all 400ms;
+        vertical-align: middle;
+        width: 10px; //Largura das bolinhas desativadas.
+    }
+
+    .slick-active button {
+        background: $cor-principal; //Cor de fundo de bolinhas ativadas.
+        height: 15px; //Altura das bolinhas ativadas.
+        width: 15px; //Largura das bolinhs ativdas.
+    }
+}
+

@@ -1,0 +1,72 @@
+header{
+    color: #fff;
+    background: $cor-principal;
+    height: 100%;
+    position: fixed;
+    text-transform: uppercase;
+    width: 30%;
+    z-index: 2;
+}
+.margin-header{
+    margin: 5%;
+}
+//Título.
+.header-titulo {
+    font: 2.5em 'Gotham HTF Book';
+    margin: 1em 0 .8em 0;
+}
+//Descrição.
+.header-descricao {
+    font:{
+        family: 'Gotham HTF Book';
+        size: 0.939em;
+    }
+    line-height: 1.6em;
+    max-width: 700px;
+}
+//Media Query.
+@media screen and (min-width: 1400px){//Acima de 1400px
+    header{
+        width: 40%;
+    }
+}
+@include MQ (L){
+     //Header.
+    .header-titulo {
+        font-size: 2.1em;
+    }
+    .margin-header{
+        margin: 7%;
+    }
+}
+@include MQ (M){
+    //Header.
+    header{
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .header-titulo{
+        margin: 0 0 20px 0;
+    }
+    .margin-header{
+        margin: 0;
+        padding: 1.8em;
+    }
+    //Capa.
+    .bg-capa{
+        background: $cor-principal;
+    }
+}
+@include MQ (XS){
+    //Título.
+    .header-titulo {
+        font-size: 1.8em;
+        width: 90%;
+        
+    }
+    //Descrição.
+    .header-descricao {
+        font-size: 0.8em;
+    }
+}

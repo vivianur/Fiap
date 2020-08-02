@@ -1,0 +1,950 @@
+<on-section section-id="1" [onAction]="animations.inicio">
+  <div class="on-chapter-number on-animation-inicio">7</div>
+  <on-section-container>
+    <on-section-content>
+      <div class="on-row">
+        <div class="on-col-md-6">
+          <h1 class="on-hide">Início</h1>
+          <object class="on-image-inicio">
+
+          </object>
+          <on-arrow-scroll class="on-animation-inicio" textColor="" arrowColor="" dotColor=""></on-arrow-scroll>
+        </div>
+      </div>
+    </on-section-content>
+  </on-section-container> 
+  <on-layer class="on-background-inicio" backgroundColor=""></on-layer>
+</on-section> 
+
+<on-section class="on-background-video on-background-video-highlight-1 on-section-dark" section-id="2" [onAction]="animations.videoIntroducao">
+  <on-section-container>
+    <on-section-content>
+      <div class="on-video-highlight-container on-video-introducao">
+        <h1>
+          <div class="on-font-size-large on-color-primary on-text-uppercase">O que</div>
+          <div class="on-font-size-large on-color-primary on-text-uppercase">vem</div>
+          <div class="on-font-size-medium on-text-uppercase">por aí!</div>
+        </h1>
+        <div class="on-video-container">
+          <iframe src="https://player.vimeo.com/video/" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen
+            allowfullscreen></iframe>
+        </div>
+        <div class="clear-fix"></div>
+      </div>
+    </on-section-content>
+  </on-section-container>
+</on-section>
+
+<on-section class="on-background-color-gray on-background-shapes" section-id="3">
+  <on-section-container>
+    <on-section-content>
+      <h1 class="on-text-uppercase">
+        <div class="on-font-alianza-italic-900 on-font-size-large">Planejamento</div>
+      </h1>
+      <p>
+        Neste capítulo, você irá aprender como o planejamento é importante para o desenvolvimento de seu jogo, conhecer ferramentas que podem ajudar a organizar e acompanhar as tarefas necessárias para criação do <i>Escape Adventure</i>, além de saber como fazer entregas constantes para melhorar o produto e o processo após cada interação.
+      </p>
+    </on-section-content>
+  </on-section-container>
+</on-section>
+
+<on-section class="on-background-color-main-light on-background-shapes" section-id="4">
+  <on-section-container>
+    <on-section-content>
+      <h1 class="on-text-uppercase">
+        <div class="on-font-metronic-slab-pro-regular on-font-size-medium">Planejando</div>
+        <div class="on-font-alianza-italic-900 on-font-size-large">o projeto</div>
+      </h1>
+      <on-col-float to="left" size="50">
+        <on-figure img="https://udemy-images.udemy.com/course/750x422/756150_c033_2.jpg" description="O planejamento traz clareza no dimensionamento das etapas"></on-figure>
+      </on-col-float>
+      <p>
+        Após definir a ideia do jogo, é hora de se organizar para cumprir todas as etapas do projeto até chegar à conclusão. A fim de garantir o cumprimento do prazo, é preciso se organizar, já que são diversas áreas trabalhando em conjunto e em momentos específicos do projeto. Mas como organizar tudo isso?
+      </p>
+      <p>
+        O planejamento traz clareza no dimensionamento das etapas, e o que parecia um projeto gigante e impossível, vira palpável, com metas realistas dentro de suas capacidades de produção.
+      </p>
+      <p>
+        É importante ter a dimensão do projeto antes de iniciar, mas também é imprescindível a realização do acompanhamento das etapas no dia a dia, pois imprevistos acontecem e, se o projeto não for replanejado diariamente, ele ficará cada vez mais difícil de controlar.
+      </p>
+    </on-section-content>
+  </on-section-container>
+</on-section>
+
+<on-section class="on-background-color-gray on-background-shapes" section-id="5">
+  <on-section-container>
+    <on-section-content>
+      <h1 class="on-text-uppercase">
+        <div class="on-font-alianza-italic-900 on-font-size-large">Organização</div>
+      </h1>
+      <p>
+        Temos abaixo um exemplo das áreas que compõem um projeto de jogo. Observe a organização por áreas:
+      </p>
+      <on-tabs>
+        <on-tab title="1">
+          <h3>Programação</h3>
+          <p><b>a)	Backend</b></p>
+          <ul>
+            <li>Informações que o jogo manda para um servidor.</li>
+            <li>
+              Dados para um ranking on-line, estatísticas de uma partida multiplayer, disponibilização de novos conteúdos via download etc.
+            </li>
+          </ul>
+          <p><b>b)	Frontend</b></p>
+          <ul>
+            <li>Parte em que o jogador atua e a programação responde às ações feitas.</li>
+            <li>
+              Indicador de vida que se atualiza, aceleração do carro quando apertamos o botão para acelerar, carregamento do cenário conforme o jogador anda por ele etc.
+            </li>
+          </ul>
+        </on-tab>
+        <on-tab title="2">
+          <h3>Arte</h3>
+          <ul>
+            <li>Produção dos assets que serão usados.</li>
+            <li>Personagens, cenários, objetos etc.</li>
+          </ul>
+        </on-tab>
+        <on-tab title="3">
+          <h3>Animação</h3>
+          <ul>
+            <li>Personagens, cenários, objetos etc.</li>
+            <li>
+              Animação do personagem principal correndo, andando, caindo, morrendo, levantando, atacando, entre muitas outras ações.
+            </li>
+          </ul>
+        </on-tab>
+        <on-tab title="4">
+          <h3>Motion</h3>
+          <ul>
+            <li>Animação de janelas, transições, efeitos de telas e outros.</li>
+            <li>
+              Quando o jogador abre a janela de início do jogo, há um efeito, quando aperta um botão, há outro, quando acessa uma tela de escolha de personagem, há mais um efeito.
+            </li>
+          </ul>
+        </on-tab>
+        <on-tab title="5">
+          <h3>Game Design</h3>
+          <div class="on-row">
+            <div class="on-col-md-4">
+              <ul>
+                <li>Definição e descrição do game.</li>
+                <li>Como será o jogo? </li>
+                <li>Qual a mecânica principal?</li>
+              </ul>
+            </div>
+            <div class="on-col-md-4">
+              <ul>
+                <li>A ambientação? </li>
+                <li>Há narrativa? </li>
+                <li>O game é para um jogador? Para vários?</li>
+              </ul>
+            </div>
+            <div class="on-col-md-4">
+              <ul>
+                <li>Se é para vários, tem competição entre eles ou é cooperativo? Ou um pouco dos dois?</li>
+                <li>Como o jogador ganha?</li>
+                <li>Etc.</li>
+              </ul>
+            </div>
+          </div>
+        </on-tab>
+        <on-tab title="6">
+          <h3>QA</h3>
+          <div class="on-row">
+            <div class="on-col-md-6">
+              <ul>
+                <li>Quality Assurance</li>
+                <li>Teste do jogo.</li>
+                <li>O jogador, ao colidir contra a parede do calabouço, trava o jogo?</li>
+                <li>Os indicadores de vida estão atualizando corretamente?</li>
+              </ul>
+            </div>
+            <div class="on-col-md-6">
+              <ul>
+                <li>Ele ganha os pontos que deveria ao final da fase?</li>
+                <li>Os modelos carregam corretamente junto com o nível?</li>
+                <li>Entre outros.</li>
+              </ul>
+            </div>
+          </div>
+        </on-tab>
+        <on-tab title="7">
+          <h3>Gerenciamento</h3>
+          <div class="on-row">
+            <div class="on-col-md-6">
+              <ul>
+                <li>Controle de datas e prazos.</li>
+                <li>O que será feito na próxima semana? No próximo mês? Na próxima etapa de entrega?</li>
+              </ul>
+            </div>
+            <div class="on-col-md-6">
+              <ul>
+                <li>Todos têm atividade ou existe alguém sem trabalho?</li>
+                <li>
+                  Ele está sem trabalho por que não há mais atividades que podem ser feitas ou outra área atrasou e está impactando a atividade dele?
+                </li>
+              </ul>
+            </div>
+          </div>
+        </on-tab>
+        <on-tab title="8">
+          <h3>Música</h3>
+          <ul>
+            <li>Música que toca em cada momento do jogo.</li>
+            <li>
+              Qual música toca no menu principal? E quando o jogador começa a jogar? E qual é a música que toca quando o jogador enfrenta um chefe ou está sendo desafiado?
+            </li>
+          </ul>
+        </on-tab>
+        <on-tab title="9">
+          <h3>Efeitos sonoros</h3>
+          <div class="on-row">
+            <div class="on-col-md-6">
+              <ul>
+                <li>Feedback sonoro de cada ação do jogador.</li>
+                <li>Qual é o som que toca quando o jogador toma dano?</li>
+              </ul>
+            </div>
+            <div class="on-col-md-6">
+              <ul>
+                <li>E qual toca quando ele acerta o ataque?</li>
+                <li>Quando ele ganha, o que toca?</li>
+              </ul>
+            </div>
+          </div>
+        </on-tab>
+        <on-tab title="10">
+          <h3>Comunidade e Social</h3>
+          <div class="on-row">
+            <div class="on-col-md-6">
+              <ul>
+                <li>Interação com o público-alvo e coleta de informações.</li>
+                <li>Haverá uma página de mídias sociais para o jogo? </li>
+                <li>Quem vai administrar?</li>
+              </ul>
+            </div>
+            <div class="on-col-md-6">
+              <ul>
+                <li>O que será feito ali? </li>
+                <li>Promoções, anúncios, contato direto com os jogadores?</li>
+              </ul>
+            </div>
+          </div>
+        </on-tab>
+      </on-tabs>
+      <p>
+        Essas podem ser as áreas envolvidas em um projeto, mas o seu pode ter alguma particularidade. É importante avaliar: 
+      </p>
+      <div class="on-row">
+        <div class="on-col-md-6">
+          <ul>
+            <li>Seu projeto tem mais áreas? </li>
+            <li>Quais são? </li>
+          </ul>
+        </div>
+        <div class="on-col-md-6">
+          <ul>
+            <li>O que será necessário fazer em cada uma delas? </li>
+            <li>Quem será o responsável?</li>
+          </ul>
+        </div>
+      </div>
+      <p>
+        É um trabalho grande, não é mesmo? Trabalhar com jogos é trabalhar com várias áreas diferentes ao mesmo tempo e, de projeto para projeto, pode ser que algumas dessas áreas mudem para atender alguma inovação que está sendo proposta. 
+      </p>
+      <p>
+        É uma boa prática fazer a listagem antes de iniciar o projeto para identificar tudo que será feito. Lembrando que de projeto para projeto as coisas podem mudar. Abaixo, há um exemplo de projeto com as etapas, áreas (com suas responsabilidades) e o tipo de atividade a ser feito.
+      </p>
+      <p>
+        Por ali, foi possível dimensionar o projeto de forma que a meta final e a entrega do jogo, fossem subdivididas em vários objetivos menores e mais “alcançáveis”. Quando esses objetivos foram agregados, resultou no game final.
+      </p>
+      <on-important>
+        <p>
+          Quebre o jogo em várias etapas menores para conseguir avançar passo a passo até a conclusão.
+        </p>
+      </on-important>
+      <div class="on-table-responsive">
+        <table class="on-table on-table-primary">
+          <thead>
+            <tr>
+              <th class="on-text-center" width="50%">Atividade</th>
+              <th class="on-text-center">Responsabilidade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="2" class="on-text-center">Planejamento</td>
+            </tr>
+            <tr>
+              <td>
+                Produção do PIV
+              </td>
+              <td class="on-text-center">
+                Arte              
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Validação do PIV
+              </td>
+              <td class="on-text-center">
+                Cliente
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Definição dos 10 conteúdos
+              </td>
+              <td class="on-text-center">
+                Cliente
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Reunião de Kick off
+              </td>
+              <td class="on-text-center">
+                Jes e Cliente
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Alinhamento de requisições técnicas
+              </td>
+              <td class="on-text-center">
+                Jes e Cliente
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Criação do fluxo do game
+              </td>
+              <td class="on-text-center">
+                GD
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Validação do fluxo
+              </td>
+              <td class="on-text-center">
+                Cliente
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Definição do conteúdo das 20 situações<br>(20 por conteúdo)
+              </td>
+              <td class="on-text-center">
+                Cliente
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        Aqui temos a primeira etapa de um jogo: o planejamento. Nesse começo de projeto, já possível perceber algumas atribuições destacadas: 
+      </p>
+      <on-box>
+        <div class="on-row">
+          <div class="on-col-md-6">
+            <ul>
+              <li>área de arte;</li>
+              <li>a parte do cliente;</li>
+            </ul>
+          </div>
+          <div class="on-col-md-6">
+            <ul>
+              <li>JeS (nome do setor, jogos e simulações);</li>
+              <li>GD.</li>
+            </ul>
+          </div>
+        </div>
+      </on-box>
+      <p>
+        Só com os nomes já conseguimos identificar quem é responsável por qual atividade, facilitando visualizar o que precisa ser feito. Nessa etapa inicial temos muita ação do cliente, já que ele trará o conteúdo que será aplicado no game e deverá validar, tanto a linha visual do projeto através da PIV (Proposta de Identidade Visual), quanto o fluxo macro do jogo (no qual são destacadas algumas grandes etapas do game, antes do detalhamento minucioso).
+      </p>
+      <on-col-float to="left" size="25">
+        <on-emphasis>
+          evite dar seguimento ao projeto sem ter todas as atividades anteriores <b>feitas</b> e <b>validadas</b>.
+        </on-emphasis>
+      </on-col-float>
+      <p>
+        Apenas com todas essas atividades finalizadas é que podemos passar para a próxima etapa de pré-produção, e este é um ponto importante: evite dar seguimento ao projeto sem ter todas as atividades anteriores <b>feitas</b> e <b>validadas</b>.
+      </p>
+      <p>
+        Digamos que o cliente ainda não tenha aprovado a linha visual do projeto, mas você decidiu, por questão de tempo, iniciar a produção dos personagens. Se o cliente rejeitar a PIV inicial e pedir outra, você terá perdido tempo produzindo algo que não será usado.
+      </p>
+      <on-important>
+        <p>
+          Não continue o projeto sem ter certeza daquilo que será produzido. Vale mais a pena ficar parado, esperando a validação, do que produzir errado e ter que refazer.
+        </p>
+      </on-important>
+      <p>Temos outras etapas após o planejamento:</p>
+      <div class="on-table-responsive">
+        <table class="on-table on-table-primary">
+          <thead>
+            <tr>
+              <th class="on-text-center" width="50%">Atividade</th>
+              <th class="on-text-center">Responsabilidade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="2" class="on-text-center">Pré-produção</td>
+            </tr>
+            <tr>
+              <td>
+                Desenvolvimento do GDD
+              </td>
+              <td class="on-text-center">
+                  GD          
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Criação dos wireframes
+              </td>
+              <td class="on-text-center">
+                GD              
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Criação da demanda de motions/animações
+              </td>
+              <td class="on-text-center">
+                 GD             
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Criação dos personagens (avatares e clientes)
+              </td>
+              <td class="on-text-center">
+                  Arte            
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Validação dos personagens
+              </td>
+              <td class="on-text-center">
+                  Cliente           
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Criação dos cenários  
+              </td>
+              <td class="on-text-center">
+                 Arte             
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Validação dos cenários
+              </td>
+              <td class="on-text-center">
+                Cliente            
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Criação das narrativas e textos das 20 situações (2 por conteúdo)
+              </td>
+              <td class="on-text-center">
+                Jes e Cliente            
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Validação das narrativas e textos
+              </td>
+              <td class="on-text-center">
+                Cliente            
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        A pré-produção abrange tudo que precisa ser feito antes do desenvolvimento. Para este projeto, era necessário que toda a parte de arte, conteúdo e o Game Design Document estivessem prontos, de modo que fosse possível avançar para o desenvolvimento pleno.
+      </p>
+      <p>
+        É possível ver também que a quantidade de atividades aumentou, se comparada à etapa de planejamento, e que há muito mais atividades com a equipe do que com o cliente.
+      </p>
+      <p>Com essa etapa completa, seguimos para a produção:</p>
+      <div class="on-table-responsive">
+        <table class="on-table on-table-primary">
+          <thead>
+            <tr>
+              <th class="on-text-center" width="50%">Atividade</th>
+              <th class="on-text-center">Responsabilidade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="2" class="on-text-center">Produção</td>
+            </tr>
+            <tr>
+              <td>
+                  Produção das janelas
+              </td>
+              <td class="on-text-center">
+                Arte              
+              </td>
+            </tr>
+            <tr>
+              <td>
+                  Produção da interface
+              </td>
+              <td class="on-text-center">
+                Arte              
+              </td>
+            </tr>
+            <tr>
+              <td>
+                  Produção dos motions/animações
+              </td>
+              <td class="on-text-center">
+                Arte              
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Programação de mecânicas
+              </td>
+              <td class="on-text-center">
+                Jes              
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Conexão LMS
+              </td>
+              <td class="on-text-center">
+                  Jes              
+              </td>
+            </tr>
+            <tr>
+              <td>
+                  Programação de janelas
+              </td>
+              <td class="on-text-center">
+                  Jes              
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Programação geral
+              </td>
+              <td class="on-text-center">
+                  Jes              
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Montagem da árvore de decisão das situações
+              </td>
+              <td class="on-text-center">
+                GD              
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Criação do gabarito               
+              </td>
+              <td class="on-text-center">
+                GD              
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Validação do jogo beta
+              </td>
+              <td class="on-text-center">
+                Qualidade              
+              </td>
+            </tr>
+            <tr>
+              <td>
+                  Validação do jogo beta
+              </td>
+              <td class="on-text-center">
+                Prog/GD              
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Ajustes pós validação Qualidade e GD
+              </td>
+              <td class="on-text-center">
+                Jes              
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Envio do jogo beta
+              </td>
+              <td class="on-text-center">
+                Cliente              
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Validação do jogo beta
+              </td>
+              <td class="on-text-center">
+                Cliente              
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        Temos muito mais atividades nesta etapa e são poucas que envolvem o cliente. Isso se deve ao fato de que todas as validações já foram feitas, e cabe à equipe de desenvolvimento produzir tudo.
+      </p>
+      <p>
+        O envolvimento do cliente volta no fim desta etapa, com a validação beta do jogo, termo usado pela equipe para uma validação “quase” completa.
+      </p>
+      <p>Passada essa etapa, vamos para a próxima: Qualidade.</p>
+      <div class="on-table-responsive">
+        <table class="on-table on-table-primary">
+          <thead>
+            <tr>
+              <th class="on-text-center" width="50%">Atividade</th>
+              <th class="on-text-center">Responsabilidade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="2" class="on-text-center">Qualidade</td>
+            </tr>
+            <tr>
+              <td>
+                Ajustes pós validação Cliente
+              </td>
+              <td class="on-text-center">
+                  Prog          
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Validação do jogo final
+              </td>
+              <td class="on-text-center">
+                  GD          
+              </td>
+            </tr>
+            <tr>
+              <td>
+                  Validação do jogo final
+              </td>
+              <td class="on-text-center">
+                  Qualidade          
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Ajustes pós validação Qualidade e GD
+              </td>
+              <td class="on-text-center">
+                  Prog/GD          
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Envio do jogo final                   
+              </td>
+              <td class="on-text-center">
+                  Jes          
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Validação do jogo final
+              </td>
+              <td class="on-text-center">
+                  Cliente          
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        Terminar o jogo não garante que ele está funcionando corretamente, então a etapa de qualidade é necessária para ajustar bugs e outros problemas encontrados. Esta etapa pode se estender pelas várias validações e também pela complexidade do jogo e, por isso, precisamos sempre colocar uma etapa de qualidade após a finalização da produção do game.
+      </p>
+      <p>
+        Por fim, temos a aentrega:
+      </p>
+      <div class="on-table-responsive">
+        <table class="on-table on-table-primary">
+          <thead>
+            <tr>
+              <th class="on-text-center" width="50%">Atividade</th>
+              <th class="on-text-center">Responsabilidade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="2" class="on-text-center">Entrega</td>
+            </tr>
+            <tr>
+              <td>
+                Ajustes pós validação Cliente
+              </td>
+              <td class="on-text-center">
+                  Prog          
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Fechamento da comunicação com LMS do cliente
+              </td>
+              <td class="on-text-center">
+                  Jes          
+              </td>
+            </tr>
+            <tr>
+              <td>
+                  Publicação
+              </td>
+              <td class="on-text-center">
+                  Cliente          
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        Ao terminar os testes e garantir uma versão 100% funcional do game, temos uma etapa de entrega (seja para um cliente ou para publicação própria). Nela, estamos finalizando os últimos ajustes e preparando para disponibilizar o produto final para o público.
+      </p>
+      <on-col-float to="right" size="25">
+        <on-emphasis class="on-emphasis-style-2">
+          Dividir o seu game em etapas claras facilita na hora de controlar o andamento dele
+        </on-emphasis>
+      </on-col-float>
+      <p>
+        Dividir o seu game em etapas claras facilita na hora de controlar o andamento dele, e permite ter uma visão melhor do que está acontecendo e do que precisa ser feito.
+      </p>
+      <p>
+        Para isso, temos algumas ferramentas e metodologias úteis. Veremos a seguir sobre o Trello e o SCRUM.
+      </p>
+    </on-section-content>
+  </on-section-container>
+</on-section>
+
+<on-section section-id="6" [onAction]="animations.agora">  
+  <on-section-container>
+    <on-section-content>
+      <div class="on-row">
+        <div class="on-col-md-7"></div>
+        <div class="on-col-md-5">
+          <h1 class="on-hide">Agora você tem uma lista enorme de atividades: como controlar e organizar isso?  </h1>
+          <object id="on-image-agora" class="on-background-agora-text">
+            
+          </object>
+        </div>
+      </div> 
+    </on-section-content>
+  </on-section-container>
+  <on-layer class="on-background-agora" backgroundColor="#f60"></on-layer>
+</on-section>
+
+<on-section class="on-background-color-main-light on-background-shapes" section-id="7">
+  <on-section-container>
+    <on-section-content>
+      <h1 class="on-text-uppercase">
+        <div class="on-font-alianza-italic-900 on-font-size-large">Trello</div>
+      </h1>
+      <p>Agora você tem uma lista enorme de atividades: como controlar e organizar isso?</p>
+      <p>
+        O Trello é uma ferramenta de organização e gerenciamento de projetos. Com ele é possível criar listas de atividades divididas por tarefas, que podem ser ajustadas conforme a sua necessidade. Com ele, é muito mais fácil acompanhar o andamento do projeto.
+      </p>
+      <on-important>
+        <p>Acesse: <a href="https://goo.gl/ibmkzf" target="_blank">https://goo.gl/ibmkzf</a>.</p>
+      </on-important>
+      <p>
+        Um detalhe que é importante lembrar e vale para todas as ferramentas e metodologias de planejamento e gestão de projetos:
+      </p>
+      <on-box>
+        <p>
+          As ferramentas ou metodologia só funcionam se você as usa diariamente. Precisamos controlar constantemente o andamento do projeto, a fim de evitar desvios.
+        </p>
+        <p>
+          Quanto mais tempo você deixar de controlar, mais tempo levará para conseguir retomar a produção de uma forma saudável e produtiva.
+        </p>
+      </on-box>
+      <on-col-float to="right" size="50">
+        <on-figure img="https://udemy-images.udemy.com/course/750x422/756150_c033_2.jpg" description="Exemplo de cards do Trello"></on-figure>
+      </on-col-float>
+      <p>
+        Abaixo, temos uma estrutura para organizar o Trello que é comum na produção de projetos de software, na qual os games se encaixam. Nas listas do Trello, colocamos TO DO (a fazer), DOING (o que está sendo feito), QA (em teste) e DONE (feito).
+      </p>
+      <p>
+        Na lista TO DO, colocamos todas as atividades que imaginamos serem necessárias para a produção do jogo e, conforme elas forem sendo feitas, vamos avançando do lado esquerdo do quadro (TO DO) para o lado direito (DONE).
+      </p>
+      <p>
+        É importante atualizar o <i>status</i> das atividades diariamente, assim temos uma visão realista do que falta ser feito, do que está sendo feito, do que está em teste e do que está pronto.
+      </p>
+      <div class="on-slider-box">
+        <on-slider>
+          <on-slide>
+            <h3>TO DO: a fazer</h3> 
+            <on-figure img="https://udemy-images.udemy.com/course/750x422/756150_c033_2.jpg" description="Card TO DO" class="on-figure-full"></on-figure>
+          </on-slide>
+          <on-slide>
+            <h3>DOING: o que está sendo feito</h3>
+            <on-figure img="https://udemy-images.udemy.com/course/750x422/756150_c033_2.jpg" description="Card DOING" class="on-figure-full"></on-figure>
+          </on-slide>
+          <on-slide>
+            <h3>QA: em teste</h3>
+            <on-figure img="https://udemy-images.udemy.com/course/750x422/756150_c033_2.jpg" description="Card QA" class="on-figure-full"></on-figure>
+          </on-slide>
+          <on-slide>
+            <h3>DONE: o que está pronto</h3>
+            <on-figure img="https://udemy-images.udemy.com/course/750x422/756150_c033_2.jpg" description="Card DONE" class="on-figure-full"></on-figure>
+          </on-slide>
+        </on-slider>
+      </div>
+      <p>
+        É importante que o responsável pelo gerenciamento do projeto tenha acesso a todas as áreas envolvidas.
+      </p>
+    </on-section-content>
+  </on-section-container>
+</on-section>
+
+<on-section class="on-background-color-gray on-background-shapes" section-id="8">
+  <on-section-container>
+    <on-section-content>
+      <h1 class="on-text-uppercase">
+        <div class="on-font-alianza-italic-900 on-font-size-large">SCRUM</div>
+      </h1>
+      <on-col-float to="left" size="50">
+        <on-figure img="https://udemy-images.udemy.com/course/750x422/756150_c033_2.jpg" description="Fluxo de Sprint"></on-figure>
+      </on-col-float>
+      <p>
+        SCRUM é uma metodologia de gestão e planejamento de software que usa um estilo de “ondas” incrementais no projeto, sempre melhorando o produto a cada nova versão. Não vamos passar por todas as etapas dessa metodologia aqui, mas veremos algumas que podem ajudar muito no desenvolvimento.
+      </p>
+      <div class="clear-fix"></div>
+      <div class="on-slider-box">
+        <on-slider>
+          <on-slide>
+            <h3>Product backlog</h3>
+            <p>
+              Lista de tudo que precisa ser feito no projeto, do começo ao fim.
+            </p>
+            <ul>
+              <li>
+                É feito em uma reunião geral com todas as áreas, tendo a ideia do projeto finalizada. É o primeiro passo para o detalhamento de tudo que será feito para entregar o produto final.
+              </li>
+            </ul>
+          </on-slide>
+          <on-slide>
+            <h3>Sprint</h3>
+            <p>
+              Parte do projeto. O que a equipe vai fazer nas próximas 2 a 4 semanas.
+            </p>
+            <ul>
+              <li>
+                A Sprint é uma parte do projeto, que foi definida a partir de todas as atividades do Product Backlog, sendo o foco da equipe nas próximas semanas.
+              </li>
+              <li>
+                A Sprint sempre tem um objetivo e deve entregar uma melhoria palpável para o projeto.
+              </li>
+              <li>
+                Por exemplo: finalizar a construção de todos os personagens, prototipar e definir a mecânica base do jogo, testar a tecnologia prevista para o projeto etc.
+              </li>
+            </ul>
+          </on-slide>
+          <on-slide>
+            <h3>Sprint Planning Meeting</h3>
+            <p>
+              Definição do que vai ser feito na Sprint, a partir do Product Backlog.
+            </p>
+            <ul>
+              <li>
+                Reunião de definição da Sprint, a partir do Product Backlog, sobre o que será feito nas próximas semanas.
+              </li>
+            </ul>
+          </on-slide>
+          <on-slide>
+            <h3>Sprint Backlog</h3>
+            <p>
+              Lista do que precisa ser feito na Sprint.
+            </p>
+            <ul>
+              <li>
+                Com a reunião terminada, é gerada a lista de atividades da Sprint para entregar o que foi combinado.
+              </li>
+            </ul>
+          </on-slide>
+        </on-slider>
+      </div>
+      <p>
+        Ao montar a Sprint, pense: o que é mais crítico para a entrega do jogo? Identificar as prioridades e o que é mais importante produzir primeiro ajuda a definir se o projeto está adequado ou precisa de ajustes, e se a equipe atual dá conta do que precisa ser feito.
+      </p>
+      <p>Alguns outros termos:</p>
+      <div class="on-slider-box">
+        <on-slider>
+          <on-slide>
+            <h3>Daily SCRUM</h3>
+            <p>
+              Reunião diária, para que todos conheçam o andamento do projeto.
+            </p>
+            <ul>
+              <li>
+                Reunião de 5 minutos, em pé. Cada membro responde 3 perguntas: O que fiz ontem? O que vou fazer hoje? Tem algo impedindo o meu trabalho?
+              </li>
+              <li>
+                Serve para acompanhar diariamente as ações que estão sendo feitas e se há algum impedimento que pode atrapalhar o desenvolvimento da Sprint.
+              </li>
+            </ul>
+          </on-slide>
+          <on-slide>
+            <h3>Sprint Review</h3>
+            <p>
+              Reunião ao fim da Sprint, analisando o que deu certo e o que pode melhorar.
+            </p>
+            <ul>
+              <li>
+                A ideia é melhorar o processo ao longo do tempo, garantindo que o projeto ande bem e se atualize conforme as Sprints acontecem.
+              </li>
+              <li>
+                A Sprint Review analisa tudo o que foi feito e o que pode ser mudado para ganhar velocidade de produção, melhoria de qualidade e outros fatores.
+              </li>
+            </ul>
+          </on-slide>
+        </on-slider>
+      </div>
+    </on-section-content>
+  </on-section-container>
+</on-section>
+
+<on-section class="on-background-footer on-section-dark" section-id="9">
+  <on-section-container>
+    <on-section-content>
+      <h1 class="on-font-size-medium on-text-uppercase on-text-center">Quer <span class=" on-color-primary">se aprofundar</span> mais?</h1>
+      <on-references>
+        <ul class="on-list">
+          <li>
+            SCHELL, Jesse. <b>The Art of Game Design</b>: A book of lenses. Boca Raton, FL: CRC Press, 2014.
+          </li>
+          <li>
+            SUTHERLAND, Jeff. <b>Scrum</b>: a arte de fazer o dobro do trabalho na metade do tempo. São Paulo: Leya, 2016.
+          </li>
+        </ul>
+      </on-references>
+      <on-content-switch chapter="8" figure="./assets/public/on-image-next.jpg">
+        <h3>
+          <div>Testando antes de fazer</div>
+        </h3>
+        <p>
+          Você sabe como escolher a melhor ideia para o projeto? Neste capítulo, vamos falar sobre os riscos que devem ser considerados ao colocar uma ideia em prática e a importância do protótipo para o sucesso do produto.
+        </p>
+      </on-content-switch>
+    </on-section-content>
+  </on-section-container>
+</on-section>

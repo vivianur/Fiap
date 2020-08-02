@@ -1,0 +1,11 @@
+<div class="on-game-field">
+  <ng-content></ng-content>
+</div>
+<div class="on-game-result" *ngIf="showResult" [ngClass]="classResult">
+  <p> {{ showResult }} </p>
+</div>
+<nav class="on-game-nav">
+  <button *ngIf="status" (click)="start()" class="on-game-button">Iniciar</button>
+  <button *ngIf="!status" (click)="end()" class="on-game-button">Finalizar</button>
+  <button *ngIf="!status" (click)="result()" class="on-game-button on-game-button-result">Resultado</button>
+</nav>

@@ -1,0 +1,34 @@
+.on-chapter-number {
+  $colors: (
+    1: #00eaff,
+    2: #9c00ff,
+    3: #0042ff,
+    4: #b4ff00,
+    5: #ffba00,
+    6: #ffba00,
+    7: null
+  );
+  position: absolute;
+  font-family: 'Gotham HTF Bold';
+  font-size: 50px;
+  height: 50px;
+  line-height: 50px;
+  top: $on-elements-spacing / 4;
+  right: $on-elements-spacing / 2;
+  color: map-get($colors, $on-theme-number);
+  z-index: 1;
+  @include MQ(M) {
+    top: $on-elements-spacing * 2;
+    right: $on-elements-spacing;
+    font-size: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+  @if($on-theme-number == 1) {
+    @include MQL(M) {
+      color: #9c00ff;
+    }
+  }
+}
+
+

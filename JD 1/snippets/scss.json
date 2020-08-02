@@ -1,0 +1,63 @@
+{
+  "on-chapter-number": {
+    "prefix": "on-chapter-number",
+    "body": [
+      ".on-chapter-number {\r",
+      "  position: absolute;\r",
+      "  background: url('./images/on-global/themes/#{$on-theme-number}/numbers/$1.png') no-repeat left;\r",
+      "  background-size: contain;\r",
+      "  top: -90vw;\r",
+      "  width: 20vw;\r",
+      "  height: 20vw;\r",
+      "  @include MQ(S) {\r",
+      "    width: 200px;\r",
+      "    height: 120px;\r",
+      "    top: $on-elements-spacing * 4;\r",
+      "  }\r",
+      "}"
+    ],
+    "description": "on-chapter-number"
+  },
+  "on-animation": {
+    "prefix": "on-animation",
+    "body": [
+      "#on-animation-$1 {\r",
+      "  $width: $2px;\r",
+      "  max-width: $width;\r",
+      "  margin: 0;\r",
+      "  @include MQ(XL) {\r",
+      "    max-width: $width * 1.25;\r",
+      "  }\r",
+      "}"
+    ],
+    "description": "on-animation"
+  },
+  "on-font-mobile": {
+    "prefix": "on-font-mobile",
+    "body": [
+      "@media(max-width: 767px){\r",
+      "  .on-section-title span{\r",
+      "    font-size: 27px;\r",
+      "  }\r",
+      "}\r",
+      "@media(max-width: 510px){\r",
+      "  .on-section-title span{\r",
+      "    font-size: 20px;\r",
+      "  }\r",
+      "}"
+    ],
+    "description": "on-font-mobile"
+  },
+  "on-background": {
+    "prefix": "on-background",
+    "body": [
+      ".on-background-$1 {\r",
+      "  background-image: url('./assets/public/on-background-$2-mobile.jpg');\r",
+      "  @include MQ(M) {\r",
+      "    background-image: url('./assets/public/on-background-$3.jpg');\r",
+      "  }\r",
+      "}"
+    ],
+    "description": "on-background"
+  }
+}

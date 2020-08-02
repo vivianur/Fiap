@@ -1,0 +1,27 @@
+
+$on-grid-spacing: 15px;
+
+%on-row {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: $on-elements-spacing;
+  margin-right: -$on-grid-spacing;
+  margin-bottom: $on-elements-spacing;
+  margin-left: -$on-grid-spacing;
+  > * {
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.on-row {
+  @extend %on-row;
+}
+
+.on-row-reverse {
+  @extend %on-row;
+  flex-wrap: wrap-reverse;
+}

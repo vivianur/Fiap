@@ -1,0 +1,40 @@
+button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+.on-button {
+  padding: $on-elements-spacing $on-elements-spacing * 3;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  font-family: 'Gotham HTF Bold';
+  font-size: 18px;
+  text-transform: uppercase;
+  transition: background .5s, color .5s, border .5s;
+  border: solid 1px transparent;
+  &:hover {
+    border-color: $on-color-magenta;
+    color: $on-color-magenta;
+  }
+}
+
+.on-button-white {
+  border-color: #FFF;
+  color: #FFF;
+  &:hover {
+    border-color: $on-color-magenta;
+    color: $on-color-magenta;
+  }
+}
+
+.on-button-magenta {
+  border-color: $on-color-magenta;
+  color: $on-color-magenta;
+  &:hover {
+    background-color: $on-color-magenta;
+    color: #FFF;
+  }
+}

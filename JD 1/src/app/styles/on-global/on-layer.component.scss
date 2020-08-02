@@ -1,0 +1,75 @@
+on-layer {
+  display: block;
+}
+
+.on-section-layer-normal {
+  on-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+  }
+  on-section-container {
+    position: relative;
+    z-index: 1;
+    min-height: 50vh;
+    @include MQ(M) {
+      min-height: 700px;
+    }
+  }
+}
+
+.on-section-layer-responsive {
+  on-layer {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vw;
+  }
+  on-section-container {
+    height: auto;
+    z-index: 1;
+  }
+  @include MQ(M) {
+    on-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: auto 100%;
+    }
+    on-section-container {
+      min-height: 700px;
+    }
+  }
+}
+
+.on-section-layer-fullscreen {
+  @include MQ(M) {
+    height: 100vw;
+    on-section-container {
+      height: 100%;
+    }
+  }
+}
+
+.on-section-content-layer-padding-top-remove {
+  @include MQL(M) {
+    padding-top: 0;
+  }
+}
+
+.on-section-content-layer-padding-bottom-remove {
+  @include MQL(M) {
+    padding-bottom: 0;
+  }
+}
+
+

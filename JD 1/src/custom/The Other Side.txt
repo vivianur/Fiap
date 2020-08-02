@@ -1,0 +1,228 @@
+      
+      
+      
+      
+
+THE OTHER SIDE
+PROTOTYPING
+Winna Zansavio e Henrique Poyatos
+Versão 4
+
+
+HISTÓRICO DE REVISÕES
+VersãoDataResponsávelDescrição106/11/2017Winna ZansavioArquétipos Parte 2321/01/2018Henrique PoyatosAlterações e complemento do assunto.823/01/2018Henrique PoyatosArquétipo de Guardião do Limiar.924/01/2018Henrique PoyatosArquétipos de Sombra/Vilão e Camaleão.1024/01/2018Henrique PoyatosIndo além dos arquétipos e pratique jogando RPG1325/01/2018Agesandro ScarpioniRevisão Acadêmica1415/02/2018Agesandro ScarpioniSegunda revisão acadêmica1515/02/2018Agesandro ScarpioniAjuste do capítulo para fase do projeto1619/02/2018Cristiane MeloAceitação dos ajustes1721/02/2018Felipe AraujoAjustes para o template1926/2/2018Márcia DiasCopydesk 1228/02/2018Cristiane MeloAceitação de revisão 1428/02/2018Natalia ContaveRevisão 2
+
+
+
+
+
+
+
+
+
+
+
+
+FICHA CATALOGRÁFICA 
+[NÃO PREENCHER - PARA USO DO DEPTO DE EAD E BIBLIOTECA]
+
+RESUMO
+Neste capítulo continuaremos a falar dos arquétipos de personagens, abordando alguns de natureza neutra, como Arauto, Pícaro e Camaleão, e outros que farão oposição aos heróis como o Guardião do Limiar e Vilão (ou Sombra).
+
+Palavras-chave: Roteiro. Personagens. Personalidade.
+
+ 
+
+LISTA DE FIGURAS
+Figura 1.1 – Representação do deus Hermes ou Mercúrio	8
+Figura 1.2 – Frodo Baggins e o arauto e mentor Gandalf	9
+Figura 1.3 – Scar, de O Rei Leão	10
+Figura 1.4 – Prof. Quirrel em Harry Potter e a Pedra Filosofal	12
+Figura 1.5 – Azog, o Orc de O Hobbit	13
+Figura 1.6 – O encanador Mario e seu grande vilão, Bowser	14
+Figura 1.7 – O Máscara, interpretado por Jim Carrey	15
+Figura 1.8 – R2D2 e C3PO	16
+Figura 1.9 – Fred e George Wesley	16
+Figura 1.10 – A criatura Gollum de O Senhor dos Anéis	18
+Figura 1.11 – Severo Snape, interpretado pelo saudoso Alan Rickman	19
+Figura 1.12 – Lex Luthor, um dos maiores inimigos do Superman	20
+Figura 1.13 – Zod, o vilão kriptoniano de Superman	21
+Figura 1.14 – O verdadeiro Magneto, vilão dos X-Men.	22
+Figura 1.15 – Cena do seriado “O Justificeiro”, da Netflix.	23
+Figura 1.16 – Exemplo de uma ficha de personagem em Dungeons & Dragons.	26
+
+
+SUMÁRIO
+1 THE OTHER SIDE	7
+1.1 O Arauto	7
+1.2 O Guardião do Limiar	10
+1.3 O Pícaro	15
+1.4 O Camaleão	17
+1.5 A Sombra/Vilão	19
+1.6 Indo além dos arquétipos	24
+1.7 Pratique a arte da construção de personagens jogando RPG!	25
+REFERÊNCIAS	28
+       
+ 
+
+
+1 THE OTHER SIDE
+      Na fase anterior chamada Gênesis terminamos o capítulo fazendo alguns exercícios de animação, nessa nova fase chamada de Prototyping continuaremos com os assuntos de animação digital, game design, design de interface visual e roteirização, nesta fase você irá iniciar alguns protótipos, colocando em prática os conceitos apresentados. Será um bom momento para começar a pensar e prototipar suas ideias, você será conduzido a um mundo de novas descobertas, vamos começar?
+      Uma boa história precisa de bons personagens, e estes devem ser marcantes e bem construídos por seu autor. Joseph Campbell realizou um estudo muito interessante ao analisar a literatura das mais variadas culturas em diferentes séculos, determinando padrões de personagens e descrevendo-os da mesma forma como o psicólogo Carl Jung fez para os arquétipos humanos. Christopher Vogler explicou os arquétipos de Campbell de maneira quase didática em sua obra “A Jornada do escritor”. É nestes estudos que nos baseamos aqui.
+      É importante notar que estes arquétipos nos ajudam a identificar a função ou propósito de um determinado personagem na história, funcionando como uma atribuição ou um papel desempenhado por ele. Assim sendo, nada nos impede de atribuir dois ou mais arquétipos a um mesmo personagem, e quando isso é feito com maestria, torna-os extremamente interessantes.
+      Abordamos parte destes arquétipos no capítulo anterior, e o objetivo deste capítulo é abordar os remanescentes: o arauto, o pícaro, o guardião do limiar, o camaleão e o vilão (ou sombra).
+1.1 O Arauto
+      No início de cada história, o protagonista é apresentado e contextualizado em sua vida cotidiana, até que algo ocorra e gere uma ruptura ou mudança: é o que batizamos de “chamado para a aventura”. O personagem ou elemento da narrativa que cumpre este papel de trazer o desafio ao herói é conhecido como arauto, pois assim como os arautos da cavalaria medieval, sua chegada anuncia mudanças significativas na história.
+      Seu papel é tão importante que, no caso das mitologias grega e romana, temos os deuses Hermes e Mercúrio, respectivamente, cumprindo o papel de mensageiro, o arauto dos deuses.
+
+Figura 1.1 – Representação do deus Hermes ou Mercúrio
+Fonte: Banco de imagens Shutterstock (2018)
+      O arauto pode ser representado de diversas formas, comumente é apresentado na forma de um personagem que entrega um chamado ao herói, mas pode ser representado como um fato, acontecimento ou situação, como a perda de algo, a morte de alguém próximo, uma situação apocalíptica como no filme 2012 ou O Dia Depois de Amanhã, dentre várias outras possibilidades. 
+      Psicologicamente dizendo, o arauto representa a necessidade de mudança: sua chegada indica que haverá uma ruptura no ciclo cotidiano. Segundo Vogler (2015), os arautos trazem motivação ao oferecerem ao herói uma aventura, sem eles não há história, pois não haveria a chamada aventura; são eles que a colocam em movimento.
+      De acordo com Vogler (2015), a figura do arauto pode ser positiva, neutra ou negativa. Frequentemente, temos o mentor do herói fazendo o papel de arauto, como em O Senhor dos Anéis, quando Gandalf entrega o Anel do Poder para ser destruído por Frodo, que este, por sua vez, reluta para sair de sua vida cotidiana no Condado.
+
+Figura 1.2 – Frodo Baggins e o arauto e mentor Gandalf
+Fonte: Google Imagens (2018)
+      Em sua primeira obra ou livro, Harry Potter e a Pedra Filosofal, temos Hagrid chegando à casa dos Dursley convidando nosso herói aos onze anos de idade para uma aventura mágica. Diferentemente de Frodo, Harry não reluta nem um pouco em abandonar sua vida cotidiana e acompanhar o mentor, Hagrid. Tendo sido o arauto, anteriormente demonstrado, as cartas de Hogwarts. Elas são o chamado a aventura e consequentemente o arauto. Hagrid faz, assim, o papel de mentor ao auxiliar Harry a aceitar seu chamado, que veio através das cartas (arauto).
+      Em O Mágico de Oz, a heroína Dorothy é levada para uma misteriosa Terra além do arco-íris chamada OZ por um ciclone e, neste caso, temos um evento climático fazendo o papel de arauto. Vogler (2015) aponta casos nos quais o vilão veste o arquétipo de arauto, como na animação da Disney, O Rei Leão. Scar é o vilão, mas se traveste de arauto ao matar Mufasa e fazer com que Simba fuja, sentindo-se culpado pela morte do pai. 
+
+Figura 1.3 – Scar, de O Rei Leão
+Fonte: Disney Wikia (2018)
+      Resumidamente, o arquétipo do arauto aparece logo no início da história, independentemente de sua forma ou alinhamento (positivo, neutro ou negativo), sua função dramática na história sempre será a mesma, lançar um desafio ao herói e motivá-lo a sair de sua zona de conforto.
+1.2 O Guardião do Limiar 
+      É sabido que o herói só enfrentará o vilão no terceiro ato, afinal, quando o grande confronto acontecer, a história se encerra. No entanto, nosso herói terá uma longa jornada a percorrer até o grande embate, pois ele sequer está pronto para enfrentar o grande vilão no início da história: ele terá que passar por vários testes e provações.
+      A figura do Guardião do Limiar cumpre exatamente esta função, testar o herói no meio do caminho. Ele recebe este nome pois geralmente é representado por tenentes, guardas ou “leões de chácara” do vilão, dispostos ao limiar da fortaleza do vilão, representando os desafios e problemas que o herói terá de enfrentar.
+      
+      
+      
+      
+É comum haver uma relação simbiótica entre um vilão e um Guardião de Limiar. 
+Na natureza, um animal poderoso como um urso pode, às vezes, tolerar que um animal menor, como uma raposa, faça a toca na entrada de sua caverna. 
+A raposa, com seu cheiro forte e dentes afiados, tende a impedir que outros animais venham passear na caverna enquanto o urso está dormindo. E também serve como um sistema de alarme prévio, fazendo barulho se alguma coisa tentar entrar. 
+De forma semelhante, os vilões das histórias muitas vezes se apoiam em subalternos, como porteiros, guarda costas, sentinelas ou mercenários, 
+para protegê-los e avisá-los sempre que um herói se aproxima do 
+Limiar da fortaleza do vilão –VOGLER, 2015, p. 92)
+      O guardião do limiar é essencial nas histórias dos dias de hoje, das quais longas narrativas se tornam franquias de vários livros e, posteriormente, filmes. Pegue o caso da franquia Harry Potter: o protagonista começa a saga com onze anos, recém-chegado ao mundo da magia, e descobre sobre um grande inimigo que, por sua vez, encontra-se enfraquecido e distante, praticamente uma lenda. 
+      No entanto, há uma necessidade de um confronto ao final da primeira história, uma provação à altura do herói em desenvolvimento. Este papel de guardião do limiar, no primeiro instante, é desempenhado pelo Prof. Quirrel (que para além de um guardião do limiar, entenderemos posteriormente que também é um camaleão), que se revela assecla[NdFC1] do grande vilão da saga. Com o intuito de aumentar a importância da ameaça, o grande vilão vive enfraquecido no corpo de seu servo.
+      Além do professor Quirrel, podemos pensar em outros personagens que desempenham esse papel testando o herói, como Draco Malfoy, por exemplo, Vogler (2015) assinala que qualquer personagem que bloqueie o caminho do herói e que lhe traga quaisquer tipos de dificuldades (da maior até a menor) é um guardião do limiar. Fofo, o cão de três cabeças é uma figura clássica, também, do arquétipo em questão, já que ele guarda um importante limiar, que é a passagem que leva a pedra.
+
+Figura 1.4 – Prof. Quirrel em Harry Potter e a Pedra Filosofal
+Fonte: Google Imagens (2018)
+      Em outro caso famoso, a franquia O Hobbit, tem alguns guardiões do limiar gerados em sua adaptação para as grandes telas. Isso se deve ao fato da trilogia ter sido baseada em um livro de um pouco mais de 300 páginas, pequeno demais para se tornar 3 longas-metragens de 3 horas de duração cada. O terceiro ato do primeiro e segundo filmes correspondiam ao segundo ato do livro e, especialmente no caso do primeiro filme, não havia uma ameaça grande o bastante para testar Bilbo e o grupo de anões. A solução foi aumentar a importância do Orc Azog na história, tornando-o uma ameaça importante o bastante para um terceiro ato, preservando, no entanto, o dragão Smaug para os demais filmes.
+
+Figura 1.5 – Azog, o Orc de O Hobbit
+Fonte: LOTR WIKIA (2018)
+      Uma outra possibilidade interessante é de que os guardiões do limiar sejam personagens neutros, que fazem parte da paisagem do mundo especial em que o herói está passando, e que estão apenas protegendo algo ou até mesmo se protegendo ou cumprindo seu trabalho. Um bom exemplo disso ocorre nos jogos da franquia Pokémon, e também no anime, em que o treinador Pokémon está em sua jornada de se tornar um grande mestre Pokémon, andando pela floresta, a caminho da próxima cidade, até que encontra um Pokémon e joga uma pokébola para tentar captura-lo, o Pokémon se irrita e luta contra um Pokémon do treinador, se o treinador ganha, ele consegue capturar o Pokémon da floresta e com o tempo um vínculo de amizade e lealdade é criado entre eles. Como Vogler (2015) explica, alguns guardiões do limiar precisam apenas ser devidamente compreendidos, e se o protagonista reconhecer seu valor, podem, inclusive, se tornar aliados.
+Em geral, os Guardiões de Limiares não são os principais vilões ou antagonistas nas histórias. Na maioria das vezes, são capatazes do vilão, asseclas menores ou mercenários contratados para guardar o acesso ao quartel-general do chefe. Também podem ser figuras neutras, que simplesmente fazem parte da paisagem no Mundo Especial. Em alguns casos raros, podem ser ajudantes secretos, colocados no caminho do herói para testar sua disposição ou capacidade. (VOGLER, 2015, p. 91-92)
+
+      A função dramática do guardião do limiar ao colocar desafios ao herói é prova-lo digno de enfrentar seu grande vilão. Trata-se de um recurso muito utilizado nos jogos eletrônicos: quantos dragões menores você não foi obrigado a enfrentar na pele do encanador Mario até finalmente enfrentar Bowser?
+
+Figura 1.6 – O encanador Mario e seu grande vilão, Bowser
+Fonte: Super Luigi Bros (2018)
+      Todos os jogos eletrônicos mantêm o guardião de limiar como parte de sua mecânica: a dificuldade do jogo deve sempre aumentar gradualmente, assim sendo, derrotar cada um destes “pequenos chefes” se torna cada vez mais difícil. O personagem controlado pelo jogador evolui a cada embate, seja em habilidades, recursos ou mesmo psicologicamente. É justo dizer que o jogador também se torna mais habilidoso no jogo em si e mais confiante, a cada etapa vencida. Lembrando que Vogler (2015) assinala que guardiões do limiar podem ser representados por situações, então um simples puzzle em um game, se torna um guardião do limiar. 
+      Seja em jogos, obras literárias ou para as telas, o arquétipo do Guardião do Limiar é fundamental para a construção de uma boa história.
+1.3 O Pícaro
+      Você já deve ter assistido a um filme ou série de TV da qual o clima de tensão é quebrado bruscamente por uma fala engraçada ou um ato um tanto pateta de algum personagem em tela. Pois bem, esse personagem está vestindo o arquétipo de Pícaro.
+      Segundo Vogler (2015), psicologicamente dizendo, sua função é essencial para “manter os pés no chão”, tanto de heróis, vilões e público, reduzindo egos ao agir com tolice ou hipocrisia. Por serem inimigos naturais do status quo, podem promover uma transformação em personagens e até mesmo em expectadores presos a uma situação psicológica estagnada.
+      Além disso, o pícaro é frequentemente chamado de “alívio cômico” de uma história. Ele provoca, como o nome já indica, um alívio saudável de emoções como tensão, suspense e conflito, que podem ser muito exaustivas. Esta variação de emoções é sadia, pois quando exposto há uma única emoção, por um período de tempo muito prolongado, a audiência se protege, “anestesiando-se” pela alta exposição àquela emoção, tornando-se de certa maneira indiferente a ela.
+      O exemplo mais clássico de um Pícaro é o deus nórdico Loki, considerado o deus da travessura e do engano pois, ao mesmo tempo que desempenha o papel de conselheiro para outros deuses, trama em segredo pela sua destruição.
+      Diferentes personagens podem assumir o papel de Pícaro em uma história podendo gerar, até mesmo, vilões ou heróis picarescos. Como não lembrar do protagonista interpretado por Jim Carrey em O Máscara, que, não por uma coincidência, o artefato que o transformava era atribuído ao deus Loki.
+
+Figura 1.7 – O Máscara, interpretado por Jim Carrey
+Fonte: The Mask Wikia (2018)
+      Pícaros também são papéis usualmente desempenhados por aliados do herói ou do vilão, frequentemente mais atrapalhando-os do que os ajudando, como os fãs de Star Wars podem confirmar com R2D2 e CP3O.
+
+Figura 1.8 – R2D2 e C3PO
+Fonte: Revista Monet (2015)
+      Para os fãs de Harry Potter, tal papel é facilmente atribuído aos gêmeos Wesley, Fred e George. Em várias outras situações o papel é desempenhado por outro Wesley, Ron, quando não recai ao próprio protagonista, especialmente quando são retratadas suas interações com o sexo oposto.
+
+Figura 1.9 – Fred e George Wesley
+Fonte: The Sun (2016)
+      Segundo Vogler (2015), não é raro que heróis vistam a máscara de Pícaro para enganar o grande vilão ou contornar um Guardião de Limiar: suas habilidades de trapaceiro são extremamente úteis, especialmente se você for John Constantine (protagonista da série de quadrinhos Hellblazer e do longa-metragem Constantine) e precisar vencer o diabo em pessoa.
+1.4 O Camaleão
+      Segundo Vogler (2015), heróis frequentemente encontram personagens que parecem mudar constantemente a partir do ponto de vista do herói e/ou expectador. Estes personagens mudam de aparência e humor, sendo difícil defini-los. Sua lealdade ou sinceridade para com o herói é sempre questionada: trata-se de um aliado ou inimigo? Ele o ajudará ou trairá?
+      Podemos relacionar este arquétipo ao conceito de animus, do psicólogo Carl Jung, que corresponde a uma parte de nós reprimida durante boa parte de nossa vida como as características geralmente atribuídas a mulheres que são reprimidas pelo homem e vice-versa.
+      O arquétipo do Camaleão é frequentemente empregado ao interesse romântico do protagonista, afinal, todos nós já tivemos relacionamentos dos quais nosso(a) parceiro(a) é volúvel, falso(a) ou maleável.
+      Um bom exemplo é o filme 007 – Casino Royale, em que a bond girl Vesper, interpretada por Eva Green, trai James Bond, porém ao final se arrepende e se sacrifica. 
+      Uma representação quase didática deste arquétipo em questão é o personagem Gollum/Sméagol na saga O Senhor dos Anéis: o personagem persegue o Um Anel durante toda a história e, em um dado momento da narrativa, torna-se um aliado valoroso para Frodo e Sam em sua jornada até a Montanha da Perdição. No entanto, o personagem se encontra em constante conflito interno, por momentos, encarnando sua verdadeira persona (Sméagol) de boa índole e, em outros, o ser maligno que se tornou (Gollum), consumido por décadas pelo Um Anel. Frodo faz aflorar o melhor deste camaleão ao acreditar que Sméagol ainda pode ser resgatado, porém, a desconfiança de Sam e a influência constante do Um Anel terminam por trazer Gollum à tona, que acaba traindo a dupla. 
+
+Figura 1.10 – A criatura Gollum de O Senhor dos Anéis
+Fonte: Google Imagens (2017)
+      Já que falamos bastante de Harry Potter neste capítulo, não podemos passar por este arquétipo sem citar o Prof. Severo Snape. O passado do personagem como assecla do grande vilão (que não será aqui nomeado) coloca sua condição de aliado em cheque, mesmo com o inexplicável aval de Alvo Dumbledore. O tratado dado por Severo a Harry Potter nos remete aos Dursley, o que nos faz odiá-lo imediatamente.
+      Conforme a saga prossegue, sua condição de aliado se mantém ainda que com constante desconfiança. A lealdade de Snape a Dumbledore parece ser transferível para Harry. No entanto, começamos a conhecer um pouco mais sobre o personagem, seu passado e a relação do Snape com os pais de Harry.
+      Os momentos em que Snape auxilia nosso herói e o trai se alternam durante toda a saga. Assim como Sméagol, o personagem se encontra em constante conflito interno: O amor que sente pela mãe de Harry e os traço dela em seu filho o motivam a ajudá-lo, enquanto sua semelhança com o pai alimenta sua raiva e o remete à uma infância humilhante. 
+
+Figura 1.11 – Severo Snape, interpretado pelo saudoso Alan Rickman
+Fonte: Google Imagens (2018)
+      Repare o quanto um personagem com este arquétipo pode trabalhar questões psicológicas profundas e enriquecer uma narrativa. Ele pode apresentar intenções dúbias, fazendo um jogo duplo que pode enganar o herói e o espectador, enquanto pode transformar a si e todos ao seu redor.
+1.5 A Sombra/Vilão
+      Esse arquétipo é a representação de todos os aspectos ocultos do próprio herói, defeitos e sentimentos negativos dos quais ele não gosta de admitir nem para si mesmo. São seus monstros interiores, medos e traumas que, segundo Vogler (2015), são projetados no personagem que comumente chamamos de vilão, antagonista ou inimigo.
+      São personagens que se dedicam à destruição ou derrota do herói, possuindo para tal um poder igual ou superior ao do protagonista.
+“Vilões e inimigos, em geral dedicam-se à morte, destruição ou derrota do herói. [...] vilões e heróis em conflito são como trens que avançam um de encontro ao outro, em rota de colisão.” (VOGLER, 2015, p. 111-112) 
+      Sua função dramática é desafiar o herói, dando-lhe um oponente digno de ser combatido. Histórias são compostas de conflitos, e nenhum será tão poderoso quanto o conflito do herói com sua nêmesis.
+       Seres humanos são condicionados a se acomodar em situações confortáveis, estagnando nossa própria evolução pessoal. Somos tão fortes quantos nossos oponentes: é a competição, na dose certa, que nos mantém em constante crescimento e evolução. Sendo assim, um herói é tão bom quanto seu vilão. Sem um oponente formidável, a própria grandeza do herói é abalada. 
+      Repare como todo grande herói possui um arqui-inimigo. Pegamos o caso de Lex Luthor, um dos grandes vilões do Superman: este é sempre utilizado quando o herói precisa ser desafiado em um nível mais intelectual. Este vilão pode atingir o herói de forma indireta, criando ameaças como o Bizarro ou Metallo, graças à sua grande influência e poderio financeiro. Sua motivação é proteger a humanidade do que considera uma grande ameaça alienígena, uma ameaça à soberania humana.
+
+Figura 1.12 – Lex Luthor, um dos maiores inimigos do Superman
+Fonte: Screenrant (2016)
+      No entanto, fazer frente ao Superman não é uma tarefa fácil. Trata-se do vilão errado se o objetivo é enfrentar o herói pela força física. Justiça seja feita, o vilão nunca foi bem aproveitado quando as histórias foram adaptadas para a grande tela, porém apesar de Luthor não possuir força física, ele possui uma superinteligência, é um cientista bilionário (que mesmo quando perdeu tudo, ele de alguma forma deu a volta por cima com sua superinteligência) que sempre constrói armaduras feitas para igualar suas lutas com Superman. Tanto que na série de games Injustice Lex Luthor é um personagem bastante poderoso. Quando for necessário desafiar o herói em nível físico, precisamos ajoelhar perante Zod.
+
+Figura 1.13 – Zod, o vilão kriptoniano de Superman
+Fonte: MBTI (2017)
+      General Zod é um kriptoniano condenado pelo pai do herói, Jol-El, antes da destruição de Kripton. Sua motivação é fazer o filho pagar pelos pecados do pai, já que este é o único que resta para destruir. Repare que a motivação do vilão para o embate precisa ser fundamentada e convincente.
+      Magneto é um exemplo excelente, quando pensamos em um ponto muito importante que Vogler (2015) assinala: um vilão bem construído não precisa (nem deve idealmente) ser essencialmente maligno, ele, apenas por determinadas condições e situações das quais passou, se tornou aquilo e acredita realmente estar do lado certo, que está fazendo o correto (por mais estranho que isso possa parecer). Magneto foi um prisioneiro dos nazistas, que além de ter sobrevivido aos maiores horrores e experiências nazistas, viu sua mãe ser brutalmente assassinada pelo simples fato de ele não conseguir fazer objetos de metal se mexerem quando os nazistas solicitaram, afinal, ele ainda não controlava bem seus poderes. Por conta disso, de ter sido submetido a experiências e ameaças apenas por ser diferente, por ter poderes, ele passou a ver os mutantes como seres evoluídos e os humanos como perigosos e irracionais. Em suas conversas com Charles Xavier, vemos claramente que ele acredita estar correto.
+
+Figura 1.14 – O verdadeiro Magneto, vilão dos X-Men.
+Fonte: Recreio (2017)
+      Sim, Magneto quer exterminar a raça humana, mas vamos analisar a sua motivação: sua ascendência judia fez com que o vilão, ainda garoto, vivesse todos os maiores horrores que a humanidade pode proporcionar; ao adquirir incríveis poderes e se autodenominar “Homo Superior”, o “jogo” se inverte, ele se torna a “raça ariana” que tanto odeia, torna-se um elefante pisando em uma formiga. Coloque-se no lugar dele, você é ávido ao dizer que agiria diferente?
+      A relação de profunda amizade com o herói, Charles Xavier, torna a relação em conflito ainda mais interessante: ambos compartilham de poder, respeitam-se e se compreendem, mas não concordam quando o assunto é a relação entre seres humanos e mutantes. Charles Xavier quer a solução pacífica e a coexistência, ele é o nosso Martin Luther King, enquanto Magneto quer impor a força, como Malcolm X.
+      Mas como fazer um bom vilão? Afinal, um personagem de tamanha importância precisa ser magnético, cativante e tão icônico quanto o protagonista. Ele precisa estar em pé de igualdade sem se deixar ofuscar pelo herói ou mesmo ofuscá-lo (embora existam dois filmes do Thor que quebrem minha última recomendação). Como abordado por Vogler (2015), o vilão é o único personagem que é tão importante quanto o herói, apenas um bom vilão pode fazer um bom herói. 
+      Bons vilões são interessantes, cativantes e possuem um “quê” especial, algum traço que os diferencia. Alguns são extremamente inteligentes e manipuladores, outros charmosos ou elegantes, bonitos ou mesmo repugnantes. O mais importante, no entanto, é sua motivação: dentro do contexto a história, julgam estar certos e acreditam no que estão fazendo. 
+As Sombras não precisam ser totalmente malignas ou perversas. De fato, é melhor que sejam humanizadas por um toque de bondade, ou alguma qualidade admirável. Os desenhos animados da Disney são memoráveis por seus vilões, como o Capitão Gancho, em Peter Pan, o demônio, em Fantasia, a rainha bela e cruel, em Branca de Neve e os sete anões, a glamourosa fada Malévola em A Bela Adormecida, e Cruela De Vil, em Os 101 dálmatas. Esses personagens são ainda mais deliciosamente sinistros por suas qualidades de espirituosidade, poder, beleza ou elegância. (VOGLER, 2015, p. 114)
+      O célebre autor Stephen King aponta em Sobre a Escrita que, na perspectiva dele, os vilões são os heróis de suas próprias histórias. Em algumas histórias repare que, de fato, nossa perspectiva é invertida, quando acompanhamos os chamados anti-heróis. Por mais que possua um código de conduta ao confrontar bandidos ou policiais corruptos, o Justiceiro (The Punisher) está à margem da lei e, ao matá-los, torna-se juiz, júri e executor. Em várias histórias, os vilões são os policiais que querem prendê-lo!
+
+Figura 1.15 – Cena do seriado “O Justificeiro”, da Netflix.
+Fonte: IMDB (2016)
+      E o que dizer de Jack Bauer (do seriado 24 horas) que, para evitar grandes ameaças, comete atos altamente questionáveis, mesmo sendo um agente da lei. Sob sua perspectiva, os fins justificam os meios, mas o quanto ele realmente se difere das ameaças que tanto combate?
+1.6 Indo além dos arquétipos
+      Os arquétipos são excelentes perfis, linhas guia importantes quando precisamos criar o elenco de nossa narrativa e, como vimos, cada um dos personagens deve possuir um propósito bem definido em nossa história.
+      No entanto, vamos elevar a discussão de forma breve, abordando a essência da construção de um personagem, seja este qual for. Para tal, abordemos aqui algumas reflexões trazidas por Robert McKee em seu excelente livro Story, substance, structure, style and the principles of screenwriting.
+      Um personagem precisa ser crível: seja ele jovem ou velho, corajoso ou covarde, generoso ou egoísta, sagaz ou ingênuo, culto ou ignorante, suas qualidades devem ter a proporção certa, pois este deve levar para a história características pelas quais o espectador deve acreditar que aquele personagem pensaria ou agiria do jeito que age.
+      Além disso, McKee (2010) explica a diferença entre caráter e caracterização de um personagem. Para o autor, caracterização é uma soma de todas as qualidades observáveis do personagem, como sua idade, IQ, sexo, sexualidade, forma de falar e gesticular, sua educação, profissão, personalidade, valores e atitudes, nada que não pudesse ser obtido por um longo período de observação. Os traços genéticos e experiência tornam o personagem único. No entanto, isso é sua caracterização. Seu caráter é revelado pelas escolhas que faz sob pressão e, quando maior a pressão aplicada, mais profunda é sua revelação, sua verdadeira natureza.
+      Trabalhe também a motivação por detrás do desejo. Por que este personagem quer o que quer? Chegue às suas conclusões e não estranhe se a percepção de outras pessoas ao mesmo dilema seja radicalmente diferente. Alguém poderia concluir que isso foi o resultado de uma infância rígida ou talvez seja culpa do sistema educacional, outros dirão que é genético ou que o personagem está possuído pelo demônio. Seja como for, não reduza seus personagens a estudos de caso, afinal, não existem explicações definitivas para o comportamento de ninguém. Em geral, quanto mais o escritor se restringe a causas específicas, mais o personagem perde força para a audiência. Deixe que eles tirem suas próprias conclusões.
+1.7 Pratique a arte da construção de personagens jogando RPG!
+      Talvez seja uma arte perdida, mas uma ótima forma de se praticar construção de personagens e narrativa é jogar RPG (Role Playing Game), 
+      Sejam os clássicos sistemas como Dungeons & Dragons (D&D), Vampire: The Masquerade, Werewolf, Gurps ou sistemas mais modernos, todos eles começam pela construção de seu personagem: cada jogador deve conceber em detalhes o personagem que representará neste jogo de atuação. Para tal, ele deve preencher uma extensa ficha de personagem:
+
+Figura 1.16 – Exemplo de uma ficha de personagem em Dungeons & Dragons.
+Fonte: Biblioteca Élfica (2014)
+      O preenchimento, no entanto, deve respeitar regras: pontos são concedidos ao jogador que deverá escolher em quais ações seu personagem será mais habilidoso ou mais desajeitado (o equilíbrio das características defendido por Robert McKee). Além disso, uma história de fundo deve ser escrita pelo jogador, relatando a infância dos personagens, momentos marcantes de sua vida, relacionamentos familiares entre outros, ou seja, a caracterização que McKee aborda.
+      Consagrados autores brasileiros de literatura fantástica como Eduardo Spohr e Leonel Caldela são assumidos jogadores de RPG até os dias de hoje, e algumas partidas do primeiro como jogador e o segundo como mestre, podem ser baixadas e ouvidas no podcast Nerdcast, em suas edições especiais de RPG (www.nerdcast.com.br). Faça como eles e estimule sua imaginação, praticando a arte da construção de personagem.
+       
+       
+REFERÊNCIAS
+ADOROCINEMA. Corpo Fechado. [s.d.]. Disponível em: <http://www.adorocinema.com/filmes/filme-27792/>. Acesso em: 24 jan. 2018
+BIBLIOTECA ÉLFICA. D&D 3.0 Ficha de personagem. 31 mai. 2014. Disponível em: <http://www.bibliotecaelfica.com/2014/05/d-30-ficha-de-personagem.html>. Acesso em: 24 jan. 2018.
+DISNEY WIKIA. Scar. [s.d.]. Disponível em: <http://disney.wikia.com/wiki/Scar>. Acesso em: 22 jan. 2018
+HANEY, Casey. 10 Things You Need To Know About Lex Luthor. 23 fev. 2016. Disponível em: <https://screenrant.com/superman-best-lex-luthor-facts-trivia-comics/>. Acesso em: 24 jan. 2018.
+HARRY POTTER WIKIA. Rubeus Hagrid's dress robes. [s.d.]. Disponível em: <http://harrypotter.wikia.com/wiki/Rubeus_Hagrid%27s_dress_robes>. Acesso em: 22 jan. 2018
+IMDB. O Justiceiro. [s.d.]. Disponível em: <http://www.imdb.com/title/tt5675620/>. Acesso em: 24 jan. 2018.
+KING, S. Sobre a Escrita. São Paulo: Suma de Letras, 2015.
+LOTR WIKIA. Azog. [s.d.]. Disponivel em: <http://lotr.wikia.com/wiki/Azog>. Acesso em: 23 jan. 2018.
+MALONEY, Alison. Remember the Weasley twins from Harry Potter? You wouldn’t recognise them now. 5 nov. 2016. Disponível em: <https://www.thesun.co.uk/living/2121975/remember-the-weasley-twins-from-harry-potter-you-wouldnt-recognise-them-now/>. Acesso em: 22 jan. 2018.
+MBTI DATABASE. Zod. [s.d.]. Disponível em: <http://mbtibase.com/viewchar/DruZodGeneral-Zod-DC-Extended-Universe-mbti-personality-type---35883>. Acesso em: 24 jan. 2018.
+MCKEE, Robert. Story, substance, structure, style and the principles of screenwriting. 1. ed. Nova Iorque: HarperCollins E-books, 2010.
+MONET. Ator que interpreta C3PO revela que tinha problemas de relacionamento com colega que fazia R2-D2. 23 set. 2015. Disponível em: <http://revistamonet.globo.com/Filmes/noticia/2015/09/ator-que-interpreta-c3po-revela-que-tinha-problemas-de-relacionamento-com-colega-que-fazia-r2-d2.html>. Acesso em: 22 jan. 2018.
+PRUITT, Bill. John Rambo by Bill Pruitt. [s.d.]. Disponível em: <https://fineartamerica.com/featured/john-rambo-first-blood-bill-pruitt.html>. Acesso em: 24 jan. 2018.
+QUORA. Whom does Batman like more: Catwoman or Wonder Woman?. 11 fev. 2016. Disponível em: <https://www.quora.com/Whom-does-Batman-like-more-Catwoman-or-Wonder-Woman>. Acesso em: 24 jan. 2018.
+RECREIO. Do que é feito o capacete do Magneto? 13 dez. 2017. Disponivel em: <http://recreio.uol.com.br/noticias/curiosidades/do-que-e-feito-o-capacete-do-magneto-material-resistente-indestrutivel-wolverine-capitao-america-x-men.phtml>. Acesso em: 24 jan. 2018.
+SUPER LUIGI BROS. Super Mario 64 (Nintendo 64) Bowser Artwork. [s.d.]. Disponível em: <http://www.superluigibros.com/super-mario-64-artwork-bowser>. Acesso em: 23 jan. 2018.
+THE MASK WIKIA. Mask movie.jpg. [s.d.]. Disponível em: <http://the-mask.wikia.com/wiki/File:Mask_movie.jpg>. Acesso em: 22 jan. 2018.
+VOGLER, C. A Jornada do Escritor: Estrutura Mítica para Escritores. São Paulo: Aleph, 2015.
+           [NdFC1]Design:
+
+Tooltip: Assecla significa dois gêneros correlacionados.
+         Correligionário; quem pertence ou compartilha a mesma religião, partido político, filosofia etc.
+The other side		  Página 2 de 29 
+       
+       

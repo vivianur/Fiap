@@ -1,0 +1,51 @@
+//Backgrounds
+.bg-branco-suave{
+    background-color: lighten(#fff,10%);
+}
+.bg-padrao-suave{
+    background-color: lighten($cor-principal,80%);
+}
+.bg-cinza-suave{
+    background-color: lighten($cor-cinza,70%);
+}
+.bg-destaque,
+.bg-cinza-escuro{
+    *,
+    .enfase{
+        color: #fff;
+        border-color: #fff;
+    }
+    .accordion-titulo{
+        border-top-color: rgba(#fff, .4);
+    }
+    .accordion-arrow polyline{
+        stroke: #fff;
+    }
+}
+.bg-destaque{
+    background-color: darken($cor-principal,20%);
+    &.bar{
+        &.bar-top:before{
+            border-bottom: 20px solid darken($cor-principal,12%);
+        }
+        &.bar-bottom:before{
+            border-top: 20px solid darken($cor-principal,12%);
+        }
+    }
+}
+.bg-cinza-escuro{
+    background-color: $cor-cinza;
+    &.bar{
+        &.bar-top:before{
+            border-bottom: 20px solid $cor-cinza;
+        }
+        &.bar-bottom:before{
+            border-top: 20px solid $cor-cinza;
+        }
+    }
+}
+
+.bg-capa{
+    background: url(../images/background/bg-capa.jpg) center bottom;
+    background-size: cover;
+}

@@ -1,0 +1,111 @@
+on-tabs {
+  display: block;
+  position: relative;
+  margin: $on-elements-spacing 0;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+}
+
+.on-tabs-nav {
+  display: block;
+  overflow-y: hidden;
+  ul {
+    display: table;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    @include MQ(XS) {
+      overflow: initial;
+    }
+    li {
+      $top-border-height: 4px;
+      position: relative;
+      display: table-cell;
+      font-size: 14px;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 16px 8px;
+      padding-bottom: 8px;
+      cursor: pointer;
+      border-bottom: 2px solid;
+      font-family: 'Gotham HTF Bold';
+      white-space: nowrap;
+      &:last-child {
+        border-right: 0;
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        left: -$top-border-height / 2;
+        width: calc(100% + ((#{$top-border-height} / 2) * 2));
+        height: $top-border-height;
+      }
+      &[active="1"] {
+         color: $on-color-magenta;
+         border-bottom: 0;
+         border-left: 2px solid;
+         border-right: 2px solid;
+         cursor: default;
+         &:before {
+           background-color: $on-color-magenta;
+         }
+      }
+      &[active="0"] {
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+on-tab {
+  display: block;
+  &[active="0"] {
+    visibility: hidden;
+    overflow: hidden;
+    height: 0;
+  }
+  &[active="1"] {
+    visibility: visible;
+  }
+}
+
+.on-background-color-white {
+  on-tabs {
+    @extend %border-color-gray;
+    .on-tabs-nav ul li {
+      @extend %border-color-gray;
+    }
+  }
+}
+
+.on-background-color-gray {
+  on-tabs {
+    @extend %border-color-gray-component;
+    .on-tabs-nav ul li {
+      @extend %border-color-gray-component;
+    }
+  }
+}
+
+.on-background-color-main-light {
+  on-tabs {
+    @extend %border-color-main-component;
+    .on-tabs-nav ul li {
+      @extend %border-color-main-component;
+    }
+  }
+}
+
+.on-section-dark {
+  on-tabs {
+    .on-tabs-nav ul li[active="1"] {
+      @extend %color-white;
+      box-shadow: 0px 4px 0px $on-color-white inset;
+    }
+  }
+}

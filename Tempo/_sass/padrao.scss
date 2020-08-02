@@ -1,0 +1,38 @@
+//Global
+@import
+    'global/fonts',
+    'global/reset';
+
+//Plugins
+@import
+    'plugin/jquery.animate',
+    'plugin/jquery.magnificpopup',
+    'plugin/jquery.mcustomscrollbar';
+
+//Utilidades
+@import
+    'utils/variaveis';
+
+//Layout
+@import
+    'layout/bgs',
+    'layout/colunas',
+    'layout/header',
+    'layout/menus',
+    'layout/section',
+    'layout/referencias',
+    'layout/slider';
+
+//Componentes
+@import
+    'componentes/base',
+    'componentes/acordion',
+    'componentes/figure',
+    'componentes/enfase',
+    'componentes/listas',
+    'componentes/scrollbar',
+    'componentes/parallaxy',
+    'componentes/tabelas',
+    'componentes/dinamica',
+    'componentes/video';
+

@@ -1,0 +1,13 @@
+on-challenge-stamp {
+  display: block;
+  object{
+    max-width: 110px;
+    &.on-challenge-stamp-has-color {
+      .st0{fill:#CC1B59;}
+      .st1{fill:#FFFFFF;}
+    }
+    &.on-challenge-stamp-has-no-color {
+      .st0{fill:#FFFFFF;}
+    }
+  }
+}

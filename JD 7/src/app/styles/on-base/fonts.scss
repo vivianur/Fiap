@@ -1,0 +1,95 @@
+$on-fonts: (
+  1: (
+    on-icons: "On Icons",
+    gotham-htf-book: "Gotham HTF Book",
+    gotham-htf-book-italic: "Gotham HTF Book Italic",
+    gotham-htf-medium: "Gotham HTF Medium",
+    gotham-htf-bold: "Gotham HTF Bold",
+    alianza-italic-100: "Alianza Italic 100",
+    alianza-italic-300: "Alianza Italic 300",
+    alianza-italic-500: "Alianza Italic 500",
+    alianza-italic-700: "Alianza Italic 700",
+    alianza-italic-900: "Alianza Italic 900",
+    metronic-slab-pro-regular: "Metronic Slab Pro Regular",
+    metronic-slab-pro-light: "Metronic Slab Pro Light"
+  ),
+  2: (
+    on-icons: "On Icons",
+    gotham-htf-book: "Gotham HTF Book",
+    gotham-htf-book-italic: "Gotham HTF Book Italic",
+    gotham-htf-medium: "Gotham HTF Medium",
+    gotham-htf-bold: "Gotham HTF Bold",
+    alianza-italic-500: "Alianza Italic 500",
+    alianza-italic-700: "Alianza Italic 700",
+    alianza-script-700: "Alianza Script 700",
+    metronic-slab-pro-air: "Metronic Slab Pro Air",
+    metronic-slab-pro-bold: "Metronic Slab Pro Bold",
+  ),
+  3: (
+    on-icons: "On Icons",
+    gotham-htf-book: "Gotham HTF Book",
+    gotham-htf-book-italic: "Gotham HTF Book Italic",
+    gotham-htf-medium: "Gotham HTF Medium",
+    gotham-htf-bold: "Gotham HTF Bold",
+    alianza-italic-500: "Alianza Italic 500",
+    alianza-italic-700: "Alianza Italic 700",
+    metronic-slab-pro-light: "Metronic Slab Pro Light",
+    metronic-slab-pro-air: "Metronic Slab Pro Air",
+    metronic-slab-pro-regular: "Metronic Slab Pro Regular",
+    roboto-black: "Roboto Black"
+  ),
+  4: (
+    on-icons: "On Icons",
+    gotham-htf-book: "Gotham HTF Book",
+    gotham-htf-book-italic: "Gotham HTF Book Italic",
+    gotham-htf-medium: "Gotham HTF Medium",
+    gotham-htf-bold: "Gotham HTF Bold",
+    alianza-italic-100: "Alianza Italic 100",
+    alianza-italic-500: "Alianza Italic 500",
+    alianza-italic-700: "Alianza Italic 700",
+    metronic-slab-pro-light: "Metronic Slab Pro Light",
+    metronic-slab-pro-regular: "Metronic Slab Pro Regular",
+    metronic-slab-pro-black: "Metronic Slab Pro Black",
+  ),
+  5: (
+    on-icons: "On Icons",
+    gotham-htf-book: "Gotham HTF Book",
+    gotham-htf-book-italic: "Gotham HTF Book Italic",
+    gotham-htf-medium: "Gotham HTF Medium",
+    gotham-htf-bold: "Gotham HTF Bold",
+    gotham-htf-bold-italic: "Gotham HTF Bold Italic",
+    alianza-italic-100: "Alianza Italic 100",
+    playfair-display-regular: "Playfair Display Regular",
+    playfair-display-bold: "Playfair Display Bold",
+    roboto-light: "Roboto Light"
+
+  ),
+  6: (
+    on-icons: "On Icons",
+    gotham-htf-book: "Gotham HTF Book",
+    gotham-htf-book-italic: "Gotham HTF Book Italic",
+    gotham-htf-medium: "Gotham HTF Medium",
+    gotham-htf-bold: "Gotham HTF Bold",
+    gotham-htf-bold-italic: "Gotham HTF Bold Italic",
+    gotham-htf-ultra: "Gotham HTF Ultra",
+    alianza-italic-100: "Alianza Italic 100"
+  ),
+  7: (
+    on-icons: "On Icons",
+    gotham-htf-book: "Gotham HTF Book",
+    gotham-htf-book-italic: "Gotham HTF Book Italic",
+    gotham-htf-medium: "Gotham HTF Medium",
+    gotham-htf-bold: "Gotham HTF Bold",
+    gotham-htf-bold-italic: "Gotham HTF Bold Italic",
+    alianza-italic-100: "Alianza Italic 100"
+  )
+);
+
+@each $on-font-name, $on-font in map-get($on-fonts, $on-theme-number) {
+  @font-face {
+    font-family: $on-font;
+    src: url('./fonts/#{$on-font-name}.woff2') format('woff2'), url('./fonts/#{$on-font-name}.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+}

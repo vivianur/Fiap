@@ -1,0 +1,46 @@
+on-references {
+  display: block;
+  @include MQ(S) {
+    text-align: center;
+  }
+  .on-references-button-open {
+    @include MQL(S) {
+      width: 100%;
+    }
+  }
+  .on-references-content {
+    text-align: left;
+    .on-references-content-title {
+      position: relative;
+      h2 {
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+    }
+    .on-references-button-close {
+      position: absolute;
+      display: block;
+      padding: 0;
+      color: $on-color-magenta;
+      right: 0;
+      top: 0;
+      border: none;
+      &:before {
+        content: '\e90b';
+        font-family: 'ON Icons';
+        font-size: 22px;
+        color: $on-color-magenta;
+        transition: color .5s;
+      }
+      &:hover {
+        &:before {
+          color: #FFF;
+        }
+      }
+    }
+  }
+}
+
+
+
+

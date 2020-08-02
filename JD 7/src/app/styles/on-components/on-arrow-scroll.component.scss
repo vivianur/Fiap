@@ -1,0 +1,47 @@
+on-arrow-scroll{
+  display: block;
+  margin: $on-elements-spacing * 2 0;
+  @include MQL(M) {
+    display: none;
+  }
+}
+
+on-arrow-scroll object {
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+#on-arrow-scroll-with-dot {
+  $width: 73px;
+  max-width: $width;
+  .on-arrow-scroll-dot {
+    opacity: 0.7;
+    enable-background: new;
+  }
+  .on-arrow-scroll-arrow {
+    opacity: 0.7;
+    enable-background: new;
+  }
+  .st3 {
+    font-family: 'Gotham HTF Medium';
+  }
+  .st4 {
+    font-size: 9px;
+  }
+}
+
+#on-arrow-scroll-without-dot {
+  $width: 72px;
+  max-width: $width;
+	.on-arrow-scroll-arrow {
+    opacity:0.7;
+    fill:$on-color-magenta;
+    enable-background: new;
+  }
+	.st2{
+    font-family:'Gotham HTF Medium';
+  }
+	.st3{
+    font-size:9px;
+  }
+}

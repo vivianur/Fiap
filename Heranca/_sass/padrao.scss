@@ -1,0 +1,32 @@
+//Global
+@import
+    'global/fonts',
+    'global/reset';
+
+//Plugins
+@import
+    'plugin/jquery.animate',
+    'plugin/jquery.magnificpopup';
+
+//Utilidades
+@import
+    'utils/variaveis';
+
+//Layout
+@import
+    'layout/layout',
+    'layout/bgs',
+    'layout/colunas',
+    'layout/header',
+    'layout/menus',
+    'layout/section',
+    'layout/referencias';
+
+//Componentes
+@import
+    'componentes/base',
+    'componentes/figure',
+    'componentes/listas',
+    'componentes/parallaxy',
+    'componentes/video';
+

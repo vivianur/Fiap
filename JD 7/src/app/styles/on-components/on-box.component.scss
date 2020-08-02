@@ -1,0 +1,72 @@
+on-box {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin: $on-elements-spacing 0;
+  padding: $on-elements-spacing;
+  > *:first-child {
+    margin-top: 0;
+  }
+  > *:last-child {
+    margin-bottom: 0;
+  }
+  &:before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    left: 0;
+    height: $on-elements-spacing / 2;
+    background: url(./images/on-global/on-image-pattern.svg) repeat;
+    top: 0;
+  }
+}
+
+on-box.on-box-dashed {
+  border-width: 2px;
+  border-style: solid;
+  background-color: transparent;
+}
+
+.on-background-color-white {
+  on-box {
+    @extend %background-color-gray;
+    &:before, &:after {
+      @extend %background-color-gray;
+    }
+  }
+  on-box.on-box-dashed {
+    background-color: none;
+    @extend %border-color-gray;
+  }
+}
+
+.on-background-color-gray {
+  on-box {
+    @extend %background-color-gray-component;
+  }
+  on-box.on-box-dashed {
+    @extend %border-color-gray-component;
+  }
+}
+
+.on-background-color-main-light {
+  on-box {
+    @extend %background-color-main-component;
+  }
+  on-box.on-box-dashed {
+    @extend %border-color-main-component;
+  }
+}
+
+.on-section-dark {
+  on-box {
+    border: solid 2px #FFF;
+    &:before {
+      display: none;
+    }
+  }
+}
+
+
+

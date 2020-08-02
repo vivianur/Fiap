@@ -1,0 +1,33 @@
+//Custom
+.on-text-center {
+  text-align: center!important;
+}
+// .on-background-inicio {
+// 	background-image: url('./assets/public/on-background-capa-1-mobile.jpg');
+// 	@include MQ(M) {
+// 	  background: url('./assets/public/on-background-capa-1.jpg');
+// 	}
+// }
+// .on-image-inicio { 
+//   $width: 397px;
+//   max-width: $width;
+//   margin: 0;
+//   @include MQ(XL) {
+//     max-width: $width * 1.25;
+//   }
+//   .st0{
+//     fill:#ffffff;
+//     @include MQ(M) {
+//       fill: #9C00FF;
+//     }
+//   }  
+// }
+// .on-background-agora {
+//   background-image: url('./assets/public/on-background-time-mobile.jpg');
+//   @include MQ(M) {
+//     background: url('./assets/public/on-background-time.jpg');
+//   }
+// }
+// #on-image-agora {
+// 	.st0{fill:#FCF63A;}
+// } 

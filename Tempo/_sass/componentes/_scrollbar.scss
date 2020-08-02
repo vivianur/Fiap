@@ -1,0 +1,37 @@
+//Box de scroll
+.scrollbar,
+.box-scroll{
+    height: 500px;
+}
+.box-scroll{
+    margin: $margin-padrao;
+    padding: 25px;
+    background-color: rgba($cor-cinza,.15);
+    //
+    p:first-child{
+        padding-top: 0;
+    }
+}
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+    background-color: $cor-principal;
+}
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{
+    background-color: $cor-principal;
+}
+.mCSB_scrollTools .mCSB_buttonDown,
+.mCSB_scrollTools .mCSB_buttonUp {
+    background-image: url(../images/mCSB_buttons.png);
+    //background-size: 158px;
+}
+
+@media (max-width: 900px){//Até
+    .scrollbar,
+    .box-scroll{
+        height: auto;
+    }
+}
+

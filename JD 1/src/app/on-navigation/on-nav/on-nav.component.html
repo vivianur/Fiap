@@ -1,0 +1,16 @@
+<nav id="on-nav" (touchmove)="touchMoveHandler($event)" (touchend)="touchEndHandler($event)">
+  <ul>
+    <li
+      *ngFor="let title of titles; let i = index"
+      (click)="visitChapter(li, i)"
+      (mouseover)="onMouseOver(elementHover)"
+      (mouseout)="onMouseOut(elementHover)"
+      #li>
+      <a>
+        <div class="on-nav-button-name"><span>{{ verifyIfTitleHasHighlight(title.textContent) }}</span></div>
+        <div class="on-nav-button-number"><span>{{ i + 1 }}</span></div>
+      </a>
+      <div class="on-nav-button-hover" #elementHover></div>
+    </li>
+  </ul>
+</nav>

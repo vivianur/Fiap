@@ -1,0 +1,151 @@
+on-game-question-n-answers-rush {
+  display: block;
+}
+
+.on-game-question {
+  overflow: hidden;
+  > * {
+    margin-top: $on-elements-spacing;
+    margin-bottom: $on-elements-spacing;
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.on-game-question-number {
+  float: left;
+  font-family: 'Gotham HTF Bold';
+  font-size: 32px;
+  margin-right: $on-elements-spacing / 2;
+  &:before {
+    content: "";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+  }
+}
+
+.on-game-question-navigation {
+  font-size: 0;
+  list-style: none;
+  padding: 0;
+  margin: $on-elements-spacing 0;
+  @include MQ(S) {
+    float: left;
+    padding: 38px 0;
+    margin: 0;
+  }
+}
+
+.on-game-question-tip {
+  $color: $on-color-magenta;
+  font-size: 13px;
+  color: $color;
+  padding: $on-elements-spacing / 2;
+  border: 1px solid $color;
+  border-radius: $on-elements-spacing / 2;
+  > * {
+    margin: $on-elements-spacing / 2 0;
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.on-game-button-send-answer-container {
+  margin-bottom: 0;
+}
+
+// buttons
+
+.on-game-question-navigation-previous-next {
+  padding: $on-elements-spacing 0;
+  margin: 0 $on-elements-spacing 0 0;
+  @include MQ(S) {
+    float: right;
+    margin: 0;
+  }
+}
+
+.on-game-question-button-previous,
+.on-game-question-button-next {
+  width: 42px;
+  height: 50px;
+  position: relative;
+  background-color: transparent;
+  border-color: $on-color-magenta;
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    left: 15px;
+    top: 20px;
+    width: 10px;
+    height: 2px;
+    background-color: $on-color-magenta;
+  }
+  &:before {
+    margin-top: 6px;
+  }
+  &:hover{
+    background-color: $on-color-magenta;
+    &:before, &:after {
+      background-color: #fff;
+    }
+  }
+}
+
+.on-game-question-button-previous {
+  &:before {
+    transform: rotate(45deg);
+  }
+  &:after {
+    transform: rotate(-45deg);
+  }
+}
+
+.on-game-question-button-next {
+  &:before {
+    transform: rotate(-45deg);
+  }
+  &:after {
+    transform: rotate(45deg);
+  }
+}
+
+.on-game-question-navigation-button {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-color: transparent;
+  cursor: pointer;
+  border: 3px solid #FFF;
+  border-radius: 100%;
+  margin: 0 !important;
+  transition: background-color 1s, border-color 1s;
+  &:not(:last-child) {
+    margin-right: 5px !important;
+  }
+}
+
+.on-game-question-navigation-button-current {
+  background-color: #FFF;
+}
+
+.on-game-question-navigation-button-wrong {
+  background-color: #F36;
+  border-color: #F36;
+}
+
+.on-game-question-navigation-button-correct {
+  background-color: #84AB4B;
+  border-color: #84AB4B;
+}

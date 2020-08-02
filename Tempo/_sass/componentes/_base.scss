@@ -1,0 +1,275 @@
+body{
+    background-color: lighten($cor-cinza, 78%);
+}
+bold, strong{
+    font-family:'Gotham HTF Bold';
+}
+.clear{
+    clear: both;
+}
+.text-center{
+    text-align: center;
+}
+.img-100{
+    width: 100%;
+}
+.none{
+    display: none;
+}
+
+//Transitions
+.transitions {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+//Tooltip
+.tooltip {
+    display:none;
+    position:absolute;
+    background-color:$cor-principal;
+    padding:1.5em;
+    color:#fff;
+    font:1em 'Gotham HTF Book';
+    width: 30%;
+    box-shadow: 2px 2px 1px rgba($cor-cinza, .9);
+}
+
+//Box de destaque
+.box-destaque-dashed {
+    padding: 1em;
+    clear: both;
+    margin: $margin-padrao;
+    border: 3px dashed rgba($cor-principal, .4);
+    color: $cor-principal;
+}
+.box-destaque{
+    padding: 1em;
+    margin: $margin-padrao;
+    background-color: rgba($cor-cinza, .15);
+    //
+    p:first-child,
+    .box-destaque-subtitulo:first-child{
+        padding-top: 0px;
+    }
+    .box-destaque-subtitulo{
+        font: 1.2em 'Gotham HTF Medium';
+    }
+    figure img{
+        border: 0;
+    }
+}
+
+
+//Nota de rodape
+.nota-rodape{
+    border-top: 2px dashed rgba($cor-cinza, .3);
+    padding-top: 1em;
+    margin: 1.5em 0 1em 0;
+    //
+    ol li{
+        font-size: 0.9em;
+        color: rgba($cor-cinza, .8);
+        padding: $padding-padrao;
+    }
+}
+//Modal
+.popup-modal-box{
+    background: #FFF;
+    padding: 20px 30px;
+    text-align: left;
+    max-width: 650px;
+    margin: 40px auto;
+    position: relative;
+    //
+    pre {
+        background-color: #fff;
+        color: #303030;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+}
+.popup-modal-fechar{
+    color: $cor-principal;
+    font-size: 0px;
+    top: 10px;
+    right: 10px;
+    position: absolute;
+    text-decoration:none;
+
+    &:hover{
+        text-decoration: none;
+    }
+    &:before{
+        font-size: 16px;
+        content: "\ea0f";
+        font-family:'icomoon';
+    }
+}
+.mfp-hide {
+    display: none!important;
+}
+
+//Box de dicas e sugestões
+.box-dicas {
+    padding: 1.8em;
+    margin: $margin-padrao;
+    clear: both;
+    position: relative;
+}
+.link-dicas{
+    color: $cor-cinza;
+    display: block;
+    margin: $margin-padrao;
+}
+span.icon-video{
+    background: $cor-principal url(../images/icon-links.svg) -69px center no-repeat;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background-size: 140px;
+}
+
+//Box de citação.
+.citacao {
+    margin: $margin-padrao;
+    border-left: 4px solid $cor-principal;
+    padding: 1.3em;
+    font-style: italic;
+    color: $cor-principal;
+    font-size: 1em;
+    line-height: 1.4em;
+    background-color: lighten(#fff, 5%);
+}
+
+//Box de pergunta.
+.box-pergunta {
+    margin: $margin-padrao;
+    border-left: solid $cor-principal 4px;
+    position: relative;
+    background-color: lighten(#fff, 5%);
+    padding: 20px 25px 20px;
+    width: 100%;
+    //
+    p{
+        padding: 0;
+    }
+    &:before {
+        content: "";
+        display: block;
+        width: 0px;
+        height: 0px;
+        border: solid 10px transparent;
+        border-top: solid 10px $cor-principal;
+        border-left: solid 10px $cor-principal;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+    &:after {
+        font: 0.7em 'icomoon';
+        content: "\f052";
+        position: absolute;
+        left: 0px;
+        top: 1px;
+        color: #fff;
+    }
+}
+.pergunta-number {
+    font-size: 2em;
+    line-height: 1em;
+    font-family: 'Gotham HTF Light';
+    display: block;
+    color: lighten($cor-principal, 15%);
+}
+
+
+//Vantagens e Desvantagens.
+
+.titulo-vantagens, .titulo-desvantagens {
+    min-height:50px;
+    padding: 0px 0 0px 60px;
+    font-size: 1.4em;
+}
+
+.titulo-vantagens {
+    background: url("../images/icon-vantagens-desvantagens.png") left top no-repeat;
+    //background-size: 45px;
+}
+.titulo-desvantagens {
+    background: url("../images/icon-vantagens-desvantagens.png") left bottom no-repeat;
+    // background-size: 45px;
+}
+
+//BTN
+.btn{
+    padding: 10px;
+    border: 1px solid rgba($cor-cinza, .2);
+    background-color: lighten($cor-cinza, 25%);
+    color: #fff !important;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "Gotham HTF Medium";
+    font-weight: normal;
+    letter-spacing: 1px;
+    font-size: 0.8em;
+    margin: $margin-padrao;
+    cursor: pointer;
+    //
+    &:hover{
+        background-color: $cor-principal;
+        color: #fff;
+        border-color: $cor-principal;
+        text-decoration: none;
+    }
+}
+
+//EBOOK PDF.
+.ebook {
+    width: 100%;
+    height: 570px;
+    border: 1px solid rgba($cor-cinza, .2);
+}
+
+//Media Query
+@media (max-width: 480px){//Até 480px
+    //Enfase.
+    .enfase {
+        font-size: 1.3em;
+        line-height: 1.1em;
+        width: 100%;
+    }
+    //Tooltip.
+    .tooltip {
+        width: 50%;
+    }
+
+}
+@media (min-width: 990px){//Acima de 990px
+    //Tooltip.
+    .tooltip {
+        width: 30%;
+    }
+}
+
+
+//infografico energia
+.ultimoPar {
+    text-align: center;
+    span.bold {
+        font-weight: bold!important;
+    }
+    .pverde {
+        color: $cor-principal !important;
+        font-size: 1.4em;
+        font-weight: normal!important;
+    }
+
+    .pmaior {
+        font-size: 1.1em!important;
+    }
+}
+

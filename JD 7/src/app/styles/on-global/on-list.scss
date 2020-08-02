@@ -1,0 +1,43 @@
+.on-list {
+  position: relative;
+  padding-left: 28px;
+  li {
+    list-style: none;
+    &:before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 5px;
+      height: 5px;
+      background-color: #000;
+      border-radius: 100%;
+      margin-top: 10px;
+      margin-left: -27px;
+    }
+  }
+}
+
+.on-list.on-list-magenta {
+  li:before {
+    background-color: $on-color-magenta;
+  }
+}
+
+.on-list.on-list-trace {
+  li:before {
+    width: 17px;
+    height: 3px;
+    top: 1px;
+    border-radius: 0;
+  }
+}
+
+.on-section-dark {
+  .on-list, .on-list.on-list-trace  {
+    @extend %color-white;
+    li:before {
+      @extend %background-color-white;
+    }
+  }
+}
+

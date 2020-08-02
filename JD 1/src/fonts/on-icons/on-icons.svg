@@ -1,0 +1,65 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<metadata>
+Created by FontForge 20161003 at Tue Aug 29 17:40:41 2017
+ By www-data
+</metadata>
+<defs>
+<font id="icomoon" horiz-adv-x="1024" >
+  <font-face 
+    font-family="icomoon"
+    font-weight="400"
+    font-stretch="normal"
+    units-per-em="1024"
+    panose-1="0 0 0 0 0 0 0 0 0 0"
+    ascent="960"
+    descent="-64"
+    bbox="0 -65.2542 5632 961.885"
+    underline-thickness="0"
+    underline-position="0"
+    unicode-range="U+0001-FFFD"
+  />
+<missing-glyph 
+ />
+    <glyph glyph-name=".notdef" unicode="&#xfffd;" 
+ />
+    <glyph glyph-name="glyph1" horiz-adv-x="0" 
+d="M0 0v0v0v0z" />
+    <glyph glyph-name="glyph1" horiz-adv-x="0" 
+d="M0 0v0v0v0z" />
+    <glyph glyph-name="nonmarkingreturn" horiz-adv-x="341" 
+ />
+    <glyph glyph-name="uni0001" horiz-adv-x="0" 
+d="M0 0v0v0v0z" />
+    <glyph glyph-name="space" unicode=" " horiz-adv-x="512" 
+d="M0 0v0v0v0z" />
+    <glyph glyph-name="uniE900" unicode="&#xe900;" horiz-adv-x="834" 
+d="M65 640v-704h704v704h-704v0zM255 65h-65v446h65v-446zM384 65h-64v446h64v-446v0zM514 65h-65v446h65v-446zM640 65h-65v446h65v-446zM834 831h-259v129h-320v-129h-255v-130h834v130zM514 831h-194v64h190v-64h4z" />
+    <glyph glyph-name="uniE901" unicode="&#xe901;" 
+d="M896 960h-896v-1024h1024v892zM512 828h128v-256h-128v256zM896 64h-768v764h66v-318h574v318h75l53 -53v-111v-244.5v-244.5v-111v0z" />
+    <glyph glyph-name="uniE902" unicode="&#xe902;" horiz-adv-x="559" 
+d="M305 -64h-53v999h53v-999zM524 658l-244 229l-244 -229l-36 40l280 262l279 -262z" />
+    <glyph glyph-name="uniE903" unicode="&#xe903;" horiz-adv-x="887" 
+d="M714 -64v0q-75 0 -124.5 56t-49.5 130v652q0 79 52 132.5t122 53.5v0q74 0 123.5 -56t49.5 -130v-646q0 -79 -51.5 -135.5t-121.5 -56.5zM174 -64v0q-75 0 -124.5 56t-49.5 130v652q0 79 52 132.5t122 53.5v0q74 0 124 -56t50 -130v-646q0 -79 -50 -135.5t-124 -56.5z
+" />
+    <glyph glyph-name="uniE904" unicode="&#xe904;" horiz-adv-x="917" 
+d="M151 947l716 -414q52 -28 52 -85t-52 -85l-716 -414q-52 -29 -101.5 1t-49.5 87v822q5 62 54.5 89.5t96.5 -1.5v0z" />
+    <glyph glyph-name="uniE905" unicode="&#xe905;" horiz-adv-x="5632" 
+d="M0 960h5632v-1024h-5632v1024z" />
+    <glyph glyph-name="uniE906" unicode="&#xe906;" horiz-adv-x="1432" 
+d="M0 -64v408q0 68 7 127q7 60 21 112q15 53 36 97q22 44 52 81q29 35 68 64q39 30 87 54q49 25 106 45t123 36l51 -158q-83 -31 -142 -69q-60 -38 -99 -83q-34 -46 -51 -107t-13 -134h171v-473h-417zM904 -64v408q0 68 6 127q7 60 20 112q14 53 34 97t46 81q26 35 62 64
+q37 30 83 54q46 25 101 45q56 20 120 36l56 -158q-84 -31 -143 -69q-60 -38 -98 -83q-35 -46 -52 -107t-13 -134h144v-473h-366z" />
+    <glyph glyph-name="uniE907" unicode="&#xe907;" horiz-adv-x="1457" 
+d="M0 737l245 223l483 -534l483 534l246 -223l-729 -801z" />
+    <glyph glyph-name="uniE908" unicode="&#xe908;" horiz-adv-x="1586" 
+d="M0 960h251v-201h-251v201zM502 960h1084v-201h-1084v201zM0 548h251v-200h-251v200zM502 548h883v-200h-883v200zM0 137h251v-201h-251v201zM502 137h1084v-201h-1084v201z" />
+    <glyph glyph-name="uniE909" unicode="&#xe909;" horiz-adv-x="883" 
+d="M435 -64q-72 0 -140 23t-125 65t-99.5 100.5t-64.5 129.5q-13 35 5 66.5t54 45.5q35 13 66.5 -5.5t45.5 -53.5q13 -44 38.5 -81t60.5 -63.5t77 -41t88 -14.5q58 0 107.5 20.5t86 57t57 86t20.5 106.5q0 58 -20.5 107.5t-57 86t-86 57t-107.5 20.5q-35 0 -61.5 26.5
+t-26.5 61.5q0 36 26.5 62.5t61.5 26.5q95 0 177 -34.5t142 -94.5t94.5 -142t34.5 -177q-3 -92 -38.5 -172.5t-96 -140.5t-142.5 -94t-177 -34v0zM100 736l377 218q22 13 46 -1t24 -40v-436q0 -26 -22 -40t-48 -1l-377 218q-22 18 -22 43.5t22 38.5v0z" />
+    <glyph glyph-name="uniE90A" unicode="&#xe90a;" 
+d="M1024 882l-80 78l-432 -433l-432 433l-80 -78l433 -434l-433 -434l80 -78l432 433l432 -433l80 78l-433 434z" />
+    <glyph glyph-name="uniE90B" unicode="&#xe90b;" horiz-adv-x="2389" 
+d="M2281 380h-2281v114h2281v-114zM1923 -64l-85 80l398 432l-393 432l80 80l466 -512z" />
+  </font>
+</defs></svg>

@@ -1,0 +1,17 @@
+on-figure {
+  position: relative;
+  display: block;
+  margin: $on-elements-spacing 0;
+  img {
+    cursor: url("./images/on-global/on-image-cursor-zoom-in.svg") 15 15, auto;
+  }
+}
+
+.on-figure-border img {
+  border: 1px solid #CCC;
+}
+
+.on-figure-full img {
+  width: 100%;
+}
+

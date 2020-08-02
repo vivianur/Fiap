@@ -1,0 +1,29 @@
+//Enfase
+.enfase {
+    color: $cor-principal;
+    font:{
+        size:1.2em;
+        family:'Gotham HTF Book';
+    }
+    line-height: 1.2em;
+    position: relative;
+    width: 45%;
+    height: auto;
+    //
+    &.enfase-left{
+        float: left;
+        margin: 0 20px 10px 0;
+    }
+    &.enfase-right{
+        float: right;
+        margin: 0 0 10px 20px;
+    }
+}
+
+
+//Media Query
+@media (min-width: 1400px){//Acima de 1400px
+    .enfase{
+        font-size: 1.7em;
+    }
+}

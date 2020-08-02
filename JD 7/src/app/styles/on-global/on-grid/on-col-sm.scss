@@ -1,0 +1,11 @@
+
+@for $i from 1 through $on-grid-columns {
+  .on-col-sm-#{$i} {
+    @extend %on-col;
+    margin: $on-elements-spacing / 2 0;
+    @include MQ(S) {
+      margin: 0;
+      width: #{($i / $on-grid-columns) * 100 + '%'};
+    }
+  }
+}

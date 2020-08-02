@@ -1,0 +1,21 @@
+<div class="on-code-box-nav">
+  <button
+    #element
+    class="on-code-box-nav-button"
+    *ngFor="let onCode of onCodes; let i = index"
+    (click)="showCode(onCode, element)">
+      {{ onCode.identifier }}
+  </button>
+  <button
+    class="on-code-button on-code-button-copy"
+    (click)="copy()">Copiar
+  </button>
+</div>
+
+<div id="on-code-box">
+  <ng-content></ng-content>
+</div>
+
+
+
+

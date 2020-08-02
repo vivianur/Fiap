@@ -1,0 +1,53 @@
+.image-popup{
+    cursor: zoom-in;
+}
+.mfp-figure{
+    figure{
+        border:0;
+        background: transparent;
+        margin: 0;
+    }
+    figcaption{
+        display: none;
+    }
+    img{
+        border:0;
+        padding: 0 !important;
+    }
+}
+figure{
+    cursor: zoom-in;
+    margin: $margin-padrao;
+    width: 100%;
+    //
+    img{
+        border: 1px solid lighten($cor-cinza, 65%);
+        width: 100%;
+    }
+    &.figure-left{
+        float: left;
+        width: 48%;
+            margin-right: 1.5em;
+    }
+    &.figure-right{
+        float: right;
+        width: 48%;
+            margin-left: 1.5em;
+    }
+}
+figcaption{
+    color: lighten($cor-cinza, 35%);
+    font-size: 0.8em;
+    line-height: 1em;
+}
+
+@include MQ(M){
+    figure{
+        &.figure-left,
+        &.figure-right{
+            width: 100%;
+            margin: 15px 0 30px 0;
+            clear: both;
+        }
+    }
+}

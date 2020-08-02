@@ -1,0 +1,57 @@
+on-quote {
+  display: block;
+  position: relative;
+  margin: $on-elements-spacing 0;
+  @include MQ(XS) {
+    padding-top: 41px;
+    padding-left: 40px;
+  }
+  &:after {
+    content: '\e907';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 21px;
+    font-family: 'ON Icons';
+    font-size: 20px;
+    color: $on-color-magenta;
+    display: none;
+    @include MQ(XS) {
+      display: block;
+    }
+  }
+}
+
+.on-quote-content {
+  font-style: italic;
+  > * {
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.on-quote-author {
+  position: relative;
+  font-family: 'Gotham HTF Medium';
+  color: $on-color-magenta;
+  margin-top: 10px;
+  > * {
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.on-section-dark {
+  on-quote:after  {
+    @extend %color-white;
+  }
+}

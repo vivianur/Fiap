@@ -1,0 +1,54 @@
+$background-color-normal: #FFFFFF;
+$background-color-active: #466A83;
+
+.on-game-option-container {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.on-game-option {
+  display: flex;
+  position: relative;
+  z-index: 2;
+  min-height: 64px;
+  background-color: transparent;
+  font-size: 14px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 19px $on-elements-spacing 21px $on-elements-spacing;
+  cursor: pointer;
+  border: 1px solid $on-color-white;
+  transition: background-color .25s, color .25s, padding-top .25s, padding-bottom .25s, border .25s, box-shadow .25s;
+  span {
+    margin: auto;
+  }
+}
+
+.on-game-option-selected {
+  background-color: $background-color-active;
+  padding-top: 21px;
+  padding-bottom: 19px;
+}
+
+.on-game-option-index {
+  text-align: center;
+  margin-top: $on-elements-spacing;
+  > div {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-family: 'Gotham HTF Bold';
+    line-height: 35px;
+    color: rgba(255, 255, 255, 0);
+    border: 2px solid rgba(241, 241, 241, 0);
+    border-radius: 100%;
+  }
+}
+
+.on-game-option[data-selected="1"] {
+  .on-game-option-index {
+    > div {
+      color: rgba(255, 255, 255, 1);
+      border-color: rgba(241, 241, 241, .4);
+    }
+  }
+}

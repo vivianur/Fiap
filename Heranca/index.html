@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Charset -->
+        <meta charset="UTF-8">
+
+        <!-- Título -->
+        <title>EAD | FIAP - Herança e Sobrescrita de Métodos</title>
+
+        <!-- Compatibilidade -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!-- Viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Estilos -->
+        <link rel="stylesheet" href="css/padrao.css">
+
+    </head>
+    <body>
+
+        <!-- Header com a capa e descrição do conteúdo -->
+        <header class="animated slideInLeft bg-capa">
+            <div class="margin-header">
+                <h1 class="header-titulo">Herança e Sobrescrita de Métodos</h1>
+                <p class="header-descricao">Herança, Sobrescrita de Métodos, Polimorfismo e Construtores em Classes Estendidas.</p>
+            </div>
+        </header>
+
+        <!-- Bt para sair do conteúdo e voltar a plataforma EAD -->
+        <a class="bt bt-sair" href="javascript: void();" target="_parent">
+            Sair
+        </a>
+
+        <!-- Bt de abrir o menu -->
+        <a href="#" class="bt bt-abrir-menu">
+            Abrir Menu
+        </a>
+
+
+        <!-- Navegação default -->
+        <nav class="nav-default">
+            <ul></ul>
+        </nav>
+
+        <!-- Navegação mobile -->
+        <nav class="nav-mobile">
+            <ul></ul>
+        </nav>
+
+        <!-- Bt para voltar ao topo -->
+        <a class="bt bt-topo" href="javascript: void();" target="_parent">
+            Topo
+        </a>
+
+        <!-- Container do conteúdo -->
+        <div class="container">
+
+            <!-- Section -->
+            <section class="item-menu" data-name="Herança" id="heranca">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="section-titulo">HERANÇA</h2>
+                        <p class="enfase enfase-left">Herança é um dos principais pilares da programação orientada a objetos.</p>
+                        <p>Herança é um dos principais pilares da programação orientada a objetos. A ideia é criar classes com base em classes existentes, dessa forma a que for criada herdará todos os comportamentos e atributos da existente. Sendo necessário somente adicionar novos atributos e/ou comportamentos. É possível também alterar os comportamentos existentes da classe pai.</p>
+                        <p>Uma classe que herda de outra classe é chamada de subclasse, já a classe herdada é chamada de superclasse.</p><p>A herança é utilizada como forma de reutilizar os atributos e métodos de classes já definidas, permitindo assim derivar uma nova classe mais especializada a partir de outra classe mais genérica existente.</p>
+                        
+                         <p class="enfase enfase-right">
+                            Uma subclasse recebe todas as características da superclasse [...]
+                        </p>
+                        <p>Uma classe só pode ter uma superclasse, ou seja, não é possível ter herança múltipla. Porém, uma classe pode ter um número ilimitado de subclasses. </p>
+                       
+                        <p>Dessa forma, uma subclasse recebe todas as características da superclasse e de todas as outras classes acima dela. A hierarquia de classes se inicia com a classe <b>Object</b>, isto é, todas as classes a herdam direta ou indiretamente.</p>
+                        <p>Veja a hierarquia de classes:</p>
+                        <figure class="figure-left">
+                            <a class="image-popup" href="images/conteudo/img-1.svg" target="_blank">
+                                <img src="images/conteudo/img-1.svg" alt="Hierarquia de classes" />
+                            </a>
+                            <figcaption>Hierarquia de classes</figcaption>
+                        </figure>
+                        <p>A classe Object é a superclasse da classe A, e esta, por sua vez, é subclasse de Object.</p>
+
+                        <p>A classe A é a superclasse de B e C, desta forma, as classes B e C recebem todos os atributos e métodos da classe A e da classe Object. </p>
+
+                        <p>A palavra-chave <b>extends</b> é utilizada na declaração de uma classe para determinar a sua superclasse. Caso a classe não tenha essa palavra-chave em sua declaração, a herança que existe é diretamente da classe Object.</p>
+                        <p>Sintaxe: </p>
+                        <div class="box-destaque code">
+                            [public] class &lt;subclasse&gt; extends &lt;superclasse&gt; { <br>
+                            }
+                        </div>
+                        <p>Agora é hora de praticar! Vamos ajustar a classe Conta para que ela possua as subclasses ContaCorrente e ContaPoupanca. A classe Conta herda da classe Object.</p>
+                        <p>A classe ContaCorrente possui o atributo tipo de conta, que define se a conta é básica, especial ou premium. Já a ContaPoupanca não possui esse tipo de definição. </p>
+
+                        <figure>
+                            <a class="image-popup" href="images/conteudo/img-2.gif" target="_blank">
+                                <img src="images/conteudo/img-2.gif" alt="Classe com herança" />
+                            </a>
+                            <figcaption>Classe com herança</figcaption>
+                        </figure>
+
+                        <p>Após definir que a classe ContaCorrente é uma subclasse de Conta, vamos adicionar um atributo para definir o tipo de conta corrente.</p>
+
+                       
+                        <p class="enfase enfase-left">
+                            Observe que utilizamos o encapsulamento para proteger o atributo [...]
+                        </p>
+                        <p>Observe que utilizamos o encapsulamento para proteger o atributo tipo, que define o tipo da conta corrente. </p>
+                        <p>Vamos adicionar outro atributo que será utilizado para armazenar o valor do cheque especial, ou seja, o valor que o cliente pode utilizar junto do saldo da conta.</p>
+                        <div class="clear"></div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <figure>
+                                    <a class="image-popup" href="images/conteudo/img-3.gif" target="_blank">
+                                        <img src="images/conteudo/img-3.gif" alt="Atributo da classe ContaCorrente" />
+                                    </a>
+                                    <figcaption>Atributo da classe ContaCorrente</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-sm-6">
+                                <figure>
+                                    <a class="image-popup" href="images/conteudo/img-4.gif" target="_blank">
+                                        <img src="images/conteudo/img-4.gif" alt="Atributo que armazena o limite do cheque especial" />
+                                    </a>
+                                    <figcaption>Atributo que armazena o limite do cheque especial</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                         
+                        <p>Agora que vimos como adicionar atributos na classe filha, vamos adicionar métodos específicos à ContaCorrente. Uma conta corrente tem o comportamento de retornar o Saldo Disponível, que é a soma do saldo da conta com o limite do cheque especial:</p>
+
+                        <figure class="figure-left">
+                            <a class="image-popup" href="images/conteudo/img-5.gif" target="_blank">
+                                <img src="images/conteudo/img-5.gif" alt="Método que retorna o saldo disponível da conta corrente" />
+                            </a>
+                            <figcaption>Método que retorna o saldo disponível da conta corrente</figcaption>
+                        </figure>
+                        <p>Note que o método retorna o valor da soma do cheque especial com o saldo da conta. Para acessar o saldo da conta foi necessário utilizar o método getSaldo(), pois o atributo <b>saldo</b> está definido na classe pai como <b>private</b>, por isso não é visível na classe filha.</p>
+                        <p>Uma forma de descobrir se a herança é adequada para as suas classes é seguir a regra do “é um”, que afirma que cada objeto da subclasse é um objeto da superclasse. Por exemplo, uma Conta Corrente é uma Conta, o que significa que a herança deve ser utilizada nesta situação. Naturalmente, o contrário não é verdadeiro, nem toda Conta é uma Conta Corrente.</p>
+                        <p>Dessa forma, você pode utilizar um objeto de uma subclasse sempre que o programa esperar por um objeto da superclasse. Assim, é possível atribuir um objeto do tipo Conta Corrente em uma variável do tipo Conta.</p>
+
+                        <p>Exemplo:</p>
+
+                        <div class="box-destaque code">
+                            <p>Conta conta = new Conta();</p>
+                            <p>Conta cc = new ContaCorrente();</p>
+                        </div>
+
+                        <p>As variáveis que armazenam uma referência a um objeto são polimórficas. Isso quer dizer que uma variável de uma superclasse pode receber qualquer objeto de suas subclasses.</p>
+                        <p>Podemos atribuir o objeto que está referenciado na variável cc a uma variável do tipo ContaCorrente, para isso é necessário realizar um cast:</p>
+
+                        <div class="box-destaque code">
+                            <p>ContaCorrente c1 = (ContaCorrente) cc;</p>
+                        </div>
+
+                        <p>O cast é forçar um objeto ser de outro tipo em um momento. Neste caso, forçamos o objeto a ser do tipo ContaCorrente para atribuirmos em uma variável do tipo ContaCorrente. O cast é composto pelos parênteses () e a classe que queremos forçar o objeto a se transformar naquele momento.</p>
+                         <p>Observe que se tentarmos realizar o cast e o objeto não for do tipo ou subtipo da classe que queremos forçar, o Java irá lançar a exceção ClassCastException:</p>
+                        <div class="box-destaque code">
+                            <p>ContaCorrente c2 = (ContaCorrente) conta;</p>
+                        </div>
+                        <p>A variável <b>conta</b> faz referência a um objeto do tipo Conta e não do tipo ContaCorrente. Assim, a exceção será lançada.</p>
+
+                        <p>Para verificar se o objeto é do tipo de uma classe, podemos utilizar a instrução <b>instanceof</b>. Essa instrução retorna true caso o objeto a esquerda do operador é do tipo (classe) especificado à direita do operador. Exemplo:</p>
+                         <figure>
+                            <a class="image-popup" href="images/conteudo/img-6.gif" target="_blank">
+                                <img src="images/conteudo/img-6.gif" alt="Operador instanceof" />
+                            </a>
+                            <figcaption>Operador instanceof</figcaption>
+                        </figure>
+
+                        <p>No exemplo, estamos testando se a variável cc possui um objeto do tipo Conta. Então, qual é o resultado da execução? </p>
+
+                        <p>O resultado é “cc é do tipo Conta”. E se alteramos o programa para instanciar um objeto do tipo ContaCorrente ao invés do tipo Conta, qual será o resultado da execução?</p>
+                        <figure>
+                            <a class="image-popup" href="images/conteudo/img-7.gif" target="_blank">
+                                <img src="images/conteudo/img-7.gif" alt="Operador instanceof" />
+                            </a>
+                            <figcaption>Operador instanceof</figcaption>
+                        </figure>
+
+                        <p>A resposta é que cc é do tipo conta, pois uma ContaCorrente também é uma Conta. </p>
+                        <p>Mas se alterarmos novamente o programa anterior para ficar dessa forma:</p>
+                        <figure>
+                            <a class="image-popup" href="images/conteudo/img-8.gif" target="_blank">
+                                <img src="images/conteudo/img-8.gif" alt="Operador instanceof" />
+                            </a>
+                            <figcaption>Operador instanceof</figcaption>
+                        </figure>
+
+                        <p>Agora estamos testando se o objeto da variável cc é do tipo ContaCorrente. A resposta da execução é “cc não é do tipo Conta Corrente”. Pois uma Conta não é necessariamente uma Conta Corrente.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section parallaxy -->
+            <section  class="parallaxy story" data-speed="4" data-type="background" data-offsety="250">
+                <div class="background-animate bg-parallaxy-1" data-type="sprite" data-offsety="1250" data-xposition="30%" data-speed="1">
+                    <h2 class="parallaxy-titulo wow animated bounceInRight">
+                       Uma forma de descobrir se a herança é adequada para as suas classes é seguir a regra do “é um” [...]
+                    </h2>
+                </div>
+            </section>
+
+            <!-- Section -->
+            <section class="bg-cinza-suave item-menu" data-name="Sobrescrita de métodos" id="sobrescrita">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="section-titulo">Sobrescrita de métodos</h2>
+                        <p>Outra diferença, para o nosso sistema, é que para a conta poupança não há taxa para efetuar um saque. Na conta corrente do tipo básica existe uma taxa para a retirada de dinheiro.</p>
+
+                        <p>Dessa forma, precisamos sobrescrever o comportamento do método <b>retirar</b> na classe Conta Corrente. Sobrescrever um método é redefinir na subclasse um método existente na superclasse. Assim, quando o método retirar for chamado de um objeto do tipo Conta Corrente, o método chamado será o retirar definido na classe Conta Corrente e não da classe Conta.</p>
+                         <p>Para isso, precisamos implementar na classe <b>Conta Corrente</b> um método retirar que tenha a mesma assinatura do método retirar da classe <b>Conta</b>.</p>
+
+                        <figure>
+                            <a class="image-popup" href="images/conteudo/img-9.gif" target="_blank">
+                                <img src="images/conteudo/img-9.gif" alt="Método Sobrescrito na classe Conta Corrente" />
+                            </a>
+                            <figcaption>Método Sobrescrito na classe Conta Corrente</figcaption>
+                        </figure>
+                        <p>A anotação <b>@Override</b> marca o método, identificando que o método está sobrescrevendo um método de sua superclass. </p>
+
+                        <p>O método retirar soma a taxa de retirada (10) ao valor a ser subtraído do saldo. Como não temos acesso direto ao saldo e não podemos alterar o seu valor na subclasse (não existe o método setSaldo() na classe Conta), precisamos utilizar o método retirar que está na classe Conta. A palavra <b>super</b> é utilizada para referenciar a superclasse, assim a instrução <b>super.retirar(valor)</b> está chamando o método retirar que está na classe Conta.</p>
+
+                        <figure>
+                            <a class="image-popup" href="images/conteudo/img-10.gif" target="_blank">
+                                <img src="images/conteudo/img-10.gif" alt="Método sobrescrito: @Override e super." />
+                            </a>
+                            <figcaption>Método sobrescrito: @Override e super.</figcaption>
+                        </figure>
+
+                        <p>Isso faz parte de um dos pilares da Orientação a Objetos: o <b>polimorfismo</b>.</p>
+                    
+                        <p>A palavra polimorfismo quer dizer várias formas, na orientação a objetos representa que um objeto pode ser referenciado de várias formas. Quando sobrescrevemos um método na subclasse, o que determina se o método que será chamado é da subclasse ou da superclasse é o tipo de instância do objeto. Por exemplo:</p>
+
+                        <div class="box-destaque code">
+                            <p>Conta conta = new Conta();</p>
+                            <p>conta.retirar(100);</p>
+                        </div>
+
+                        <p>O método chamado será o definido na classe Conta. </p>
+
+                        <div class="box-destaque code">
+                            <p>ContaCorrente conta = new ContaCorrente();</p>
+
+                            <p>conta.retirar(100);</p>
+                        </div>
+
+                        <p>O método chamado será o definido na classe ContaCorrente.</p>
+
+                        <p>Simples, certo? E no exemplo abaixo? Qual será o método chamado?</p>
+
+                        <div class="box-destaque code">
+                            <p>Conta conta = new ContaCorrente();</p>
+
+                            <p>conta.retirar(100);</p>
+                        </div>
+                        <p class="enfase enfase-left">Os construtores das subclasses sempre precisam chamar um construtor da superclasse.</p>
+
+                        <p>Neste caso, o método definido na ContaCorrente será invocado. Pois, o objeto que está em conta é do tipo ContaCorrente.</p>
+
+                        <p>Observe que podemos redefinir o comportamento de uma classe em sua subclasse e assim um objeto pode se comportar de maneira diferente ao invocar um método, dependendo do seu tipo de criação.</p>
+                        <div class="clear break"></div>
+                       <h2 class="section-subtitulo">Construtores em Classes Estendidas</h2>
+                        <p>Os construtores das subclasses <b>sempre</b> precisam chamar um construtor da superclasse. E para isso, a instrução <b>super</b> é utilizada.</p>
+
+                        
+
+                        <figure class="figure-right">
+                            <a class="image-popup" href="images/conteudo/img-11.gif" target="_blank">
+                                <img src="images/conteudo/img-11.gif" alt="Classe Conta e ContaCorrente" />
+                            </a>
+                            <figcaption>Classe Conta e ContaCorrente</figcaption>
+                        </figure>
+
+                        <p>Observe as classes Conta e ContaCorrente.</p>
+
+                        <p>Os atributos e métodos foram omitidos para focarmos nos construtores. Essas classes têm construtores?</p>
+
+                        <p>A resposta é sim. Apesar de não estar definido, elas possuem o construtor padrão (sem argumentos) que é fornecido pelo Java. O construtor padrão chama o construtor da superclasse direta, ou seja, o construtor da classe <b>ContaCorrente</b> chama o construtor da classe <b>Conta</b> e o construtor da classe <b>Conta</b> chama o construtor da classe <b>Object</b>.</p>
+
+                        <p>Vamos definir um construtor para a classe ContaCorrente. Esse construtor recebe como parâmetro o valor do tipo da Conta.</p>
+                        
+
+                        <p>Agora temos um construtor para a classe ContaCorrente. Esse construtor chama o construtor de sua superclasse?</p>
+
+                        <p>A resposta é sim. Isso é feito automaticamente pelo Java, pois a classe Conta possui o construtor padrão. Então o código abaixo, com a instrução <b>super()</b> na primeira linha do construtor é redundante, pois o Java irá fornecer a instrução caso não seja definido.</p>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                  <figure>
+                                    <a class="image-popup" href="images/conteudo/img-12.gif" target="_blank">
+                                        <img src="images/conteudo/img-12.gif" alt="Construtor da Classe ContaCorrente" />
+                                    </a>
+                                    <figcaption>Construtor da Classe ContaCorrente</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-sm-6">
+                                 <figure>
+                                    <a class="image-popup" href="images/conteudo/img-13.gif" target="_blank">
+                                        <img src="images/conteudo/img-13.gif" alt="Construtor da classe ContaCorrente com a chamada super de forma explícita" />
+                                    </a>
+                                    <figcaption>Construtor da classe ContaCorrente com a chamada super de forma explícita</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                      
+                       
+                        <p>Outras duas regras dos construtores são: </p>
+
+                        <ol>
+                            <li>Não são herdados. </li>
+                            <li>A chamada do construtor da superclasse deve ser sempre feita na primeira linha do construtor da subclasse.</li>
+                        </ol>
+
+                        <p>Dessa forma, se implementarmos um construtor que recebe um parâmetro na classe Conta, a classe ContaCorrente não vai herdar esse construtor.</p>
+                        
+
+                        <p>A partir do momento em que implementamos esse construtor na classe Conta, a classe ContaCorrente começa a exibir um erro de compilação. Isso acontece, pois o construtor da classe ContaCorrente deve chamar o construtor da classe Conta, porém agora, a classe Conta tem somente o construtor que recebe um parâmetro do tipo <b>int</b>.</p>
+                        <p>Para consertar o erro, devemos fazer com que o construtor da classe ContaCorrente chame o construtor definido na classe Conta. Para isso, utilizamos a instrução <b>super</b>, passando o parâmetro do tipo inteiro.</p>
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <figure>
+                                    <a class="image-popup" href="images/conteudo/img-14.gif" target="_blank">
+                                        <img src="images/conteudo/img-14.gif" alt="Construtor da classe Conta" />
+                                    </a>
+                                    <figcaption>Construtor da classe Conta</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-sm-6">
+                                <figure>
+                                    <a class="image-popup" href="images/conteudo/img-15.gif" target="_blank">
+                                        <img src="images/conteudo/img-15.gif" alt="Construtor da classe ContaCorrente invocando o construtor da superclasse." />
+                                    </a>
+                                    <figcaption>Construtor da classe ContaCorrente invocando o construtor da superclasse.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        
+                        
+                        <p>Dessa forma, o construtor da subclasse chama o construtor da superclasse:</p>
+                        <figure>
+                            <a class="image-popup" href="images/conteudo/img-16.gif" target="_blank">
+                                <img src="images/conteudo/img-16.gif" alt="Instrução super utilizada para chamar o construtor da superclasse" />
+                            </a>
+                            <figcaption>Instrução super utilizada para chamar o construtor da superclasse</figcaption>
+                        </figure>
+                        <p class="enfase enfase-right">Se não existir um construtor padrão na superclasse, haverá um erro de compilação [...]</p>
+                        <p>Resumindo, se o <b>super</b> não for chamado, o compilador acrescenta uma chamada ao construtor padrão: super();</p>
+
+                        <p>Se não existir um construtor padrão na superclasse, haverá um erro de compilação e será necessário chamar explicitamente a instrução <b>super</b>, passando os parâmetros do construtor da superclasse.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section video -->
+            <!--section class="bg-cinza-suave">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="video widescreen vimeo">
+                            <iframe src="https://player.vimeo.com/video/124624026?title=0&amp;byline=0&amp;portrait=0&amp;color=dc5b22" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                        </div>
+                        <p>Vídeo com participação de <a class="abre-tooltip" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.">Henrique Poyatos</a>.</p>
+                    </div>
+                </div>
+            </section-->
+
+            <!-- Section com referências e btn de baixar pdf -->
+            <section class="bg-cinza-escuro referencias item-menu" data-name="Referências" id="referencias">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="section-titulo">Referências</h1>
+                        <div class="row">
+                            <div class="col-md-12 col-lg-6">
+                                <ul class="lista">
+                                    <li>BARNES, David J. <b>Programação Orientada a Objetos com Java</b>: Uma introdução Prática Utilizando Blue J. São Paulo: Pearson, 2004.</li>
+                                    <li>CADENHEAD, Rogers; LEMAY, Laura. <b>Aprenda em 21 dias Java 2 Professional Reference</b>. 5.ed.  Rio de Janeiro: Elsevier, 2003.</li>
+                                    <li>DEITEL, Paul; DEITEL, Harvey. <b>Java Como Programar</b>. 8.ed. São Paulo. Pearson, 2010.</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-12 col-lg-6">
+                                <ul class="lista">
+                                    <li>HORSTMANN, Cay; CORNELL, Gary. <b>Core Java</b>: Volume I Fundamentos. 8.ed. São Paulo: Pearson, 2009.</li>
+                                    <li>SIERRA, Kathy; BATES,Bert. <b>Use a cabeça! Java</b>.  Rio de Janeiro: Alta Books, 2010.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--hr>
+                        <p><a class="btn">Baixar conteúdo PDF</a></p-->
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- JS -->
+        <script src="js/padrao.js"></script>
+    </body>
+</html>

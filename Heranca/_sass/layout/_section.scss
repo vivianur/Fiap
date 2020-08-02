@@ -1,0 +1,111 @@
+.container{
+    color: $cor-cinza;
+    float: right;
+    font: 1.2em 'Gotham HTF Book';
+    width: 70%;
+    line-height: 1.6em;
+}
+//Sections
+section {
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    padding: 2.5em 5.5em 3em 5.5em;
+    ::selection {
+        background: lighten($cor-principal, 25%);
+        color: $cor-cinza;
+    }
+    ::-moz-selection {
+        background: lighten($cor-principal, 25%);
+        color: $cor-cinza;
+    }
+    //
+    p{
+        padding: $padding-padrao;
+    }
+}
+section a,
+section a:focus,
+section a:visited
+{
+    color: darken($cor-principal, 15%);
+    text-decoration: none;
+}
+section a:hover
+{
+    color: lighten($cor-principal, 20%);
+    text-decoration: underline;
+}
+.section-titulo{
+    font: 2.8em 'Gotham HTF Light';
+    text-transform: uppercase;
+    padding: 15px 0 30px 0;
+}
+.section-subtitulo{
+    font: 1.2em 'Gotham HTF Medium';
+    text-transform: uppercase;
+    padding: $padding-padrao;
+}
+//Bar
+.bar{
+    padding: 5.5em;
+    &:before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        width: 0;
+        height: 0;
+        margin-left: -10px;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        z-index: 9;
+    }
+    &.bar-top:before {
+        top: -20px;
+    }
+    &.bar-bottom:before {
+        bottom: -20px;
+    }
+}
+//Media Query
+@media screen and (min-width: 1400px){//Acima de 1400px
+    .container{
+        width: 60%;
+    }
+}
+@include MQ (L){
+     .section-titulo {
+        font-size: 2.3em;
+    }  
+    section {
+        padding: 2.5em 3.5em 3em 3.5em;
+    }
+}
+@include MQ (M){
+    .container{
+        width: 100%;
+        line-height: 1.6em;
+    }
+     .section-titulo {
+        font-size: 1.8em;
+    }
+    section {
+        padding: 1.2em 1.5em;
+    }
+    .bar {
+        padding: 3em 1.5em;
+    }
+}
+@include MQ (XS){
+    .section-titulo {
+        font-size: 1.3em;
+        padding-bottom: 15px;
+        letter-spacing: -2px;
+        line-height: 1.2em;
+    }
+    .section-subtitulo {
+        font-size: 1em;
+        line-height: 1.3em;
+    }
+}
+

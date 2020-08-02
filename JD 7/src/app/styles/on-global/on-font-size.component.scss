@@ -1,0 +1,65 @@
+on-font-size {
+  display: block;
+  position: fixed;
+  cursor: pointer;
+  height: 35px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 $on-elements-spacing / 2;
+  z-index: 2;
+  opacity: .65;
+  background-color: $on-color-magenta;
+  font-family: 'Gotham HTF Book';
+  text-align: left;
+  line-height: 35px;
+  word-break: break-all;
+  color: #FFF;
+  > div {
+    float: left;
+    transition: all 1s;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border-top: 35px solid transparent;
+    border-right: 10px solid $on-color-magenta;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: -33px;
+    left: -17px;
+    width: 61px;
+    height: 98px;
+    background-image: url('./images/on-global/on-background-font-size-button.png');
+    background-repeat: no-repeat;
+  }
+  @include MQ(M) {
+    &:hover {
+      .on-font-size-message {
+        width: 170px;
+        @include MQ(XL) {
+          width: 200px;
+        }
+      }
+    }
+  }
+  .on-font-size-message {
+    width: 0px;
+    overflow: hidden;
+    span {
+      display: block;
+      width: 170px;
+      padding: 0 5px;
+      @include MQ(XL) {
+        width: 200px;
+      }
+    }
+  }
+}
+

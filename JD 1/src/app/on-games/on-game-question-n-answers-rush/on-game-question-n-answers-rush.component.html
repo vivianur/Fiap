@@ -1,0 +1,50 @@
+<div class="on-game">
+  <div class="on-game-field">
+   <div
+   *ngFor="let question of questions; let i = index"
+   [ngClass]="{'on-game-question': true, 'on-hide': !question.isCurrentQuestion}"
+   >
+     <div class="on-game-question-name">
+       <span class="on-game-question-number">{{ i + 1 }}.</span>
+       <div [innerHTML]="question.name"></div>
+     </div>
+     <div class="on-game-question-tip" *ngIf="question.hasAnsweredSelected === false">
+       <p>Por favor, selecione uma das respostas!</p>
+     </div>
+     <div class="on-game-question-tip" *ngIf="question.tip && question.isAnswer === false">
+       <p><b>Dica: {{ question.tip }}</b> </p>
+     </div>
+      <div class="on-game-question-answers">
+        <div class="on-row" *ngFor="let group of gridQuestions[i]">
+         <div class="on-col on-col-sm on-col-sm-3" *ngFor="let answer of group">
+           <div
+           (click)="selectOption(answer, question.answers)"
+           [ngClass]="{'on-game-option': true, 'on-game-option-selected': answer.selected}"> {{ answer.name }}</div>
+         </div>
+       </div>
+       <div class="on-game-button-send-answer-container">
+         <button (click)="sendAnswer()"class="on-game-button on-game-button-send-answer">Enviar resposta</button>
+       </div>
+       <div class="on-game-result on-game-result-correct" *ngIf="question.isAnswer === true">
+         <p>Parabéns! Você acertou a resposta :)</p>
+       </div>
+       <div class="on-game-result on-game-result-wrong" *ngIf="question.isAnswer === false">
+         <p>Não foi dessa vez :(</p>
+       </div>
+     </div>
+   </div>
+
+   <div class="on-game-question-navigation-previous-next">
+     <button (click)="previousQuestion()" class="on-game-button on-game-question-button-previous"></button>
+     <button (click)="nextQuestion()" class="on-game-button on-game-question-button-next"></button>
+   </div>
+   <ul class="on-game-question-navigation">
+     <li
+     *ngFor="let question of questions"
+     [ngClass]="'on-game-question-navigation-button ' + setClassesToButtonsNavigations(question)"
+     (click)="navigationQuestion(question)"
+     >
+     </li>
+   </ul>
+ </div>
+</div>

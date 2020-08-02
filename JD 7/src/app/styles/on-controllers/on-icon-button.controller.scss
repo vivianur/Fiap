@@ -1,0 +1,68 @@
+
+
+on-icon-button {
+  $transition-time: .5s;
+  display: block;
+  position: fixed;
+  z-index: 3;
+  top: 36px;
+  right: 0;
+  width: 44px;
+  height: 36px;
+  cursor: pointer;
+  transition: width $transition-time, background-color $transition-time;
+  overflow: hidden;
+  @include MQ(M) {
+    right: $on-elements-spacing;
+  }
+  .on-icon-button-icon {
+    $width: 24px;
+    $height: 24px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: $width;
+    height: $height;
+    line-height: 1;
+    color: $on-color-main;
+    margin-top: (-$height) / 2;
+    path, rect {
+      transition: fill $transition-time;
+    }
+    .st0 {
+      fill: transparent;
+    }
+    .st1 {
+      fill: $on-color-magenta;
+    }
+  }
+  .on-icon-button-message {
+    width: 0px;
+    font-family: 'Gotham HTF Bold';
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 0;
+    overflow: hidden;
+    padding: 1px 0 0 10px;
+    line-height: 35px;
+    color: $on-color-magenta;
+    transition: width $transition-time, color $transition-time;
+  }
+  &:hover {
+    width: 255px;
+    background-color: $on-color-magenta;
+    .on-icon-button-icon {
+      .st0 {
+        fill: #FF3366;
+      }
+      .st1 {
+        fill: #000000;
+      }
+    }
+    .on-icon-button-message {
+      width: 255px;
+      color: #000;
+    }
+  }
+}
+

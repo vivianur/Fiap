@@ -1,0 +1,15 @@
+on-read-more-item {
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  .on-read-more-description {
+    margin: $on-elements-spacing 0;
+    text-decoration: underline;
+    color: $on-color-magenta;
+  }
+  .on-read-more-reference {
+    margin-top: $on-elements-spacing;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,173 @@
+$on-color-white: #FFF;
+$on-color-magenta: #cc1b59;
+$on-color-default: #000;
+
+$on-color-gray: #f2f2f2;
+$on-color-gray-component: #e5e5e5;
+
+$on-color-main: null;
+$on-color-main-component: null;
+$on-color-main-light: null;
+$on-color-primary: null;
+$on-color-secondary: null;
+$on-colors-names: null;
+
+$on-colors: (
+  1: (
+    blue: #00eaff,
+    purple: #6907ff,
+    dark-blue: #001441,
+    light: #d9fcff,
+    component: #b8e2e5,
+    primary: #00eaff,
+    secondary: #fff600
+  ),
+  2: (
+    yellow: #fff600,
+    orange: #ff6601,
+    purple: #6c00ff,
+    light: #e9d9ff,
+    component: #cbb8e5,
+    primary: #fff600,
+    secondary: #6a00fb
+  ),
+  3: (
+    orange: #ff6600,
+    yellow: #fff600,
+    blue: #0012ff,
+    light: #d9e3fe,
+    component: #b8bbe5,
+    primary: #fff600,
+    secondary: null
+  ),
+  4: (
+    green: #b4ff00,
+    dark-purple: #150031,
+    purple: #c600ff,
+    light: #f0d9fe,
+    component: #dcb8e5,
+    primary: #b4ff00,
+    secondary: null
+  ),
+  5: (
+    pink: #fc00ff,
+    yellow: #ffba00,
+    purple: #370047,
+    light: #fed9ff,
+    component: #e5b8e5,
+    primary: #ffba00,
+    secondary: #ff0066
+  ),
+  6: (
+    orange: #ff5b00,
+    pink: #fc00ff,
+    purple: #c600ff,
+    light: #ffe8d9,
+    component: #e5c8b8,
+    primary: #ff6600,
+    secondary: #fc00ff
+  ),
+  7: (
+    magenta: #fe0e60,
+    magenta2: #fe0e60,
+    magenta3: #fe0e60,
+    light: #ffe3ec,
+    component: #e3a9bd ,
+    primary: #fe0e60,
+    secondary: #fe0e60
+  )
+);
+
+$on-colors-themes: map-keys($on-colors);
+
+// Function get colors
+@function on-colors($color-name, $color-variant:null) {
+  @if ($color-variant != null) {
+    @return map-get(map-get($on-colors, $color-name), $color-variant);
+  } @else {
+    @return map-get($on-colors, $color-name);
+  }
+}
+
+// Definitions theme color
+$on-color-main-light: on-colors($on-theme-number, light);
+$on-color-main-component: on-colors($on-theme-number, component);
+$on-color-primary: on-colors($on-theme-number, primary);
+$on-color-secondary: on-colors($on-theme-number, secondary);
+$on-colors-names: map-keys(map-get($on-colors, $on-theme-number));
+
+
+// White Placeholders
+
+%background-color-white {
+  background-color: $on-color-white;
+}
+%color-white {
+  color: $on-color-white;
+}
+%border-color-white {
+  border-color: $on-color-white;
+}
+
+// Grays Placeholders
+
+%background-color-gray {
+  background-color: $on-color-gray;
+}
+%background-color-gray-component {
+  background-color: $on-color-gray-component;
+}
+%color-gray {
+  color: $on-color-gray-component;
+}
+%color-gray-component {
+  color: $on-color-gray-component;
+}
+%border-color-gray {
+  border-color: $on-color-gray;
+}
+%border-color-gray-component {
+  border-color: $on-color-gray-component;
+}
+
+// Main Placeholders
+%background-color-main-light {
+  background-color: $on-color-main-light;
+}
+%background-color-main-component {
+  background-color: $on-color-main-component;
+}
+
+%color-main-component {
+  color: $on-color-main-component;
+}
+%border-color-main-component {
+  border-color: $on-color-main-component;
+}
+
+.on-color-magenta {
+  color: $on-color-magenta !important;
+}
+
+.on-color-primary {
+  color: $on-color-primary !important;
+}
+
+.on-color-secondary {
+  color: $on-color-secondary !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

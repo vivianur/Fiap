@@ -1,0 +1,43 @@
+
+//Backgrounds
+.bg-branco-suave{
+    background-color: lighten(#fff,10%);
+}
+.bg-verde-suave{
+    background-color: lighten($cor-principal,40%);
+
+    .box-questao{
+        border: 2px #6CAAA5 dashed;
+    }
+    hr{
+        border: 0;
+        border-bottom: 1px solid rgba(56, 156, 101, 0.42);
+        box-shadow: none;
+    }
+    .box-destaque{
+          margin: 10px 15px !important;
+    }
+
+
+}
+.bg-cinza-suave{
+    background-color: lighten($cor-cinza,70%);
+}
+.bg-destaque{
+    background-color: darken($cor-principal,12%);
+    *{
+        color: #fff;
+    }
+    .accordion-titulo{
+        border-top-color: rgba(#fff, .4);
+    }
+    .accordion-arrow:before,
+    .accordion-arrow:after{
+        background: #fff;
+    }
+}
+
+.bg-capa{
+    background: url(../images/background/bg-capa.jpg) center bottom;
+    background-size: cover;
+}

@@ -1,0 +1,13 @@
+<div class="on-tabs-nav">
+  <ul>
+    <li
+      *ngFor="let tab of tabs;let i = index" id="{{ i + 1 }}"
+      (click)="executeTab(i)"
+      active="0"> {{ tab.getAttribute('title') }} </li>
+  </ul>
+</div>
+<div class="on-tabs-contents">
+  <ng-content select="on-tab"></ng-content>
+</div>
+
+

@@ -1,0 +1,273 @@
+
+table {
+  width: 100%;
+}
+
+.on-table-responsive {
+  max-width: 100%;
+  margin: $on-elements-spacing 0;
+  overflow: auto;
+}
+
+.on-table {
+  td, th {
+    padding: $on-elements-spacing / 2;
+    border: solid 2px transparent;
+    text-align: left;
+    background-color: transparent;
+  }
+
+  thead {
+    color: #FFF;
+    font-family: 'Gotham HTF Medium';
+    background-color: $on-color-magenta;
+    td, th {
+      border-color: $on-color-magenta;
+      &:not(:last-child) {
+        border-right-color: #FFF;
+      }
+    }
+  }
+
+  tfoot {
+    td {
+      padding: 0;
+      padding-top: $on-elements-spacing / 2;
+      font-size: 14px;
+    }
+  }
+}
+
+%tbody-simple-hover {
+  tbody {
+    tr:hover {
+      td {
+        position: relative;
+        &:first-child {
+          border-left: 2px solid $on-color-magenta;
+        }
+        &:before {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background: url('./images/on-global/on-image-pattern-large.png') repeat-x;
+        }
+      }
+    }
+  }
+}
+
+.on-table.on-table-primary {
+  @extend %tbody-simple-hover;
+}
+
+.on-table.on-table-secondary {
+  tbody {
+    td:first-child {
+      font-family: 'Gotham HTF Bold';
+    }
+    tr:hover {
+      td:first-child {
+        background: linear-gradient(to right, $on-color-magenta, #a5a8ac);
+        border-left-color: transparent;
+        color: #FFF;
+      }
+    }
+  }
+}
+
+.on-table.on-table-tertiary {
+  thead {
+    tr:not(:first-child) {
+      color: #000;
+    }
+  }
+  @extend %tbody-simple-hover;
+}
+
+.on-background-color-white {
+  .on-table {
+    tbody {
+      tr, td {
+        @extend %border-color-gray;
+      }
+    }
+  }
+  .on-table.on-table-primary {
+    tbody {
+      tr:nth-child(2n+0) {
+        @extend %background-color-gray;
+        td {
+          border-right-color: $on-color-white;
+          &:last-child {
+            @extend %border-color-gray;
+          }
+        }
+      }
+    }
+  }
+  .on-table.on-table-secondary {
+    tbody {
+      tr td:first-child {
+        @extend %background-color-gray;
+      }
+      tr:hover {
+        td:first-child {
+          background: linear-gradient(to right, $on-color-magenta, $on-color-gray-component);
+        }
+      }
+    }
+  }
+  .on-table.on-table-tertiary {
+    thead {
+      tr:not(:first-child) {
+        @extend %background-color-gray;
+        td, th {
+          @extend %border-color-gray;
+          &:not(:last-child) {
+            border-right-color: $on-color-white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.on-background-color-gray {
+  .on-table {
+    tbody {
+      tr, td {
+        @extend %border-color-gray-component;
+      }
+    }
+  }
+  .on-table.on-table-primary {
+    tbody {
+      tr:nth-child(2n+0) {
+        background-color: #dbdbdb;
+        td {
+          border-right-color: $on-color-gray-component;
+          &:last-child {
+            @extend %border-color-gray-component;
+          }
+        }
+      }
+    }
+  }
+  .on-table.on-table-secondary {
+    tbody {
+      tr td:first-child {
+        background-color: #dbdbdb;
+      }
+      tr:hover {
+        td:first-child {
+          background: linear-gradient(to right, $on-color-magenta, $on-color-gray-component);
+        }
+      }
+    }
+  }
+  .on-table.on-table-tertiary {
+    thead {
+      tr:not(:first-child) {
+        background-color: #dbdbdb;
+        td, th {
+          @extend %border-color-gray-component;
+          &:not(:last-child) {
+            @extend %border-color-gray-component;
+          }
+        }
+      }
+    }
+  }
+}
+
+.on-background-color-main-light {
+  .on-table {
+    tbody {
+      tr, td {
+        @extend %border-color-main-component;
+      }
+    }
+  }
+  .on-table.on-table-primary {
+    tbody {
+      tr:nth-child(2n+0) {
+        @extend %background-color-main-component;
+        td {
+          border-right-color: darken($on-color-main-light, 5%);
+          &:last-child {
+            @extend %border-color-main-component;
+          }
+        }
+      }
+    }
+  }
+  .on-table.on-table-secondary {
+    tbody {
+      tr td:first-child {
+        @extend %background-color-main-component;
+      }
+      tr:hover {
+        td:first-child {
+          background: linear-gradient(to right, $on-color-magenta, $on-color-main-component);
+        }
+      }
+    }
+  }
+  .on-table.on-table-tertiary {
+    thead {
+      tr:not(:first-child) {
+        @extend %background-color-main-component;
+        td, th {
+          @extend %border-color-main-component;
+          &:not(:last-child) {
+            border-right-color: darken($on-color-main-light, 5%);
+          }
+        }
+      }
+    }
+  }
+}
+
+.on-section-dark {
+  .on-table {
+    tbody {
+      tr, td {
+        @extend %border-color-white;
+      }
+    }
+  }
+  .on-table.on-table-primary {
+    tbody {
+      tr:nth-child(2n+0) {
+        background-color: darken($on-color-primary, 10%);
+        td {
+          border-right-color: $on-color-white;
+          &:last-child {
+            background-color: darken($on-color-primary, 10%);
+          }
+        }
+      }
+    }
+  }
+  .on-table.on-table-secondary {
+    tbody {
+      tr td:first-child {
+        background-color: darken($on-color-primary, 10%);
+      }
+      tr:hover {
+        td:first-child {
+          background: linear-gradient(to right, $on-color-magenta, $on-color-gray-component);
+        }
+      }
+    }
+  }
+}
+
+
+
+
+

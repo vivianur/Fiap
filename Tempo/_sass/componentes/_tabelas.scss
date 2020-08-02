@@ -1,0 +1,312 @@
+table{
+    width: 100%;
+    margin: $margin-padrao;
+    font-family: 'Gotham HTF Book';
+    //
+    th,
+    td{
+        padding: 10px;
+    }
+}
+
+//Tabela Responsiva
+.tabela-responsiva {
+    margin: 20px 0;
+    min-height: .01%;
+    overflow-x: auto;
+
+    *{
+        margin: 0 !important;
+    }
+}
+
+//Tabela Clean
+.tabela-clean thead th,
+.tabela-clean th{
+    border-bottom: 4px solid rgba($cor-cinza, .1);
+    color: $cor-principal;
+    font-family: 'Gotham HTF Medium';
+    line-height: 1.4em;
+    vertical-align: top;
+    text-transform: uppercase;
+    text-align: left;
+}
+.tabela-clean tbody {
+    tr {
+        border: 0px;
+        border-bottom: solid 2px lighten($cor-cinza,60%);
+    }
+    tr:nth-child(2n + 1) {
+        background-color: rgba($cor-cinza, 0.07);
+    }
+}
+
+//Tabela colorida
+.tabela-colorida{
+    thead th{
+        border-bottom: 4px solid rgba($cor-principal, .3);
+        border-top: 4px solid rgba($cor-principal, .4);
+        font-family: 'Gotham HTF Medium';
+        text-align: left;
+    }
+    tbody{
+        td:first-child{
+            background-color: rgba($cor-principal, .2);
+        }
+        tr{
+            border-bottom: 2px dashed rgba($cor-cinza, .3);
+        }
+        tr:last-child{
+            border-bottom: 0px;
+        }
+    }
+}
+
+//Tabela de Processos
+.tabela-processo{
+    position: relative;
+    margin-top: 40px;
+    line-height: 1em;
+    //
+    &:before{
+        background: url('../images/seta-processo.svg') 0 0 no-repeat;
+        content: "";
+        width: 13px;
+        height: 17px;
+        position: absolute;
+        top: -23px;
+        right: -2px;
+    }
+    th {
+        border: 1px solid transparent;
+        color: #fff;
+        font-family: 'Gotham HTF Bold';
+        position: relative;
+
+        &:before{
+            height: 3px;
+            width: 100%;
+            position: absolute;
+            top: -17px;
+            left:0;
+            content: "";
+        }
+    }
+    td {
+        border: 0px;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+        font-size: 0.8em;
+        padding: 0px !important;
+
+        ol {
+            padding: 0px;
+
+            li{
+                padding: 10px;
+                list-style-position: inside;
+            }
+
+        }
+    }
+
+}
+.bg-cinza-suave .tabela-processo{
+    td {
+        border-left: 1px solid lighten($cor-cinza,70%)!important;
+        border-right: 1px solid lighten($cor-cinza, 70%) !important;
+    }
+}
+//TH
+.tabela-processo th:nth-child(1),
+.tabela-processo th:nth-child(2),
+.tabela-processo th:nth-child(3){
+    width:33%;
+}
+.tabela-processo th:nth-child(1),
+.tabela-processo th:nth-child(1)::before
+{
+    background-color: lighten($cor-principal, 8%);
+}
+.tabela-processo th:nth-child(2),
+.tabela-processo th:nth-child(2)::before
+{
+    background-color: lighten($cor-adjust-hue-1, 5%);
+}
+.tabela-processo th:nth-child(3),
+.tabela-processo th:nth-child(3)::before
+{
+    background-color: darken($cor-adjust-hue-2, 8%);
+}
+//TD
+.tabela-processo{
+    td:nth-child(1){
+        background-color: rgba($cor-principal, .3);
+    }
+    td:nth-child(2){
+        background-color: rgba($cor-adjust-hue-1, .3);
+    }
+    td:nth-child(3){
+        background-color: rgba($cor-adjust-hue-2, .5);
+    }
+    //ATIVO
+    tr td:nth-child(1) ol li.ativo {
+        background-color: darken($cor-principal, 5%);
+        color: #fff;
+    }
+    tr td:nth-child(2) ol li.ativo {
+        background-color: darken($cor-adjust-hue-1, 5%);
+        color: #fff;
+    }
+    tr td:nth-child(3) ol li.ativo {
+        background-color: darken($cor-adjust-hue-2, 15%);
+        color: #fff;
+    }
+}
+//Tabela de Processos Mobile
+.tabela-processo-mobile{
+    display: none;
+    //
+    tr th{
+        color: #fff;
+    }
+    tr td{
+        font-size: 1em;
+        line-height: 1.5em;
+        padding: 15px;
+    }
+    ol li{
+        padding: 3px 0;
+    }
+    //TR TH
+    tr:nth-child(1) > th{
+        background-color: lighten($cor-principal, 8%);
+    }
+    tr:nth-child(3) > th{
+        background-color: lighten($cor-adjust-hue-1, 5%);
+    }
+    tr:nth-child(5) > th{
+        background-color: darken($cor-adjust-hue-2, 8%);
+    }
+    //TR TD
+    tr:nth-child(2) > td{
+        background-color: rgba($cor-principal, .3);
+    }
+    tr:nth-child(4) > td{
+        background-color: rgba($cor-adjust-hue-1, .3);
+    }
+    tr:nth-child(6) > td{
+        background-color: rgba($cor-adjust-hue-2, .5);
+    }
+}
+
+//Lista de Processos.
+.list-processos{
+    .item{
+        display: none;
+        padding-top: 10px;
+    }
+    //
+    &.entradas h3.titulo-list-processos{
+        border-color: darken($cor-principal, 5%);
+    }
+    &.tecnicas h3.titulo-list-processos{
+        border-color: darken($cor-adjust-hue-1, 5%);
+    }
+    &.saidas h3.titulo-list-processos{
+        border-color: darken($cor-adjust-hue-2, 15%);
+    }
+}
+h3.titulo-list-processos{
+    border-left-width: 7px;
+    border-left-style: solid;
+    padding-left: 10px;
+    font-size: 1.3em;
+}
+//Tabela Fluida.
+.tabela-fluida{
+    width: 100%;
+    max-width: 100%;
+    margin: $margin-padrao;
+    border: 1px solid rgba($cor-cinza, .2);
+    //
+    > thead,
+    > tbody{
+        > tr {
+            border-bottom: 1px solid rgba($cor-cinza, .2);
+            > th{
+                border-bottom: 1px solid rgba($cor-cinza, .2);
+                color: saturate($cor-principal, 10%);
+                font-family: "Gotham HTF Bold";
+                text-align: left;
+            }
+            > td {
+                text-align: left;
+                padding: 10px;
+                vertical-align: top;
+                border-left: 1px solid rgba($cor-cinza, .2);
+            }
+        }
+    }
+}
+
+//Media Query.
+@media screen and (max-width: 768px) {//Até 768px
+    .tabela-fluida-vertical {
+        > .tabela-fluida {
+            border: 0;
+            > thead{
+                display: none;
+            }
+            > tbody {
+                display: block;
+                > tr {
+                    display: block;
+                    border: 1px solid rgba($cor-cinza, .2);
+                    //
+                    > td {
+                        display: block;
+                        vertical-align: middle;
+                    }
+                    > td[data-title]:before {
+                        color: saturate($cor-principal, 10%);
+                        content: attr(data-title);
+                        display: block;
+                        width: 100%;
+                        font:{
+                            family: "Gotham HTF Bold";
+                            size: inherit;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 480px){//Até 480px
+    .tabela-responsiva {
+        border: 1px solid rgba($cor-cinza, .2);
+    }
+    .tabela-processo{
+        display: none;
+    }
+    .tabela-processo-mobile{
+        display: block;
+    }
+    //Lista de Processos.
+    .list-processos{
+        .item{
+            display: block;
+        }
+        //
+        &.entradas h3.titulo-list-processos{
+            border-color: lighten($cor-principal, 8%);
+        }
+        &.tecnicas h3.titulo-list-processos{
+            border-color: lighten($cor-adjust-hue-1, 5%);
+        }
+        &.saidas h3.titulo-list-processos{
+            border-color: darken($cor-adjust-hue-2, 8%);
+        }
+    }
+}

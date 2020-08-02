@@ -1,0 +1,21 @@
+%on-col {
+  width: 100%;
+  min-height: 1px;
+  padding: 0 $on-grid-spacing;
+
+  @include MQL(M) {
+    &:empty {
+      display: none;
+    }
+  }
+
+  > * {
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+

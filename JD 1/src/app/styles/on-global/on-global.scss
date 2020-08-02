@@ -1,0 +1,86 @@
+$on-grid-columns: 12;
+$on-elements-spacing: 20px;
+
+::selection {
+  background-color: $on-color-magenta !important;
+  color: #FFF;
+  cursor: text;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  &:focus {
+    outline: none;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, .125);
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, .25);
+}
+@include MQ(S) {
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+body {
+  min-width: 320px;
+  background-color: #FFF;
+  font-family: 'Gotham HTF Book';
+  color: $on-color-default;
+  line-height: 22px;
+  font-size: 16px;
+  padding-top: 36px;
+  overflow-x: hidden;
+  @include MQ(M) {
+    padding-top: 0;
+  }
+  @include MQ(XL) {
+    font-size: 18px;
+  }
+  &::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: #610725;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #ED145B;
+    border-radius: 7px;
+  }
+}
+
+sub,
+sup {
+  padding-right: 5px;
+}
+
+sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+
+sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+
+.clear-fix {
+  clear: both;
+}
+
+.on-hide {
+  display: none;
+}
+
+

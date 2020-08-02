@@ -1,0 +1,106 @@
+
+on-code-box {
+  position: relative;
+  display: block;
+  background-color: transparent;
+  border: solid 2px transparent;
+  border-left: 0;
+  margin: $on-elements-spacing 0;
+  .on-code-box-nav {
+    position: absolute;
+    width: 100%;
+    padding: 0 $on-elements-spacing / 2;
+    max-height: 0;
+    top: 0;
+    left: 0;
+    font-size: 0;
+    background-color: rgba(14, 14, 14, 0.6);
+    transition: max-height .5s, padding .5s;
+    z-index: 1;
+    button {
+      overflow: hidden;
+      max-height: 0;
+      padding: 0;
+      font-family: 'Gotham HTF Medium';
+      text-transform: uppercase;
+      font-size: 12px;
+      color: $on-color-white;
+      cursor: pointer;
+      outline: none;
+      transition: max-height .5s, padding .5s;
+    }
+    .on-code-box-nav-button {
+      padding: 0 $on-elements-spacing / 2;
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+    .on-code-box-nav-button-active {
+      font-family: 'Gotham HTF Bold';
+    }
+    .on-code-button {
+      position: relative;
+      font-family: 'Gotham HTF Book';
+      float: right;
+      &:after {
+        content: '\e900';
+        font-family: 'ON Icons';
+        color: $on-color-magenta;
+        right: 0;
+        top: 0;
+      }
+    }
+  }
+  &:hover {
+    .on-code-box-nav {
+      padding: $on-elements-spacing / 2;
+      max-height: 35px;
+      button {
+        max-height: 35px;
+      }
+    }
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    width: $on-elements-spacing / 2;
+    height: 100%;
+    background: url(./images/on-global/on-image-pattern-vertical.svg);
+    background-repeat: repeat;
+    left: 0;
+  }
+}
+
+.on-background-color-white {
+  on-code-box {
+    @extend %border-color-gray;
+    &:before {
+      @extend %background-color-gray;
+    }
+  }
+}
+
+.on-background-color-gray {
+  on-code-box {
+    @extend %border-color-gray-component;
+    &:before {
+      @extend %background-color-gray-component;
+    }
+  }
+}
+
+.on-background-color-main-light {
+  on-code-box {
+    @extend %border-color-main-component;
+    &:before {
+      @extend %background-color-main-component;
+    }
+  }
+}
+
+
+
+

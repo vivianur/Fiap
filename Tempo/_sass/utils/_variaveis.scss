@@ -1,0 +1,25 @@
+//Cores FIAP.
+$cor-amarelo: rgb(201, 163, 118);
+$cor-azul: rgb(42, 58, 117);
+$cor-cinza: #303030;
+$cor-laranja: rgb(233, 106, 49);
+$cor-laranja-opaco: #f2594b;
+$cor-magenta: #e8314d;
+$cor-rosa: rgb(206, 57, 120);
+$cor-roxo: rgb(126, 56, 156);
+$cor-verde: #accfcc;
+$cor-vermelho: rgb(195, 29, 16);
+$cor-vermelho-opaco: #ca4654;
+$cor-vinho: #713348;
+
+//Cor principal.
+$cor-principal: $cor-vermelho-opaco;//Inserir a cor do tema
+
+//Cores adjust hue.
+$cor-adjust-hue-1: adjust-hue($cor-principal, 40deg);
+$cor-adjust-hue-2: adjust-hue($cor-principal, 210deg);
+
+//Padding e margin principal.
+$padding-padrao: 10px 0;
+$margin-padrao: 10px 0;
+

@@ -1,0 +1,37 @@
+//Ol
+ol {
+    padding-left: 20px;
+}
+
+//Lista padrão
+ul.lista{
+    list-style-type: none;
+    padding: 0px;
+    margin: $margin-padrao;
+    line-height: 21px;
+    margin-bottom: 20px;
+    //
+    li {
+        position: relative;
+        list-style: none;
+        padding-left: 14px;
+        padding: 10px 0 10px 26px;
+        margin-left: 0;
+
+        &:before{
+            color: $cor-principal;
+            content: "\e115";
+            position: absolute;
+            left:0;
+            font-family: "icomoon";
+        }
+
+    }
+    ul li{
+        color: $cor-principal;
+        background-image: none;
+        list-style-type: disc;
+        padding-left: 0px;
+        margin-left: 14px;
+    }
+}

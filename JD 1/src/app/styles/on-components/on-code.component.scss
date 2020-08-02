@@ -1,0 +1,14 @@
+on-code {
+  display: block;
+  color: $on-color-default;
+}
+
+pre[class*="language-"] {
+  width: 100%;
+  padding: $on-elements-spacing;
+}
+
+code[class*="language-"], pre[class*="language-"] {
+  margin: 0;
+  background-color: transparent;
+}

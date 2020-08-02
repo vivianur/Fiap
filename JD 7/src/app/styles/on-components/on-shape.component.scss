@@ -1,0 +1,50 @@
+on-shape{
+  display: none;
+  position: relative;
+  @include MQ(M) {
+    display: block;
+  }
+  .on-shape {
+    position: absolute;
+    object {
+      margin: 0;
+      cursor: default;
+    }
+  }
+  &.on-shape-theme-1{
+    &.blue{ fill: #004fff;}
+    &.blue-light{ fill: #00eaff;}
+  }
+  &.on-shape-theme-4{
+    &.green{ fill: #b4ff00;}
+  }
+  &.on-shape-theme-5{
+    &.lilac{ fill: #fb00ff;}
+    &.purple{ fill: #c500ff;}
+    &.yellow{ fill: #fff601;}
+  }
+  &.on-shape-theme-2, &.on-shape-theme-3, &.on-shape-theme-6{
+    &.blue-purple{ fill:#6b00fe;}
+  }
+  &.on-shape-theme-2, &.on-shape-theme-3, &.on-shape-theme-4, &.on-shape-theme-5, &.on-shape-theme-6{
+    &.magenta{ fill: #ff0066; }
+  }
+  &.on-shape-theme-2, &.on-shape-theme-3, &.on-shape-theme-5, &.on-shape-theme-6{
+    &.orange{ fill:#ff6600;}
+  }
+  &.on-shape-theme-2, &.on-shape-theme-3, &.on-shape-theme-6{
+    &.yellow{ fill: #fff600;}
+  }
+  &.on-shape-theme-1, &.on-shape-theme-4, &.on-shape-theme-6{
+    &.lilac{ fill: #fc00ff;}
+  }
+  &.on-shape-theme-1, &.on-shape-theme-2, &.on-shape-theme-3, &.on-shape-theme-4, &.on-shape-theme-6{
+    &.purple{ fill: #c600ff;}
+  }
+  &.on-shape-theme-1, &.on-shape-theme-4,{
+    &.blue-purple{ fill: #6c00ff;}
+  }
+  &.on-shape-theme-1, &.on-shape-theme-3{
+    &.blue-dark{ fill: #0012ff;}
+  }
+}

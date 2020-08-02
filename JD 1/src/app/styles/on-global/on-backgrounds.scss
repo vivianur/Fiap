@@ -1,0 +1,38 @@
+.on-background-color-white {
+  background-color: $on-color-white;
+}
+
+.on-background-color-gray {
+  @extend %background-color-gray;
+}
+
+.on-background-color-main-light {
+  @extend %background-color-main-light;
+}
+
+@for $i from 1 through 3 {
+  .on-background-color-#{nth($on-colors-names, $i)} {
+    background-color: on-colors($on-theme-number, nth($on-colors-names, $i))
+  }
+}
+
+
+%on-background-shapes {
+  background-position: center top;
+  background-repeat: repeat-y;
+}
+
+@for $i from 1 through 3 {
+  .on-background-color-main-light.on-background-shapes-#{$i} {
+    @extend %on-background-shapes;
+    @if($on-theme-number != 7) {
+      background-image: url('./images/on-global/themes/#{$on-theme-number}/on-background-shapes-main-#{$i}.gif');
+    }
+  }
+  .on-background-color-gray.on-background-shapes-#{$i} {
+    @extend %on-background-shapes;
+    @if($on-theme-number != 7) {
+      background-image: url('./images/on-global/themes/#{$on-theme-number}/on-background-shapes-gray-#{$i}.gif');
+    }
+  }
+}

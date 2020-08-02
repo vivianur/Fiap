@@ -1,0 +1,53 @@
+<div class="on-content-switch-content" *ngIf="justHas !== 'prev'">
+  <!-- Se tiver figure no componente -->
+  <div class="on-row" *ngIf="figure">
+    <div class="on-col-sm-6">
+      <span class="on-content-switch-content-label">Capítulo {{ chapter }}</span>
+      <ng-container *ngTemplateOutlet="content"></ng-container>
+    </div>
+    <div class="on-col-sm-6 on-content-switch-next">
+      <img [src]="figure" alt="Próximo capítulo" title="Próximo capítulo">
+    </div>
+  </div>
+  <!-- Se não tiver figure no componente -->
+  <div class="on-row" *ngIf="!figure">
+    <div class="on-col-sm-12">
+      <span class="on-content-switch-content-label">Capítulo {{ chapter }}</span>
+      <ng-container *ngTemplateOutlet="content"></ng-container>
+    </div>
+  </div>
+</div>
+<ng-template #content><ng-content></ng-content></ng-template>
+<!-- Normal -->
+<div class="on-content-switch-buttons-container" *ngIf="justHas !== 'next' && justHas !== 'prev'">
+  <div class="on-row">
+    <div class="on-col-xs-6">
+      <a class="on-content-switch-buttons-previous" href="#" (click)="prevContent()">
+        <div class="on-arrow on-arrow-left"></div>
+        <div class="on-content-switch-buttons-text">Capítulo<br> anterior</div>
+      </a>
+    </div>
+    <div class="on-col-xs-6">
+      <a class="on-content-switch-buttons-next" href="#" (click)="nextContent()">
+        <div class="on-content-switch-buttons-text">Próximo<br> capítulo</div>
+        <div class="on-arrow on-arrow-right"></div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Tem apenas botão next -->
+<div class="on-content-switch-buttons-container" *ngIf="justHas === 'next'">
+  <a class="on-content-switch-buttons-next" href="#" (click)="nextContent()">
+    <div class="on-content-switch-buttons-text">Próximo<br> capítulo</div>
+    <div class="on-arrow on-arrow-right"></div>
+  </a>
+</div>
+
+<!-- Tem apenas botão prev -->
+<div class="on-content-switch-buttons-container" *ngIf="justHas === 'prev'">
+  <a class="on-content-switch-buttons-previous" href="#" (click)="prevContent()">
+    <div class="on-arrow on-arrow-left"></div>
+    <div class="on-content-switch-buttons-text">Capítulo<br> anterior</div>
+  </a>
+</div>

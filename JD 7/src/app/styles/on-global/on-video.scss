@@ -1,0 +1,117 @@
+.on-video-container {
+  display: block;
+  position: relative;
+  height: 0;
+  padding-bottom: 56%;
+  margin: $on-elements-spacing 0;
+  overflow: hidden;
+}
+
+.on-video-container iframe,
+.on-video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.on-video-fullscreen {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.on-background-video {
+  $themes: (
+    fonts1: (
+      1: 'Alianza Italic 700',
+      2: 'Metronic Slab Pro Bold',
+      3: 'Metronic Slab Pro Light',
+      4: 'Metronic Slab Pro Black',
+      5: 'Playfair Display Bold',
+      6: 'Gotham HTF Ultra',
+      7: 'Gotham HTF Bold'
+    ),
+    fonts2: (
+      1: 'Alianza Italic 300',
+      2: 'Alianza Script 700',
+      3: 'Metronic Slab Pro Regular',
+      4: 'Metronic Slab Pro Regular',
+      5: 'Roboto Light',
+      6: 'Gotham HTF Book',
+      7: 'Gotham HTF Book'
+    )
+  );
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include MQ(S) {
+    background-size: auto 100%;
+  }
+  span:nth-child(1), span:nth-child(2), div:nth-child(1), div:nth-child(2) {
+    font-family: map-get(map-get($themes, fonts1), $on-theme-number);
+  }
+  span:nth-child(3), div:nth-child(3) {
+    font-family: map-get(map-get($themes, fonts2), $on-theme-number);
+  }
+  &-highlight-1 {
+    $bgColors: (
+      1: #000327,
+      2: #281902,
+      3: #00086b,
+      4: #1f0f2e,
+      5: #380047,
+      6: #260f01,
+      7: #fe0e60
+    );
+    background-image: url('./images/on-global/themes/#{$on-theme-number}/mobile/on-background-video-1.jpg');
+     @include MQ(S) {
+      background-image: url('./images/on-global/themes/#{$on-theme-number}/on-background-video-1.jpg');
+      background-color: map-get($bgColors, $on-theme-number);
+     }
+  }
+  &-highlight-2 {
+    $bgColors: (
+      1: #970099,
+      2: #970099,
+      3: #550248,
+      4: #350180,
+      5: #e4a701,
+      6: #5a2400,
+      7: #fe0e60
+    );
+    background-image: url('./images/on-global/themes/#{$on-theme-number}/mobile/on-background-video-2.jpg');
+    @include MQ(S) {
+      background-image: url('./images/on-global/themes/#{$on-theme-number}/on-background-video-2.jpg');
+      background-color: map-get($bgColors, $on-theme-number);
+    }
+    @if $on-theme-number == '2' {
+      .on-color-primary {
+        color: #fff600
+      }
+    }
+  }
+}
+
+.on-video-highlight-container {
+  position: relative;
+  h1 {
+    margin: 0;
+    @include MQ(M) {
+      position: absolute;
+      z-index: 1;
+    }
+    span, div {
+      display: inline;
+      @include MQ(M) {
+        display: block;
+      }
+    }
+  }
+  .on-video-container {
+    @include MQ(M) {
+      width: 90%;
+      float: right;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+on-section-content {
+  display: block;
+  padding: $on-elements-spacing * 2;
+  max-width: 940px;
+  margin: 0 auto;
+  @include MQ(M) {
+    padding: $on-elements-spacing * 6 0;
+  }
+  > * {
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

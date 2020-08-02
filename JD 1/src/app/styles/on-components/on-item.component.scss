@@ -1,0 +1,27 @@
+on-item {
+  display: block;
+  margin: $on-elements-spacing 0;
+  .on-item-title {
+    color: $on-color-magenta;
+    padding-bottom: $on-elements-spacing / 2;
+    font-size: 2rem;
+  }
+  .on-item-content {
+    * {
+      &:first-child {
+        margin-top: 0;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.on-item-float {
+  .on-item-title {
+    padding: 0 $on-elements-spacing / 2 0 0;
+    float: left;
+  }
+}
+

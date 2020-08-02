@@ -1,0 +1,42 @@
+//Ol
+ol.lista, ol {
+    padding-left: 20px;
+    li {
+        margin: 15px 0;
+    }
+}
+//Lista padrão
+ul{
+    padding: 0px;
+    margin: $margin-padrao;
+    &.lista{
+        list-style-type: none;
+        //
+        li {
+            position: relative;
+            list-style: none;
+            padding: 10px 0 10px 26px;
+            margin-left: 0;
+
+            &:before{
+                color: $cor-principal;
+                content: "\e115";
+                position: absolute;
+                left:0;
+                font-family: "icomoon";
+            }
+            ul li{
+                color: $cor-principal;
+                background-image: none;
+                list-style-type: disc;
+                padding-left: 0px;
+                margin-left: 14px;
+                &:before{
+                    content: "";
+                }
+            }
+        }
+        
+    }
+}
+

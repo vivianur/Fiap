@@ -1,0 +1,302 @@
+.dinamica {
+    // background: lighten($cor-cinza,70%);
+    margin: $margin-padrao;
+}
+
+// New Styles
+
+.drag-holder,
+.drop-holder {
+    width: 60px;
+    height: 45px;
+    border-radius: 5px;
+    display: block;
+}
+
+.drag-holder{
+    border: 2px dashed #ccc;
+}
+
+.drop-holder{
+    position:relative;
+    z-index:999;
+    box-shadow: inset 0px 0px 10px 0px rgba(117,114,114,0.4);
+}
+
+.drag-holder,
+.drop-wrap {
+    margin-bottom: 10px;
+}
+
+.drag-me {
+    width: 60px;
+    height: 45px;
+    margin-top:-2px;
+    margin-left:-1px;
+    cursor: move;
+    border-radius:5px;
+    background-color:#f8f8f8;
+    font-family: 'Gotham HTF Light';
+    box-shadow: 0 2px 0 1px rgba(117, 114, 114, 0.4);
+    z-index:1000;
+    p { font-size:14px; }
+    &.ui-draggable-disabled {
+        cursor: default;
+        box-shadow:none;
+        z-index:998;
+        border: 3px solid #22ca48;
+    }
+}
+
+.drop-wrap {
+    .drop-holder {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    .drop-holder.correct { border: 3px solid #22ca48; }
+    .drop-holder.wrong { border: 3px solid #ca2233; }
+    h4 {
+        line-height: 50px;
+        margin: 0;
+        font-size:1.3em;
+        font-family: 'Gotham HTF Bold';
+        margin-left: 100px;
+        text-transform: uppercase;
+    }
+}
+
+// New Styles
+
+//Dinamica 01
+.correto { background-color: rgb(201, 215, 202); }
+.ja-digitou { background-color: rgb(244, 203, 203); }
+
+.game_finished { display: none; }
+
+.dinamica02{
+    display: block !important;
+    padding: 0 !important;
+    li { list-style-type: none; }
+}
+
+.entrada-lincar{
+    display: table;
+    input {
+        color: #303030;
+        float: left;
+        margin-right: 1em;
+        font-size: 20px;
+        text-align: center;
+        border: 1px solid #CCC;
+        outline-color: $cor-principal;
+    }
+    label {
+        line-height: 1.3em;
+        display: table;
+    }
+}
+
+.game_finished{
+    .titulo-ganhou {
+        width: 60%;
+    }
+}
+
+.game-container.dnd {
+    -webkit-box-shadow: 0 0 40px 0 rgba(0, 51, 21, 0.38);
+    -moz-box-shadow: 0 0 40px 0 rgba(0, 51, 21, 0.38);
+    box-shadow: 0 0 40px 0 rgba(0, 51, 21, 0.38);
+    width: 100%;
+    margin: 0 auto 40px;
+    min-height: 640px;
+    padding: 25px;
+    background: #ffffff;
+}
+
+.box-questao {
+    line-height: 2em;
+    margin: 0 auto;
+    border: #ccc dashed 4px;
+    padding: 20px 30px 20px 55px;
+    margin-bottom: 30px;
+}
+
+.legenda-dinamica {
+    margin-top: 150px;
+    margin-left:15px;
+    p { line-height: 10px; }
+}
+
+.break-space {
+    min-height: 6em;
+    width: 100%;
+}
+
+.um:before,
+.dois:before,
+.tres:before,
+.quatro:before,
+.cinco:before{
+    position: absolute;
+    height:45px;
+    line-height:45px;
+    width:100%;
+    text-align:center;
+    color:#909090;
+    font-size: 20px;
+    font-family: 'Gotham HTF Medium';
+}
+
+.um:before { content: '1' }
+.dois:before { content: '2' }
+.tres:before { content: '3' }
+.quatro:before { content: '4' }
+.cinco:before { content: '5' }
+
+.game_finished { display: none; }
+
+.seta {
+    position: absolute;
+    left: 190px;
+    top: 220px;
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+}
+
+.questao{
+    position: relative;
+    font-family: "Gotham HTF Medium";
+    font-size: 1.3em;
+    line-height: 1.3em;
+    border-left: $cor-principal 4px solid;
+    padding: 10px 0 10px 18px;
+    margin: 20px 0;
+
+    &:before {
+        position: absolute;
+        content: '';
+        border-left: 0 solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 15px solid $cor-principal;
+        top: 0;
+        left: -1px;
+    }
+
+}
+
+.animate {
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+}
+
+.action-button {
+    position: relative;
+    padding: 12px 30px;
+    margin: 10px 0;
+    float: left;
+    font-family: 'Gotham HTF Bold';
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+    color: #FFF;
+    text-decoration: none;
+
+    &:active
+    {
+        transform: translate(0px,5px);
+        -webkit-transform: translate(0px,5px);
+        border-bottom: 1px solid;
+    }
+
+    background-color: $cor-principal;
+    border: 0px;
+    text-shadow: 0px -2px $cor-principal;
+}
+
+.mensagem-dinamica{display: none;}
+
+
+
+.bg-cinza-suave{
+    .dinamica {
+        background: rgba($cor-cinza, 0.1);
+    }
+    .btn-print{
+        background-color: rgba($cor-cinza, .1);
+    }
+    .dinamica {
+        background: rgba($cor-cinza, 0.2);
+    }
+}
+
+.btn-print {
+    padding: 5px;
+    font-size: 13px;
+    color: darken($cor-principal, 2%);
+    border: 1px solid rgba($cor-cinza, .14);
+    background-color: rgba($cor-cinza, .14);
+    float: right;
+    cursor: pointer;
+
+    &:hover {
+        color: #fff;
+        background-color: $cor-principal;
+        border-color: $cor-principal;
+    }
+    &:hover i.icon-disk::before{
+        color: #fff;
+    }
+}
+
+.dinamica-titulo {
+    font-size: 1.2em;
+    line-height: 1.2em;
+    margin-bottom: 20px;
+}
+.dinamica input,
+.dinamica textarea {
+    width: 100%;
+    color: $cor-cinza;
+    background-color: transparent;
+    padding: 10px;
+    border: 1px solid rgba($cor-cinza, .3);
+    font-size: 1em;
+}
+.dinamica textarea {
+    min-height: 150px;
+}
+
+//Ícone de Salvar.
+i.icon-disk::before {
+    content: "\e962";
+    font: 1.1em 'icomoon';
+    color: darken($cor-principal, 2%);
+    margin-right: 3px;
+}
+
+//Placeholder.
+::-webkit-input-placeholder {
+    color:rgba($cor-cinza, .6);
+}
+::-moz-placeholder {
+    color:rgba($cor-cinza, .6);
+} /* firefox 19+ */
+:-ms-input-placeholder {
+    color:rgba($cor-cinza, .6);
+} /* ie */
+input:-moz-placeholder {
+    color:rgba($cor-cinza, .6);
+}
+
+@media (max-width:1000px){
+    //.dinamicas{display: none;}
+    .mensagem-dinamica{display: block;}
+}
+
+@media (max-width: 480px) {
+    .drop-holder h4 {
+        font-size:.8em;
+        margin-left:80px;
+    }
+}

@@ -1,0 +1,138 @@
+on-col-float {
+  display: block;
+  position: relative;
+  z-index: 1;
+  margin-bottom: $on-elements-spacing;
+  > * {
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.on-col-float-5 {
+  @include MQ(M) {
+    width: 5%;
+  }
+}
+
+.on-col-float-10 {
+  @include MQ(M) {
+    width: 10%;
+  }
+}
+
+.on-col-float-15 {
+  @include MQ(M) {
+    width: 15%;
+  }
+}
+
+.on-col-float-20 {
+  @include MQ(M) {
+    width: 20%;
+  }
+}
+
+.on-col-float-25 {
+  @include MQ(M) {
+    width: 25%;
+  }
+}
+
+.on-col-float-30 {
+  @include MQ(M) {
+    width: 30%;
+  }
+}
+
+.on-col-float-35 {
+  @include MQ(M) {
+    width: 35%;
+  }
+}
+
+.on-col-float-40 {
+  @include MQ(M) {
+    width: 40%;
+  }
+}
+
+.on-col-float-45 {
+  @include MQ(M) {
+    width: 45%;
+  }
+}
+
+.on-col-float-50 {
+  @include MQ(M) {
+    width: 50%;
+  }
+}
+
+.on-col-float-55 {
+  @include MQ(M) {
+    width: 55%;
+  }
+}
+
+.on-col-float-60 {
+  @include MQ(M) {
+    width: 60%;
+  }
+}
+
+.on-col-float-65 {
+  @include MQ(M) {
+    width: 65%;
+  }
+}
+
+.on-col-float-70 {
+  @include MQ(M) {
+    width: 70%;
+  }
+}
+
+.on-col-float-75 {
+  @include MQ(M) {
+    width: 75%;
+  }
+}
+
+.on-col-float-85 {
+  @include MQ(M) {
+    width: 85%;
+  }
+}
+
+.on-col-float-90 {
+  @include MQ(M) {
+    width: 90%;
+  }
+}
+
+.on-col-float-95 {
+  @include MQ(M) {
+    width: 95%;
+  }
+}
+
+.on-col-float-left {
+  @include MQ(M) {
+    float: left;
+    padding-right: $on-elements-spacing / 2;
+    margin-right: $on-elements-spacing / 2;
+  }
+}
+
+.on-col-float-right {
+  @include MQ(M) {
+    float: right;
+    padding-left: $on-elements-spacing / 2;
+    margin-left: $on-elements-spacing / 2;
+  }
+}

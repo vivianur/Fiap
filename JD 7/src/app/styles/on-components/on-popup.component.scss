@@ -1,0 +1,31 @@
+on-popup {
+  display: block;
+  position: fixed;
+  z-index: 50;
+  top: 36px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 36px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  @include MQ(M) {
+    top: 0;
+    height: 100%;
+  }
+  on-section-container {
+    position: static !important;
+    h2 {
+      font-size: 35px
+    }
+  }
+}
+
+.on-background-popup {
+  background-image: url('./images/on-global/themes/#{$on-theme-number}/mobile/on-background-popup.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include MQ(M) {
+    background-image: url('./images/on-global/themes/#{$on-theme-number}/on-background-popup.jpg')
+  }
+}

@@ -1,0 +1,24 @@
+
+.on-game-result {
+  display: block;
+  font-family: 'Gotham HTF Bold';
+  padding: 15px;
+  margin: 15px 0;
+  color: #000;
+  > * {
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.on-game-result-wrong {
+  background-color: #ff0000;
+}
+
+.on-game-result-correct {
+  background-color: #00ff6c;
+}

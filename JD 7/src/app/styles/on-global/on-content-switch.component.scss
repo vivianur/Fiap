@@ -1,0 +1,104 @@
+on-content-switch {
+  display: block;
+  $themes: (
+    label: (
+      1: 'Alianza Italic 300',
+      2: 'Metronic Slab Pro Air',
+      3: 'Roboto Medium',
+      4: 'Metronic Slab Pro Regular',
+      5: 'Playfair Display Regular',
+      6: 'Gotham HTF Book',
+      7: 'Gotham HTF Book'
+    ),
+    h2: (
+      1: 'Alianza Italic 900',
+      2: 'Metronic Slab Pro Bold',
+      3: 'Metronic Slab Pro Light',
+      4: 'Metronic Slab Pro Light',
+      5: 'Playfair Display Bold',
+      6: 'Gotham HTF Ultra',
+      7: 'Gotham HTF Bold'
+    ),
+    div: (
+      1: 'Metronic Slab Pro Light',
+      2: 'Alianza Script 700',
+      3: 'Roboto Black',
+      4: 'Metronic Slab Pro Black',
+      5: 'Roboto Light',
+      6: 'Gotham HTF Book',
+      7: 'Gotham HTF Book'
+    ),
+    a: (
+      1: 'Alianza Italic 100',
+      2: 'Metronic Slab Pro Air',
+      3: 'Metronic Slab Pro Air',
+      4: 'Alianza Italic 100',
+      5: 'Alianza Italic 100',
+      6: 'Alianza Italic 100',
+      7: 'Alianza Italic 100'
+    )
+  );
+  h2 {
+    font-family: map-get(map-get($themes, h2), $on-theme-number);
+    text-transform: uppercase;
+    span, div {
+      display: block;
+      font-family: map-get(map-get($themes, div), $on-theme-number);
+      @if($on-theme-number == 2) {
+        text-transform: none;
+      }
+    }
+    @include MQ(XS) {
+      font-size: 35px;
+    }
+  }
+  .on-content-switch-content-label {
+    font-family: map-get(map-get($themes, label), $on-theme-number);
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  .on-content-switch-buttons-container {
+    a {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding: 80px 0px;
+      color: #FFF;
+      font-size: 34px;
+      text-decoration: none;
+      line-height: .8;
+      font-family: map-get(map-get($themes, a), $on-theme-number);
+      @include MQL(XS) {
+        flex-wrap: wrap;
+        padding: $on-elements-spacing 0;
+      }
+      > * {
+        text-align: center;
+      }
+      .on-arrow {
+        width: 30px;
+        height: 30px;
+        margin: 15px 0;
+      }
+      .on-content-switch-buttons-text {
+        padding: 0 ($on-elements-spacing * 2);
+        @include MQL(S) {
+          display: none;
+        }
+      }
+    }
+    .on-content-switch-buttons-previous {
+      background: url('./images/on-global/themes/#{$on-theme-number}/on-background-content-switch-prev.png') center no-repeat;
+      background-size: contain;
+      @include MQL(XS) {
+        div:nth-child(1) {
+          order: 1;
+        }
+      }
+    }
+    .on-content-switch-buttons-next {
+      background: url('./images/on-global/themes/#{$on-theme-number}/on-background-content-switch-next.png') center no-repeat;
+      background-size: contain;
+    }
+  }
+}

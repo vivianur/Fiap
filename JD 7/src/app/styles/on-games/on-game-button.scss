@@ -1,0 +1,67 @@
+.on-game-button-container {
+  text-align: center;
+  button {
+    display: inline-block;
+  }
+}
+
+.on-game-button-open-container {
+  @if (($on-theme-number == 5) or ($on-theme-number == 6)) {
+    button {
+      border-color: $on-color-secondary;
+      color: $on-color-secondary;
+    }
+  } @else {
+    button {
+      border-color: $on-color-primary;
+      color: $on-color-primary;
+    }
+  }
+
+}
+
+.on-game-button {
+  transition: .2s;
+  width: 100%;
+  padding: $on-elements-spacing;
+  font-size: 16px;
+  font-family: 'Gotham HTF Medium';
+  background-color: $on-color-magenta;
+  color: #000;
+  border: 1px solid transparent;
+  margin: $on-elements-spacing / 2 0;
+  @include MQ(S) {
+    width: auto;
+    margin: 0 $on-elements-spacing / 2;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &:hover {
+    background-color: transparent;
+    border-color: $on-color-magenta;
+    color: $on-color-magenta;
+  }
+}
+
+.on-game-button-result {
+  background-color: transparent;
+  color: $on-color-magenta;
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+.on-game-button-previous {
+  width: $on-elements-spacing;
+  height: $on-elements-spacing;
+  transition: border-color .5s, color .5s;
+  cursor: pointer;
+  &:hover {
+    color: #FFF;
+    border-color: #FFF;
+  }
+}

@@ -1,0 +1,7 @@
+
+@for $i from 1 through $on-grid-columns {
+  .on-col-xs-#{$i} {
+    @extend %on-col;
+    width: #{($i / $on-grid-columns) * 100 + '%'};
+  }
+}

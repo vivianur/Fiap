@@ -1,0 +1,62 @@
+on-important {
+  $top-border-height: 4px;
+  display: block;
+  position: relative;
+  padding: $on-elements-spacing;
+  margin: $on-elements-spacing 0;
+  border: 2px solid transparent;
+  border-top: 0;
+  background-color: transparent;
+  color: $on-color-magenta;
+  > *:first-child {
+    margin-top: 0;
+  }
+  > *:last-child {
+    margin-bottom: 0;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: -$top-border-height / 2;
+    width: calc(100% + ((#{$top-border-height} / 2) * 2));
+    height: $top-border-height;
+    background-color: $on-color-magenta;
+  }
+}
+
+on-important.on-important-references {
+  color: $on-color-default;
+}
+
+.on-background-color-white {
+  on-important {
+    @extend %border-color-gray;
+  }
+}
+
+.on-background-color-gray {
+  on-important {
+    @extend %border-color-gray-component;
+  }
+}
+
+.on-background-color-main-light {
+  on-important {
+    @extend %border-color-main-component;
+  }
+}
+
+.on-section-dark {
+  on-important {
+    @extend %color-white;
+    @extend %border-color-white;
+    &:before {
+      @extend %background-color-white;
+    }
+  }
+}
+
+
+

@@ -1,0 +1,81 @@
+@each $on-font-name, $on-font in map-get($on-fonts, $on-theme-number) {
+  @if($on-font-name != "On Icons") {
+    .on-font-#{$on-font-name} {
+      font-family: $on-font
+    }
+  }
+}
+
+b, .on-font-bold {
+  font-family: 'Gotham HTF Bold';
+  font-weight: 100;
+}
+
+i, .on-font-italic {
+  font-style: italic;
+}
+
+// Font sizes
+
+$on-font-sizes: (
+  1: (
+    medium: 40px,
+    large: 50px,
+    extra-large: 65px
+  ),
+  2: (
+    medium: 35px,
+    large: 55px,
+    extra-large: 64px
+  ),
+  3: (
+    medium: 35px,
+    large: 45px,
+    extra-large: 60px
+  ),
+  4: (
+    medium: 35px,
+    large: 45px,
+    extra-large: 60px
+  ),
+  5: (
+    medium: 35px,
+    large: 50px,
+    extra-large: 75px
+  ),
+  6: (
+    medium: 40px,
+    large: 50px,
+    extra-large: 60px
+  ),
+  7: (
+    medium: 40px,
+    large: 50px,
+    extra-large: 60px
+  ),
+);
+
+.on-font-size-extra-large, .on-font-size-large, .on-font-size-medium {
+  font-size: 30px;
+  @if($on-theme-number == 4) {
+    margin: 5px 0;
+  }
+}
+
+.on-font-size-extra-large {
+  @include MQ(XS) {
+    font-size: map-get(map-get($on-font-sizes, $on-theme-number), extra-large);
+  }
+}
+
+.on-font-size-large {
+  @include MQ(XS) {
+    font-size: map-get(map-get($on-font-sizes, $on-theme-number), large);
+  }
+}
+
+.on-font-size-medium {
+  @include MQ(XS) {
+    font-size: map-get(map-get($on-font-sizes, $on-theme-number), medium);
+  }
+}

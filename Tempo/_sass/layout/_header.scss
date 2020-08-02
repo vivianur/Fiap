@@ -1,0 +1,68 @@
+header{
+    color: #fff;
+    background: $cor-principal;
+    height: 100%;
+    position: fixed;
+    text-transform: uppercase;
+    width: 30%;
+    z-index: 2;
+}
+.margin-header{
+    margin: 5%;
+}
+
+//Título
+.header-titulo {
+    font: 1.8em 'Gotham HTF Book';
+    margin-bottom: 30px;
+}
+//Descrição
+.header-descricao {
+    font:{
+        family: 'Gotham HTF Book';
+        size: 0.939em;
+    }
+    line-height: 1.6em;
+    max-width: 700px;
+}
+
+//Media Query.
+@media (max-width: 1080px){//Até
+     //Header.
+    .header-titulo {
+        font-size: 1.5em;
+    }
+    .margin-header{
+        margin: 7%;
+    }
+}
+@media (max-width: 900px){//Até
+    //Header.
+    header{
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .margin-header{
+        margin: 0;
+        padding: 1.8em;
+    }
+    //Capa.
+    .bg-capa{
+        background: $cor-principal;
+    }
+}
+@media (max-width: 480px){//Até
+    //Título.
+    .header-titulo {
+        font-size: 1.8em;
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    //Descrição.
+    .header-descricao {
+        font-size: 0.8em;
+    }
+}
+
+

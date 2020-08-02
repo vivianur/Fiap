@@ -1,0 +1,98 @@
+$on-emphasis-styles: (
+  1: ('on-emphasis-alianza-italic-700', 'on-emphasis-dark-alianza-italic-500'),
+  2: ('on-emphasis-alianza-italic-700', 'on-emphasis-alianza-script', 'on-emphasis-dark-alianza-italic-500'),
+  3: ('on-emphasis-alianza-italic-700', 'on-emphasis-magenta', 'on-emphasis-dark-alianza-italic-500'),
+  4: ('on-emphasis-alianza-italic-700', 'on-emphasis-dark-alianza-italic-500'),
+  5: ('on-emphasis-gotham-htf-bold-italic', 'on-emphasis-dark-gotham-htf-bold-italic'),
+  6: ('on-emphasis-gotham-htf-bold-italic', 'on-emphasis-dark-gotham-htf-bold-italic'),
+  7: ('on-emphasis-gotham-htf-bold-italic'),
+);
+
+on-emphasis {
+  display: block;
+  position: relative;
+  color: $on-color-default;
+}
+
+@for $i from 1 through length(map-get($on-emphasis-styles, $on-theme-number)) {
+  @if($i == 1) {
+    on-emphasis {
+      @extend %#{nth(map-get($on-emphasis-styles, $on-theme-number), $i)};
+      @include MQL(S) {
+        font-size: 18px !important;
+      }
+    }
+  } @else {
+    on-emphasis.on-emphasis-style-#{$i - 1} {
+      @extend %#{nth(map-get($on-emphasis-styles, $on-theme-number), $i)};
+    }
+  }
+
+}
+
+%on-emphasis-simple {
+  padding-left: $on-elements-spacing;
+  border-left: 5px solid $on-color-magenta;
+  line-height: 24px;
+  margin: 0;
+}
+
+%on-emphasis-dark {
+  padding: 0;
+  border: 0;
+  span {
+    background-color: #000;
+    padding: 5px;
+    color: #FFF;
+  }
+}
+
+%on-emphasis-gotham-htf-bold-italic {
+  @extend %on-emphasis-simple;
+  font-family: 'Gotham HTF Bold Italic';
+  line-height: 1.375;
+  font-size: 18px;
+}
+
+%on-emphasis-alianza-italic-700 {
+  @extend %on-emphasis-simple;
+  font-family: 'Alianza Italic 700';
+  font-size: 20px;
+}
+
+%on-emphasis-dark-gotham-htf-bold-italic {
+  @extend %on-emphasis-dark;
+  font-family: 'Gotham HTF Bold Italic';
+  font-size: 18px;
+  line-height: 1.95;
+}
+
+%on-emphasis-dark-alianza-italic-500 {
+  @extend %on-emphasis-dark;
+  font-family: 'Alianza Italic 500';
+  font-size: 20px;
+  line-height: 1.87;
+}
+
+%on-emphasis-magenta {
+  font-family: 'Metronic Slab Pro Regular';
+  color: $on-color-magenta;
+  border: 0;
+  padding: 0;
+  font-size: 25px;
+  line-height: 32px;
+}
+
+%on-emphasis-alianza-script {
+  font-family: 'Alianza Script 700';
+  font-size: 20px;
+  border: 0;
+  padding: 0;
+}
+
+.on-section-dark {
+  on-emphasis {
+    color: #FFF;
+    @extend %border-color-white;
+  }
+}
